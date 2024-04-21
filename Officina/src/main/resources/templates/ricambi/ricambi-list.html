@@ -1,0 +1,55 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Ricambi</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <section layout:fragment="body" class="py-5">
+            <div class="container px-5 my-4">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder">Pezzi di ricambio</h1>
+                    
+                </div>
+                <div class="input-group-append">
+                    <p style="font-size:140%; margin-top: 20px;">Che pezzo di ricambio stai cercando?</p>
+                </div>
+                <form action="/ricambi" method="post" th:object="${selectedRicambio}">
+                        <input type="text" style="width: 350px;" class="form-control-sm" th:field="${selectedRicambio.nome}" placeholder="Nome del pezzo" aria-label="Nome del pezzo" aria-describedby="button-addon2">                        <div class="input-group-append d-flex flex-row">
+                        <button style="margin-top: 5px;" class="btn btn-dark" type="submit">Cerca</button>
+                        <p style="font-size: 100%; margin-top: 10px; margin-left: 62px; margin-right: 62px;" class="mb-2">oppure</p>
+                        <button style="margin-top: 5px;" class="btn btn-dark" type="submit" name="mostraTutti" value="true">Mostra tutti</button>
+                    </div>
+                </form>
+                <div style="text-align: right;">
+                    <a style="margin-top: 20px; margin-bottom: 20px; margin-right: 15px;" class="btn btn-dark" th:href="@{/ricambi/new}">Aggiungi</a>
+                </div>
+
+                <div style="margin-top: 10px" class="row gx-5">
+                    
+                    <div th:each="ricambio : ${ricambi}" class="mb-4">
+                        <div class="card">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <!-- Nome in grassetto con prezzo -->
+                                <h5 class="card-title font-weight-bold" th:text="${ricambio.nome + ': ' + ricambio.costoUnitario + '€'}"></h5>
+                                <!-- Bottone Modifica -->
+                                <a class="btn btn-dark" th:href="@{/ricambi/{ricambioId}/edit(ricambioId=${ricambio.id})}">Modifica</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+
+            </div>
+        </section>   
+    </main>
+</body>
+</html>

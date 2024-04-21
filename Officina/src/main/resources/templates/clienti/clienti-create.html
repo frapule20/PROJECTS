@@ -1,0 +1,86 @@
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Clienti Create</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+    <section layout:fragment="body" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder" style="margin-top: 0px;">Aggiungi un nuovo Cliente</h1>
+            </div>
+            <form role="form" method="post" th:action="@{/clienti/new}" th:object="${cliente}">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <td> <label style="font-weight: bold; font-size: 15px;" for="nome">Nome</label></td>
+                        <tr>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="nome"
+                                            name="nome"
+                                            th:field="*{nome}"
+                                            placeholder="Nome"/>
+                                    <p th:if="${#fields.hasErrors('nome')}" class="text-danger" th:errors="*{nome}"></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div style="margin-top: 15px;" class="form-group col-md-6">
+                        <label style="font-weight: bold; font-size: 15px;" for="cognome">Cognome</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="Cognome"
+                                name="Cognome"
+                                th:field="*{cognome}"
+                                placeholder="Cognome">
+                        <p th:if="${#fields.hasErrors('cognome')}" class="text-danger" th:errors="*{cognome}"></p>
+                    </div>
+                    <div style="margin-top: 15px;" class="form-group col-md-6">
+                        <label style="font-weight: bold; font-size: 15px;" for="email">E-mail</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                th:field="*{email}"
+                                placeholder="E-mail">
+                        <p th:if="${#fields.hasErrors('email')}" class="text-danger" th:errors="*{email}"></p>
+                    </div>
+                    <div style="margin-top: 15px;" class="form-group col-md-6">
+                        <label style="font-weight: bold; font-size: 15px;" for="telefono">Telefono</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="telefono"
+                                name="telefono"
+                                th:field="*{telefono}"
+                                placeholder="Telefono">
+                        <p th:if="${#fields.hasErrors('telefono')}" class="text-danger" th:errors="*{telefono}"></p>
+                    </div>
+                    <div style="margin-top: 15px;" class="form-group col-md-6">
+                        <label style="font-weight: bold; font-size: 15px;" for="dataInizio">Data Registrazione</label>
+                        <input
+                                type="date"
+                                class="form-control"
+                                id="dataRegistrazione"
+                                name="dataRegistrazione"
+                                th:field="*{dataRegistrazione}"
+                                placeholder="Data Registrazione">
+                        <p th:if="${#fields.hasErrors('dataRegistrazione')}" class="text-danger" th:errors="*{dataRegistrazione}"></p>
+                    </div>
+                    <button type="submit" class="btn btn-dark" style="margin-top: 20px;">Crea</button>
+                </div>
+            </form>
+            <a href="javascript:void(0);" style="font-weight: bold; margin-top: 40px; margin-bottom: 50px;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+
+        </div>
+    </section>
+</main>
+</body>
+</html>

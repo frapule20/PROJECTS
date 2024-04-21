@@ -1,0 +1,65 @@
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Nuovo Meccanico</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+    <section layout:fragment="body" class="py-5">
+        <div class="container">
+            <h1 class="fw-bolder" style="margin-top: 0px; font-size: 25px;">Aggiungi un meccanico:</h1>
+
+            <form role="form" method="post" th:action="@{/meccanici/new}" th:object="${meccanico}">
+                <div class="form-row">
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <td><label style="font-weight: bolder;" for="nome">Nome</label></td>
+                        <tr>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <input type="text" class="form-control" id="nome" name="nome" th:field="*{nome}" placeholder="Nome"/>
+                                    <p th:if="${#fields.hasErrors('nome')}" class="text-danger" th:errors="*{nome}"></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="cognome">Cognome</label>
+                        <input type="text" class="form-control" id="Cognome" name="Cognome" th:field="*{cognome}" placeholder="Cognome">
+                        <p th:if="${#fields.hasErrors('cognome')}" class="text-danger" th:errors="*{cognome}"></p>
+                    </div>
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="cognome">Email</label>
+                        <input type="text" class="form-control" id="Email" name="Email" th:field="*{email}" placeholder="Email">
+                        <p th:if="${#fields.hasErrors('email')}" class="text-danger" th:errors="*{email}"></p>
+                    </div>
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="specializzazione">Specializzazione</label>
+                        <select class="form-control" id="specializzazione" name="specializzazione" th:field="*{specializzazione}">
+                            <option value="" selected hidden>Seleziona la specializzazione</option>
+                            <option th:each="singleSpecializzazione : ${allSpecializzazioni}"
+                                    th:value="${singleSpecializzazione.name()}"
+                                    th:text="${singleSpecializzazione.name()}"></option>
+                        </select>
+                        <p th:if="${#fields.hasErrors('specializzazione')}" class="text-danger" th:errors="*{specializzazione}"></p>
+                    </div>
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="licenza">Licenza</label>
+                        <select class="form-control" id="licenza" name="licenza" th:field="*{licenza}">
+                            <option value="true">Valida</option>
+                            <option value="false">Scaduta</option>
+                        </select>
+                        <p th:if="${#fields.hasErrors('licenza')}" class="text-danger" th:errors="*{licenza}"></p>
+                    </div>
+                    <button style="margin-top: 20px;" type="submit" class="btn btn-dark">Crea</button>
+                </div>
+            </form>
+            <div style="margin-top: 40px; margin-bottom: 50px;">
+                <a href="javascript:void(0);" style="font-weight: bold;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+            </div>
+        </div>
+        
+    </section>
+</main>
+</body>
+</html>

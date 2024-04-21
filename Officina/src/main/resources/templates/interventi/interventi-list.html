@@ -1,0 +1,77 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Interventi</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <section layout:fragment="body" class="py-5">
+            <div class="container px-5 my-4">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder">Interventi</h1>
+                </div>
+                <p style="font-size:130%; margin-top: 20px;">
+                    In che <strong>periodo</strong> è stato effettuato l'intervento che cerchi? <br> 
+                    Ricordi anche la <strong>specializzazione</strong> del meccanico che l'ha effettuato? <br>
+                    Se sì, inserisci i dettagli nella ricerca qui di seguito:
+                </p>
+                
+
+                    <form style="margin-bottom: 40px;" action="/interventi" method="post" th:object="${selectedIntervento}">
+                            <input type="date" class="form-control-sm" placeholder="Inserisci data inizo" th:field="${selectedIntervento.dataInizio}">
+                            <input type="date" class="form-control-sm" placeholder="Inserisci data fine" th:field="${selectedIntervento.dataFine}">
+                            <select style="width: 285px; margin-top: 5px;" class="form-control" id="specializzazione" name="specializzazione" th:field="${selectedIntervento.meccanico.specializzazione}">
+                                <option  value="" selected hidden>Seleziona la specializzazione</option>
+                                <option th:each = "singleSpecializzazione : ${allSpecializzazioni}" th:value="${singleSpecializzazione.name()}" th:text="${singleSpecializzazione.name()}"></option>
+
+                            </select>
+                           
+                        
+                            <div class="input-group-append d-flex flex-row">
+                                <button style="margin-top: 5px;" class="btn btn-dark" type="submit">Cerca</button>
+                                <p style="font-size: 100%; margin-top: 10px; margin-left: 30px; margin-right: 30px;" class="mb-2">oppure</p>
+                                <button style="margin-top: 5px;" class="btn btn-dark" type="submit" name="mostraTutti" value="true">Mostra tutti</button>
+                            </div>
+                    </form>
+                            <div class="row gx-5"></div>
+                                <div th:each="intervento :${interventi}" class="col-lg-6 mb-2">
+                                    <div class="card" style="margin-top: 0px;">
+                                        <div class="card-body">
+                                            
+                                            <!-- Descrizione Intervento -->
+                                            <h5 class="card-title" th:text="${intervento.descrizione} + ' (' + ${intervento.auto.targa} + ')'">Descrizione</h5> 
+                                            <!-- Linea di separazione -->
+                                            <hr>             
+                                            
+                                            <!-- Meccanico che ha effettuato l'intervento-->
+                                            <p style="font-size:100%;" class="card-text">
+                                                Effettuato dal meccanico:
+                                                <a th:href="@{/meccanici/{meccanicoId}(meccanicoId=${intervento.meccanico.id})}">
+                                                    <span style="white-space: nowrap;" th:text="${intervento.meccanico.nome} + ' ' + ${intervento.meccanico.cognome}"></span>
+                                                </a>
+                                            </p>
+
+                                            <!-- Data Inizio -->
+                                            <p style="font-size: 100%; margin-top: 20px;" class="card-text" th:text="'Data Inizio: ' + ${#dates.format(intervento.dataInizio, 'dd-MM-yyyy')}"></p>
+
+                                            <!-- Data Fine -->
+                                            <p style="font-size: 100%; margin-top: 20px;" class="card-text" th:text="'Data Fine: ' + ${#dates.format(intervento.dataFine, 'dd-MM-yyyy')}"></p>
+
+                                            
+            
+                                           
+                                        </div>
+                                    </div>
+                                    <a style="margin-top: 10px; margin-bottom: 40px;" class="btn btn-dark" th:href="@{/interventi/{interventoId}(interventoId=${intervento.id})}">Dettagli</a>
+                                </div>
+                            </div>
+                
+            
+        </section>   
+        
+    </main>
+    
+</body>
+</html>

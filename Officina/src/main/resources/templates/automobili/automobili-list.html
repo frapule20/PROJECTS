@@ -1,0 +1,56 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Automobili</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <section layout:fragment="body" class="py-5">
+            <div class="container px-5 my-4">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder" style="margin-top: 0px;">Automobili</h1>
+                </div>
+                <div class="container">
+                    <p style="font-size:130%; margin-top: 20px;">Conosci la targa dell'auto? Inseriscila di seguito per trovare rapidamente l'automobile che cerchi:</p>
+                    <form action="/automobili" method="post" th:object="${selectedAuto}">
+                                <input type="text" class="form-control" style="width: 300px;;" placeholder="Inserisci la targa" th:field="${selectedAuto.targa}">
+                            
+                                <div class="input-group-append d-flex flex-row">
+                                    <button style="margin-top: 5px;" class="btn btn-dark" type="submit">Cerca</button>
+                                    <p style="font-size: 100%; margin-top: 10px; margin-left: 37px; margin-right: 37px;" class="mb-2">oppure</p>
+                                    <button style="margin-top: 5px;" class="btn btn-dark" type="submit" name="mostraTutti" value="true">Mostra tutti</button>
+                                </div>
+                    </form>
+                </div>
+                <div  style="margin-bottom: 40px" class="row gx-5">
+                    <div th:each="auto :${automobili}" class="col-lg-6 mb-2">
+                        <div class="card" style="margin-top: 20px;">
+                            <div class="card-body">
+                                <!-- Targa -->
+                                <h5 class="card-title" th:text="${auto.targa}">Targa</h5>
+                                <!-- Linea di separazione -->
+                                <hr>                           
+                                <!-- Cilindrata -->
+                                <p style="font-size:100%; margin-top: 20px;" class="card-text" th:text="'Cilindrata: ' + ${auto.cilindrata}"></p>
+
+                                <!-- Anno di produzione -->
+                                <p style="font-size:100%;" class="card-text" th:text="'Anno di produzione: ' + ${auto.annoProduzione}"></p>
+
+                                <!-- Modello -->
+                                <p style="font-size:100%;" class="card-text" th:text="'Modello: ' + ${auto.modello}"></p>
+
+                                <!-- Colore -->
+                                <p style="font-size:100%;" class="card-text" th:text="'Colore: ' + ${auto.colore}"></p>
+
+                            </div>
+                        </div>
+                        <a style="margin-top: 10px;" class="btn btn-dark" th:href="@{/automobili/{autoId}(autoId=${auto.id})}">Dettagli</a>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </main>
+</body>
+</html>

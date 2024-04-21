@@ -1,0 +1,87 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Dettagli Auto</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+  <section layout:fragment="body" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="fw-bolder" style="margin-top: 0px;">Dettagli dell'automobile selezionata:</h1>
+      </div>
+
+      <!-- Targa -->
+      <span style="font-weight: bold; font-size:170%;" >
+      <span th:text="${auto.targa}"></span>
+
+      <div class="container d-flex">
+      <div class="col-lg-8 card mb-3" style="margin-top: 10px;margin-right: 30px;">
+          <h5 class="card-body" style="margin-top: 0px; margin-bottom: 0px;">
+            <!-- Cliente -->
+            <p style="font-size:100%; margin-top: 0px; margin-bottom: 0px;" class="card-text">
+              
+                <span style="font-weight: bold;">Di proprietà del cliente:</span>
+                  <span th:text="${auto.cliente.nome} + ' ' + ${auto.cliente.cognome}"></span>
+              
+            </p>
+
+            <!-- Cilindrata -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Cilindrata:</span> <span th:text="${auto.cilindrata}"></span>
+            </p>
+
+            <!-- Anno di produzione -->
+            <p<p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Anno di produzione:</span> <span th:text="${auto.annoProduzione}"></span>
+            </p> 
+
+            <!-- Modello -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Modello:</span> <span th:text="${auto.modello}"></span>
+            </p>
+            <!-- Colore -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Colore:</span> <span th:text="${auto.colore}"></span>
+            </p>
+            <!-- Intervento -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Ha subito gli interventi:</span> 
+              <th:block th:if="${not #lists.isEmpty(auto.interventoList)}">
+                  <li th:each="intervento : ${auto.interventoList}">
+                      <a th:href="@{/interventi/{interventoId}(interventoId=${intervento.id})}"> 
+                          <span th:text="${intervento.descrizione}"></span>
+                      </a>
+                  </li>
+              </th:block>
+              <th:block th:if="${#lists.isEmpty(auto.interventoList)}">
+                  <span>Nessuno</span>
+              </th:block>
+          </p>
+          
+          </h5>
+      </div>
+      
+        <div class="d-flex flex-column mr-5" style="margin-left:0px; margin-top:20px;">
+          <a class="btn btn-dark" th:href="@{/interventi/{autoId}/new(autoId=${auto.id})}" role="button" style="margin-bottom: 1px;">Aggiungi Intervento</a>
+          <a class="btn btn-dark" style="margin-top: 5px;" th:href="@{/automobili/{autoId}/edit(autoId=${auto.id})}">Modifica</a>
+          
+          <form th:action="@{/automobili/{autoId}(autoId=${auto.id})}" th:method="delete">
+            <input type="hidden" th:name="_method" th:value="delete">
+            <input type="submit" class="btn btn-dark" style="background-color: #8B0000; color: #FFFFFF;" value="Cancella Automobile">
+          </form>
+        </div>
+      </div>
+      <div style="margin-top:40px; margin-bottom:50px;">
+        <a href="javascript:void(0);" style="font-weight: bold;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+      </div>
+    </div>
+    
+  
+</div>
+</section>
+</main>
+</body>
+</html>

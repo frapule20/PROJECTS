@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Crea Pezzi di Ricambio</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <section layout:fragment="body" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder" style="margin-top: 0px;">Aggiungi Pezzi di Ricambio:</h1>
+                  </div>
+                <form role="form" method="post" th:action="@{/ricambi/new}" th:object="${ricambio}">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label style="font-weight: bold;" for="nome">Nome</label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="text"
+                                       class="form-control"
+                                       id="nome"
+                                       name="nome"
+                                       th:field="*{nome}"
+                                       placeholder="Nome"/>
+                                <p th:if="${#fields.hasErrors('nome')}" class="text-danger" th:errors="*{nome}"></p>
+                            </div>
+                        </div>
+                        <div style="margin-top:20px" class="form-group col-md-6">
+                            <label style="font-weight: bold;" for="costoUnitario">Costo Unitario</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="costoUnitario"
+                                   name="costoUnitario"
+                                   th:field="*{costoUnitario}"
+                                   placeholder="Costo Unitario">
+                                   <p th:if="${#fields.hasErrors('costoUnitario')}" class="text-danger" th:errors="*{costoUnitario}"></p>
+                        </div>
+                    </div>
+                    <button style="margin-top:20px"  type="submit" class="btn btn-dark">Crea</button>
+                </form>
+                <a href="javascript:void(0);" style="font-weight: bold; margin-top: 40px; margin-bottom: 50px;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

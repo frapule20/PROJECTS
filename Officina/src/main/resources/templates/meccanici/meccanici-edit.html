@@ -1,0 +1,129 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+  <title>Modifica Meccanico</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+  <section layout:fragment="body" class="py-5">
+    <div class="container">
+    
+      <h1 class="fw-bolder" style="margin-top: 0px; font-size: 25px;">Modifica il meccanico selezionato:</h1>
+
+      <form role="form" th:method="put" th:action="@{/meccanici/{meccanicoId}(meccanicoId=${meccanico.id})}" th:object="${meccanico}">
+    
+        <input type="hidden" th:field="*{id}">
+          <div class="form-row">
+            <div style="margin-top: 20px;" class="form-group col-md-6">
+              <td><label style="font-weight: bolder;" for="nome">Nome</label></td>
+              <tr>
+                  <td>
+                <div style="display: flex; align-items: center;">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        name="nome"
+                        th:field="*{nome}"
+                        placeholder="Nome"/>
+                    <p th:if="${#fields.hasErrors('nome')}" class="text-danger" th:errors="*{nome}"></p>
+                </div>
+            </td>
+        </tr>      
+        </div>
+        <div style="margin-top: 20px;" class="form-group col-md-6">
+          <label style="font-weight: bolder;" for="cognome">Cognome</label>
+          <input
+                  type="text"
+                  class="form-control"
+                  id="Cognome"
+                  name="Cognome"
+                  th:field="*{cognome}"
+                  placeholder="Cognome">
+           <p th:if="${#fields.hasErrors('cognome')}" class="text-danger" th:errors="*{cognome}"></p>
+      </div>
+      <div style="margin-top: 20px;" class="form-group col-md-6">
+        <label style="font-weight: bolder;" for="email">Email</label>
+        <input
+                type="text"
+                class="form-control"
+                id="Email"
+                name="Email"
+                th:field="*{email}"
+                placeholder="Email">
+         <p th:if="${#fields.hasErrors('email')}" class="text-danger" th:errors="*{email}"></p>
+    </div>
+      <div style="margin-top: 20px;" class="form-group col-md-6">
+        <label style="font-weight: bolder;" for="specializzazione">Specializzazione</label>
+        <select class="form-control" id="specializzazione" name="specializzazione" th:field="*{specializzazione}">
+          <option value="" selected hidden>Seleziona la specializzazione</option>
+          <option th:each = "singleSpecializzazione : ${allSpecializzazioni}" th:value="${singleSpecializzazione.name()}" th:text="${singleSpecializzazione.name()}"></option>
+
+        </select>
+        <p th:if="${#fields.hasErrors('specializzazione')}" class="text-danger" th:errors="*{specializzazione}"></p>
+    </div>
+    <script th:inline="javascript">
+    /* Funzione per gestire la visibilità e l'abilitazione/disabilitazione della sezione degli assistenti */
+    function gestisciSezioneAssistenti() {
+        var licenzaScaduta = document.getElementById('licenza').value === 'false';
+        var assistentiCheckbox = document.getElementById('meccaniciCheckbox');
+        var messaggioLicenzaScaduta = document.getElementById('messaggioLicenzaScaduta');
+
+        if (licenzaScaduta) {
+            assistentiCheckbox.style.display = 'none';  // Nascondi la sezione degli assistenti
+            messaggioLicenzaScaduta.style.display = 'block';  // Mostra il messaggio di licenza scaduta
+        } else {
+            assistentiCheckbox.style.display = 'block';  // Mostra la sezione degli assistenti
+            messaggioLicenzaScaduta.style.display = 'none';  // Nascondi il messaggio di licenza scaduta
+        }
+    }
+
+    /* Chiamata alla funzione quando la pagina si carica e quando cambia il valore della licenza */
+    document.addEventListener('DOMContentLoaded', gestisciSezioneAssistenti);
+    document.getElementById('licenza').addEventListener('change', gestisciSezioneAssistenti);
+</script>
+
+<div style="margin-top: 20px;" class="form-group col-md-6">
+    <label style="font-weight: bolder;" for="licenza">Licenza</label>
+    <select class="form-control" id="licenza" name="licenza" th:field="*{licenza}">
+        <option value="true">Valida</option>
+        <option value="false">Scaduta</option>
+    </select>
+</div>
+
+
+
+<div class="form-group col-md-6">
+    <div style="margin-top: 20px;" class="position-relative mb-3">
+        <label style="font-weight: bolder;" for="meccaniciCheckbox">Aggiungi Assistenti</label>
+        <div id="meccaniciCheckbox" th:if="${allMeccanici}">
+
+            <div th:each="meccanicoX : ${allMeccanici}">
+              <div style="margin-top: 10px;">
+                <span  th:if="${allMeccanici.isEmpty()}">Nessun assistente disponibile.</span>
+              </div>
+                <input type="checkbox" id="${meccanicoX.id}" th:field="*{assistente}" name="${meccanicoX.nome}" th:value="${meccanicoX.id}" th:checked="${allMeccanici.contains(meccanico)}" class="form-check-input">
+                <label for="${meccanicoX.id}" class="form-check-label" th:text="${meccanicoX.nome} + ' ' + ${meccanicoX.cognome}"></label>
+            </div>
+        </div>
+        <p id="messaggioLicenzaScaduta" style="display: none; color: red;">Un meccanico con la licenza scaduta non può avere assistenti. Può al più essere un assistente. <br> Se ora ha una licenza valida, modifica quel campo e aggiorna la pagina per vedere che assistente assegnare al meccanico.</p>
+    </div>
+</div>
+
+    <button style="margin-top: 20px; margin-bottom: 5px;" type="submit" class="btn btn-dark">Aggiorna</button>
+    </form>
+
+    <form th:action="@{/meccanici/{meccanicoId}(meccanicoId=${meccanico.id})}" th:method="delete">
+      <input type="hidden" th:name="_method" th:value="delete">
+      <input type="submit" class="btn btn-dark" style="background-color: #8B0000; color: #FFFFFF;" value="Elimina">
+    </form>
+      </div>
+    <div style="margin-top: 40px; margin-bottom: 50px;">
+      <a href="javascript:void(0);" style="font-weight: bold;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+  </div>
+  </section>
+</main>
+</body>
+</html>

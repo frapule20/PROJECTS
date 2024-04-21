@@ -1,0 +1,115 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Dettagli Meccanico</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+  <section layout:fragment="body" class="py-5">
+    <div class="container">
+        <h1 class="fw-bolder" style="margin-top: 0px; font-size: 25px;">Scheda del meccanico:</h1>
+      
+
+      <div class="container d-flex">
+      <div class="col-lg-8 card mb-3" style="margin-top: 10px;margin-right: 30px;">
+          <h5 class="card-body" style="margin-top: 0px; margin-bottom: 0px;">
+
+            <!-- Nome -->
+            <p style="font-size:100%; margin-top: 0px; margin-bottom: 0px;" class="card-text">
+              <span style="font-weight: bold;">Nome:</span> <span th:text="${meccanico.nome}"></span>
+            </p>
+
+            <!-- Cognome -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Cognome:</span> <span th:text="${meccanico.cognome}"></span>
+            </p>
+
+             <!-- Email -->
+             <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Email:</span> <span th:text="${meccanico.email}"></span>
+            </p>
+
+            <!-- Licenza -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Licenza:</span>
+                <span th:if="${meccanico.licenza} == true">Valida</span>
+                <span th:if="${meccanico.licenza} == false">Scaduta</span>
+            </p>
+            
+            <!-- Specializzazione -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Specializzazione:</span> <span th:text="${meccanico.Specializzazione}"></span>
+              </p>
+            
+            <!-- Interventi effettuati -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Ha effettuato i seguenti interventi:</span>
+                <span th:if="${meccanico.interventiList.isEmpty()}">Ancora nessuno</span>
+
+                <span th:if="${not meccanico.interventiList.isEmpty()}">
+                    <ul>
+                        <li th:each="intervento : ${meccanico.interventiList}" th:text="${intervento.descrizione}"></li>
+                    </ul>
+                </span>
+            </p>
+
+            <!-- Assistito da -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Assistito da:</span>
+                <span th:if="${meccanico.assistente.isEmpty()}">Ancora nessuno</span>
+
+                <span th:if="${not meccanico.assistente.isEmpty()}">
+                    <ul>
+                            <li th:each="assistenti : ${meccanico.assistente}" >
+                                <a th:href="@{/meccanici/{meccanicoId}(meccanicoId=${assistenti.id})}" th:text="${assistenti.nome} + ' ' + ${assistenti.cognome}"></a>
+                            </li>
+                        
+                    </ul>
+                </span>
+            </p>
+
+            <!-- Assistente di -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Assistente di:</span>
+                <span th:if="${meccanico.assistito.isEmpty()}">Ancora nessuno</span>
+                <span th:if="${not meccanico.assistito.isEmpty()}">
+                    <ul>
+                            <li th:each="assistiti : ${meccanico.assistito}" >
+                                <a th:href="@{/meccanici/{meccanicoId}(meccanicoId=${assistiti.id})}" th:text="${assistiti.nome} + ' ' + ${assistiti.cognome}"></a>
+                            </li>
+                         
+                    </ul>
+                </span>
+               
+            </p>
+            
+          </h5>
+      </div>
+      
+        
+      <div class="d-flex flex-column mr-5" style="margin-left:0px; margin-top:20px;">
+        <a class="btn btn-dark" th:href="@{/meccanici/{meccanicoId}/edit(meccanicoId=${meccanico.id})}" role="button" style="margin-bottom: 10px;">Modifica</a>
+        <form th:action="@{/meccanici/{meccanicoId}(meccanicoId=${meccanico.id})}" th:method="delete">
+          <input type="hidden" th:name="_method" th:value="delete">
+          <input type="submit" class="btn btn-dark" style="background-color: #8B0000; color: #FFFFFF;" value="Elimina">
+        </form>
+        
+ 
+      </div>
+
+
+
+      </div>
+      <div style="margin-bottom: 60px; margin-top: 40px;">
+        <a href="javascript:void(0);" style="font-weight: bold;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+      </div>
+    </div>
+    
+  
+</div>
+</section>
+</main>
+</body>
+</html>

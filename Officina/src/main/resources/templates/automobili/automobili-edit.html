@@ -1,0 +1,101 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+  <title>Auto Edit</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+  <section layout:fragment="body" class="py-5">
+    <div class="container">
+      <form role="form" th:method="put" th:action="@{/automobili/{autoId}(autoId=${auto.id})}" th:object="${auto}">
+        <input type="hidden" th:field="*{id}">
+        <div class="text-center mb-5">
+          <h1 class="fw-bolder" style="margin-top: 0px;">Modifica dell'automobile:</h1>
+        </div>
+          <div>
+                <label style="font-weight: bold; margin-top: 20px;" for="targa">Targa</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        id="targa"
+                        name="targa"
+                        th:field="*{targa}"
+                        placeholder="Targa">
+                <p th:if="${#fields.hasErrors('targa')}" class="text-danger" th:errors="*{targa}"></p>
+          </div>
+              <div class="form-group col-md-6">
+                <label style="font-weight: bold; margin-top: 20px;" for="annoProduzione">Anno di Produzione</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        id="annoProduzione"
+                        name="annoProduzione"
+                        th:field="*{annoProduzione}"
+                        placeholder="Anno di Produzione">
+                <p th:if="${#fields.hasErrors('annoProduzione')}" class="text-danger" th:errors="*{annoProduzione}"></p>
+            </div>
+            <div class="form-group col-md-6">
+              <label style="font-weight: bold;margin-top: 20px;" for="cilindrata">Cilindrata (in cc)</label>
+              <input
+                  type="number"
+                  class="form-control"
+                  id="cilindrata"
+                  name="cilindrata"
+                  th:field="*{cilindrata}"
+                  placeholder="Cilindrata"
+                  min="600"
+                  step="100">
+              <p th:if="${#fields.hasErrors('cilindrata')}" class="text-danger" th:errors="*{cilindrata}"></p>
+          </div>
+
+          <input type="hidden" th:field="*{cliente}">
+          
+          <div style="margin-top: 20px;" class="form-group col-md-6">
+            <label style="font-weight: bold;" for="colore">Colore</label>
+            <select class="form-control" id="colore" name="colore" th:field="*{colore}">
+                <option value="" selected hidden>Scegli un colore</option>
+                <option value="Rosso">Rosso</option>
+                <option value="Verde">Verde</option>
+                <option value="Blu">Blu</option>
+                <option value="Rosa">Rosa</option>
+                <option value="Arancione">Arancione</option>
+                <option value="Grigio">Grigio</option>
+                <option value="Nero">Nero</option>
+                <option value="Bianco">Bianco</option>
+                <option value="Viola">Viola</option>
+                <option value="Azzurro">Azzurro</option>
+                <option value="Marrone">Marrone</option>
+                <option value="Giallo">Giallo</option>
+            </select>
+            <p th:if="${#fields.hasErrors('colore')}" class="text-danger" th:errors="*{colore}"></p>
+        </div>
+          <div class="form-group col-md-6">
+              <label style="font-weight: bold; margin-top: 20px;" for="modello">Modello</label>
+              <input
+                      type="text"
+                      class="form-control"
+                      id="modello"
+                      name="modello"
+                      th:field="*{modello}"
+                      placeholder="Modello">
+              <p th:if="${#fields.hasErrors('modello')}" class="text-danger" th:errors="*{modello}"></p> 
+          </div>
+          <button style="margin-top: 20px;margin-bottom: 5px;" type="submit" class="btn btn-dark">Aggiorna</button>
+      </form>
+      <div style="margin-top: 20px;">
+        <form style="margin-top: 10px;" th:action="@{/automobili/{autoId}(autoId=${auto.id})}" th:method="delete">
+          <input type="hidden" th:name="_method" th:value="delete">
+          <input type="submit" class="btn btn-dark" style="background-color: #8B0000; color: #FFFFFF;" value="Elimina">
+        </form>
+      </div>
+      <div style="margin-top: 40px; margin-bottom: 50px;">
+        <a href="javascript:void(0);" style="font-weight: bold;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+      </div>
+    </div>
+    
+  </section>
+</main>
+</body>
+</html>

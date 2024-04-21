@@ -1,0 +1,76 @@
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Crea Intervento</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+    <section layout:fragment="body" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder" style="margin-top: 0px;">Aggiungi un intervento all'automobile selezionata:</h1>
+            </div>
+
+            <form role="form" method="post" th:action="@{/interventi/{autoId}(autoId=${autoId})}" th:object="${intervento}">
+                <div class="form-row">
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="descrizione">Descrizione Intervento</label>
+                        <input type="text" class="form-control" id="descrizione" name="descrizione" th:field="*{descrizione}"
+                               placeholder="Breve descrizione dell'intervento (ad esempio 'Cambio ruote')">
+                        <p th:if="${#fields.hasErrors('descrizione')}" class="text-danger" th:errors="*{descrizione}"></p>
+                    </div>
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="dataInizio">Data Inizio intervento</label>
+                        <input type="date" class="form-control" id="dataInizio" name="dataInizio" th:field="*{dataInizio}"
+                               placeholder="Data Inizio intervento">
+                        <p th:if="${#fields.hasErrors('dataInizio')}" class="text-danger" th:errors="*{dataInizio}"></p>
+                    </div>
+                    <div style="margin-top: 20px;" class="form-group col-md-6">
+                        <label style="font-weight: bolder;" for="dataFine">Data Fine intervento</label>
+                        <input type="date" class="form-control" id="dataFine" name="dataFine" th:field="*{dataFine}"
+                               placeholder="Data Fine intervento">
+                        <p th:if="${#fields.hasErrors('dataFine')}" class="text-danger" th:errors="*{dataFine}"></p>
+                    </div>
+                    <div class="row gx-5">
+
+                        <div class="position-relative mb-3">
+                            <div style="margin-top: 20px;">
+                                <label style="font-weight: bolder;" for="dataFine">Seleziona pezzi di ricambio:</label>
+                        
+                                <div th:each="ricambio : ${ricambi}" class="mb-2">
+                                    <input type="checkbox" id="ricambioCheckbox_${ricambio.id}" name="ricambiCheckbox" th:if="${not ricambi.isEmpty()}"
+                                        th:value="${ricambio.id}" th:field="*{ricambi}">
+                                    <label for="ricambioCheckbox_${ricambio.id}" th:text="${ricambio.nome}"></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <div style="margin-top: 10px;" th:field="*{meccanico}">
+                        <label style="font-weight: bolder;" for="meccanicoDropdown">Seleziona meccanico:</label>
+                        <select id="meccanicoDropdown" name="meccanicoDropdown" th:if="${not meccanici.isEmpty()}"
+                                th:disabled="${meccanici.isEmpty()}" th:field="${intervento.meccanico}">
+                            <option th:each="meccanico : ${meccanici}" th:value="${meccanico.id}" th:text="${meccanico.nome} + ' ' + ${meccanico.cognome}"></option>
+                         </select>
+                         <p th:if="${#fields.hasErrors('meccanico')}" class="text-danger" th:errors="*{meccanico}"></p>
+                    </div>
+                    
+                    <div class="row gx-5">
+                        <div class="position-relative mb-3">
+                            <button style="margin-top: 40px;" type="submit" class="btn btn-dark">Crea</button>
+                        </div>
+                        <div style="margin-top: 40px; margin-bottom: 50px;">
+                            <a href="javascript:void(0);" style="font-weight: bold;" onclick="history.back();" class="btn btn-dark">&laquo;</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </form>
+            
+        </div>
+    </section>
+</main>
+</body>
+</html>

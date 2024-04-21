@@ -1,0 +1,67 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Dettagli Cliente</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+  <section layout:fragment="body" class="py-5">
+    <div style="margin-bottom: 50px;" class="container">
+        <h1 class="fw-bolder" style="margin-top: 0px; font-size: 25px;">Scheda del cliente:</h1>
+      
+
+      <div class="container d-flex">
+      <div class="col-lg-8 card mb-3" style="margin-top: 10px;margin-right: 30px;">
+          <h5 class="card-body" style="margin-top: 0px;">
+
+            <!-- Nome -->
+            <p style="font-size:100%; margin-top: 0px; margin-bottom: 0px;" class="card-text">
+              <span style="font-weight: bold;">Nome:</span> <span th:text="${cliente.nome}"></span>
+            </p>
+
+            <!-- Cognome -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Cognome:</span> <span th:text="${cliente.cognome}"></span>
+            </p>
+
+             <!-- Email -->
+             <p style="font-size:100%; margin-top: 20px;" class="card-text">
+              <span style="font-weight: bold;">Email:</span> <span th:text="${cliente.email}"></span>
+            </p>
+
+            <!-- Numero di Telefono -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Numero di Telefono:</span> <span th:text="${cliente.telefono}"></span>
+            </p>
+            
+            <!-- Registrato in data -->
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Data di registrazione:</span> <span th:text="${cliente.dataRegistrazione}"></span>
+              </p>
+            
+            <!-- Auto registrate -->           
+            <p style="font-size:100%; margin-top: 20px;" class="card-text">
+                <span style="font-weight: bold;">Auto registrate:</span>
+                <ul>
+                    <li th:each="auto : ${cliente.autoList}" >
+                        <a th:href="@{/automobili/{autoId}(autoId=${auto.id})}" th:text="${auto.targa}"></a>
+
+                    </li>
+                  </ul>
+                <span th:if="${cliente.autoList.isEmpty()}">Ancora nessuna</span>
+            </p>
+            
+          </h5>
+      </div>
+
+      </div>
+    </div>
+    
+  
+</div>
+</section>
+</main>
+</body>
+</html>

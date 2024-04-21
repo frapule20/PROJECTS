@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Officina</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Stile del dialog */
+        #pricing-dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Stile del backdrop (sfondo) */
+        #backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Stile del checkbox nascosto */
+        #toggle-pricing-dialog {
+            display: none;
+        }
+
+        /* Stile del link per aprire il dialog quando il checkbox è selezionato */
+        #show-pricing-dialog {
+            cursor: pointer;
+        }
+
+        /* Quando il checkbox è selezionato, mostra il dialog e il backdrop */
+        #toggle-pricing-dialog:checked ~ #pricing-dialog,
+        #toggle-pricing-dialog:checked ~ #backdrop {
+            display: block;
+        }
+    </style>
+    <title>Dialog Prezzi</title>
+
+
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a style="margin-left: 0px;" class="navbar-brand" th:href="@{/officina}">Officina</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" th:href="@{/meccanici}">Meccanici</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/contattaci}">Contattaci</a></li>
+                <li class="nav-item"><label class="nav-link" for="toggle-pricing-dialog" id="show-pricing-dialog">Prezzi</label></li>
+                <li class="nav-item dropdown"></li>
+
+                <!-- Link per aprire il dialog -->
+<input type="checkbox" id="toggle-pricing-dialog">
+
+<!-- Dialog -->
+<div id="pricing-dialog" class="dialog" style="width: 600px; height:500px; overflow: auto;">
+    <h2>Listino Prezzi</h2>
+    <span style="font-size: 8pt;">I prezzi sono da considerarsi IVA compresa.</span>
+    <table class="pneumatici-testo" border="0" width="100%" cellspacing="1" cellpadding="3">
+        <tbody>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td colspan="2" bgcolor="#F4F4F4" width="261">
+        <div style="text-align: center;" align="left"><span style="font-size: 14pt; color: #808080;"><strong>OFFICINA</strong></span></div>
+        </td>
+        </tr>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td colspan="2" bgcolor="#F4F4F4" width="261">&nbsp;</td>
+        </tr>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td bgcolor="#F4F4F4" width="261" height="29">&nbsp; Ricarica aria condizionata</td>
+        <td style="text-align: center;" bgcolor="#CCC" width="95">
+        <div style="text-align: center;" align="left"><span style="color: #000000;"><b>85.40&nbsp;</b></span><b><span style="color: #000000;">€</span></b></div>
+        </td>
+        </tr>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td bgcolor="#F4F4F4" width="261">&nbsp; Costo revisione auto moto tricicli e quadri cicli</td>
+        <td style="text-align: center;" bgcolor="#CCC" width="95">
+        <div style="text-align: center;" align="left"><span style="color: #000000;"><b>66.88 €</b></span></div>
+        </td>
+        </tr>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td bgcolor="#F4F4F4" width="261">&nbsp; Auto sostitutiva</td>
+        <td style="text-align: center;" bgcolor="#CCC" width="95">
+        <div style="text-align: center;" align="left"><span style="color: #000000;"><b>20.00 € </b>(al giorno)</span></div>
+        </td>
+        </tr>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td bgcolor="#F4F4F4" width="261">&nbsp; Costo manodopera</td>
+        <td style="text-align: center;" bgcolor="#CCC" width="95">
+        <div style="text-align: center;" align="left"><span style="color: #000000;"><b>40.50 €</b></span></div>
+        </td>
+        </tr>
+        <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+        <td style="text-align: center;" colspan="2" bgcolor="#F4F4F4" width="261">&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+        <table class="pneumatici-testo" border="0" width="100%" cellspacing="1" cellpadding="3">
+            <tbody>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td colspan="2" bgcolor="#F4F4F4" width="261">
+            <div style="text-align: center;" align="left"><span style="font-size: 14pt; color: #808080;"><strong>REPARTO GOMME</strong></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td colspan="2" bgcolor="#F4F4F4" width="261">&nbsp;</td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261" height="29">&nbsp; Inversione e bilanciatura</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>5.00&nbsp;</b></span><b><span style="color: #000000;">€ </span></b><span style="color: #000000;">cad.</span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td colspan="2" bgcolor="#F4F4F4" width="261">
+            <div style="text-align: left;" align="left"><span style="color: #000000;"><b>- Prezzi per sostituzione ogni pneumatico</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp;&nbsp;Cerchi in ferro</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>6.30 €&nbsp;</b>cad.</span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp;&nbsp;Cerchi in lega fino a 16”</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>7.51 € </b>cad.</span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp;&nbsp;Cerchi in lega da 17” a 18”</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>8.76&nbsp;€&nbsp;</b>cad.</span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp;&nbsp;Cerchi in lega da 19” a&nbsp; 20”</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>10.01 €&nbsp;</b>cad.</span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td style="text-align: left;" colspan="2" bgcolor="#F4F4F4" width="261"><strong>- Deposito</strong></td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Deposito invernale / estivo</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>2.01 €&nbsp;</b>cad.</span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td colspan="2" bgcolor="#F4F4F4" width="261">
+            <div style="text-align: left;" align="left"><span style="color: #000000;"><b><strong>-&nbsp;Convergenza</strong></b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Convergenza anteriore</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>25.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp;&nbsp;Convergenza anteriore + posteriore</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>40.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Convergenza completa</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>50.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td style="text-align: left;" colspan="2" bgcolor="#F4F4F4" width="261"><strong><b>-&nbsp;Riparazione gomme</b></strong></td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Riparazione gomme con ciurlo</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>12.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Riparazione gomma con pezza</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>15.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Riparazione gomma con pezza rinforzata</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>18.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td bgcolor="#F4F4F4" width="261">&nbsp; Riparazione gomma con vulcanizzazione</td>
+            <td style="text-align: center;" bgcolor="#CCC" width="95">
+            <div style="text-align: center;" align="left"><span style="color: #000000;"><b>25.00 €</b></span></div>
+            </td>
+            </tr>
+            <tr class="tabellagrande" valign="middle" bgcolor="#FFFFFF">
+            <td style="text-align: left;" colspan="2" bgcolor="#F4F4F4" width="261">&nbsp;</td>
+            </tr>
+            </tbody>
+            </table>
+
+
+    
+    <label for="toggle-pricing-dialog" class="btn btn-dark" style="margin-top: 20px;">Chiudi</label>
+
+</div>
+
+<!-- Backdrop (sfondo) -->
+<div id="backdrop"></div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container px-5 mt-4">
+    <h1 class="display-4 fw-bolder mb-4" style="margin-left: 0px;">Benvenuto nell'Officina virtuale.</h1>
+    <h2 class="display-7 fw-bolder mb-4" style="margin-left: 30px;">Che operazione vuoi effettuare?</h2>
+    <div class="btn-group" role="group" style="margin-left: 20px;">
+        <a style="margin-bottom: 0px;" class="btn btn-lg btn-dark mx-2" th:href="@{/automobili}">Automobili</a>
+        <a style="margin-bottom: 0px;" class="btn btn-lg btn-dark mx-2" th:href="@{/interventi}">Interventi</a>
+        <a style="margin-bottom: 0px;" class="btn btn-lg btn-dark mx-2" th:href="@{/ricambi}">Ricambi</a>
+        <a style="margin-bottom: 0px;" class="btn btn-lg btn-dark mx-2" th:href="@{/clienti}">Clienti</a>
+    </div>
+</div>
+
+
+<footer class="bg-dark py-4 mt-auto fixed-bottom">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" th:href="@{privacy}">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" th:href="@{contattaci}">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+
+
+
+</html>

@@ -1,0 +1,78 @@
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Clienti</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <section layout:fragment="body" class="py-5">
+            <div class="container px-5 my-4">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder" style="margin-top: 0px;">Lista Clienti</h1>
+                </div>
+                <div class="input-group-append">
+                    <p style="font-size:140%; margin-top: 20px;">Chi cerchi?</p>
+                </div>
+                <form action="/clienti" method="post" th:object="${selectedCliente}">
+                        <input type="text" class="form-control-sm" placeholder="Inserisci il nome" th:field="${selectedCliente.nome}">
+                        <input type="text" class="form-control-sm" placeholder="Inserisci il cognome" th:field="${selectedCliente.cognome}">
+                        <div class="input-group-append d-flex flex-row">
+                            <button style="margin-top: 5px;" class="btn btn-dark" type="submit">Cerca</button>
+                            <p style="font-size: 100%; margin-top: 10px; margin-left: 67px; margin-right: 67px;" class="mb-2">oppure</p>
+                            <button style="margin-top: 5px;" class="btn btn-dark" type="submit" name="mostraTutti" value="true">Mostra tutti</button>
+                        </div>
+                </form>
+                <div style="margin-top: 50px;" class="row gx-5">
+                    <div style="text-align: right;">
+                        <a style="margin-left: 1000px; margin-top: 0px; margin-bottom:40px" class="btn btn-dark" th:href="@{/clienti/new}">Aggiungi Cliente</a>
+                    </div>
+                    <div th:each="cliente : ${clienti}" class="col-lg-12 mb-2">
+                        <hr/> <!-- Aggiunta una riga orizzontale per separare i clienti -->
+                        <h5 style="margin-top: 0px; margin-bottom: 0px;">
+                            <!-- Nome -->
+                            <p style="font-size:90%; margin-top: 5px; margin-bottom: 0px;" class="card-text">
+                              <span style="font-weight: bold;">Nome:</span> <span th:text="${cliente.nome}"></span>
+                            </p>
+                            <!-- Cognome -->
+                            <p style="font-size:90%; margin-top: 5px; margin-bottom: 0px;" class="card-text">
+                                <span style="font-weight: bold;">Cognome:</span> <span th:text="${cliente.cognome}"></span>
+                              </p>
+                              <!-- Numero di Telefono -->
+                            <p style="font-size:90%; margin-top: 5px; margin-bottom: 0px;" class="card-text">
+                                <span style="font-weight: bold;">Numero di telefono:</span> <span th:text="${cliente.telefono}"></span>
+                              </p>
+                            <!-- Email -->
+                            <p style="font-size:90%; margin-top: 5px; margin-bottom: 0px;" class="card-text">
+                                <span style="font-weight: bold;">Email:</span> <span th:text="${cliente.email}"></span>
+                            </p>
+                            <!-- Data di registraione -->
+                            <p style="font-size:90%; margin-top: 5px; margin-bottom: 0px;" class="card-text">
+                                <span style="font-weight: bold;">Registrato in data:</span>
+                                <span th:text="${#dates.format(cliente.dataRegistrazione, 'dd/MM/yyyy')}"></span>
+                            </p>
+                            <!-- Auto registrate -->
+                              <p style="font-size:90%; margin-top: 5px; margin-bottom: 0px;" class="card-text">
+                                <span style="font-weight: bold;">Auto registrate:</span>
+                                <ul>
+                                    <li th:each="auto : ${cliente.autoList}" >
+                                        <a th:href="@{/automobili/{autoId}(autoId=${auto.id})}" th:text="${auto.targa}"></a>
+
+                                    </li>
+                                  </ul>
+                            </p>
+                            <a class="btn btn-dark" style="margin-top: 20px;" th:href="@{/clienti/{clienteId}/edit(clienteId=${cliente.id})}">Modifica</a>
+                            <a style="margin-top: 20px; " class="btn btn-dark" th:href="@{/automobili/{clienteId}/new(clienteId=${cliente.id})}">Aggiungi Automobile</a>
+
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-12 mb-2">
+                        <hr/> <!-- Aggiunta una riga orizzontale alla fine della lista -->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </main>
+</body>
+</html>
+

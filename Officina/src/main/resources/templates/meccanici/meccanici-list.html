@@ -1,0 +1,65 @@
+<html
+        xmlns:th="http://thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+<head>
+    <title>Meccanici</title>
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+  <section layout:fragment="body" class="py-5">
+    <div class="container">
+        <p style="font-size:130%; margin-top: 20px;">Il meccanico che cerchi in cosa è specializzato?</p>
+
+        <form action="/meccanici" method="post" th:object="${selectedMeccanico}">
+        <div class="input-group mb-3">
+            <div>
+    <select style="width: 300px;" class="form-control" id="specializzazione" name="specializzazione" th:field="${selectedMeccanico.specializzazione}">
+        <option value="" selected hidden>Seleziona la specializzazione</option>
+        <option th:each = "singleSpecializzazione : ${allSpecializzazioni}" th:value="${singleSpecializzazione.name()}" th:text="${singleSpecializzazione.name()}"></option>
+
+    </select>
+    <div class="input-group-append d-flex flex-row">
+        <button style="margin-top: 5px;" class="btn btn-dark" type="submit">Cerca</button>
+        <p style="font-size: 100%; margin-top: 10px; margin-left: 37px; margin-right: 37px;" class="mb-2">oppure</p>
+        <button style="margin-top: 5px;" class="btn btn-dark" type="submit" name="mostraTutti" value="true">Mostra tutti</button>
+    </div>
+    
+</div>
+</div>
+
+
+    
+</form>
+      <div style="margin-bottom: 50px;" class="container d-flex">
+
+      
+
+        <div class="col-lg-8 card mb-3" style="margin-top: 10px;margin-right: 30px;margin-bottom: 0px;">
+            <h5 class="card-body" style="margin-top: 0px; margin-bottom: 0px;">
+                <p class="text-center mb-5" style="font-weight: bold; font-size: 30px; margin-bottom: 0px;">Lista dei Meccanici</p> 
+            </h5>
+            
+
+            <div style="margin-top: 0px;" th:each="meccanico : ${meccanici}" class="col-lg-6 mb-2">
+                <!-- Nome meccanico -->
+                <p style="font-size:130%; margin-top: 0px; margin-left: 40px; margin-bottom: 20px;" class="card-text">
+                    <span style="font-weight: bold;">
+                        <a th:href="@{/meccanici/{meccanicoId}(meccanicoId=${meccanico.id})}">
+                            <span th:text="${meccanico.nome} + ' ' + ${meccanico.cognome}"></span>
+                        </a>
+                    </span>
+                </p>
+            </div>
+      </div>
+      <div class="d-flex flex-column mr-5" style="margin-left:0px; margin-top:20px;">
+        <a class="btn btn-dark" th:href="@{/meccanici/new}" role="button" style="margin-bottom: 30px;">Aggiungi Meccanico</a>
+    </div>
+    </div>
+    
+  
+</div>
+</section>
+</main>
+</body>
+</html>
