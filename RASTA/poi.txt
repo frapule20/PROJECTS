@@ -1,2 +1,2 @@
-8666261: Palazzo Cesi
-13436625: Chiesa di Santa Cecilia
+8666261: Palazzo Cesi, {'street1': 'Piazza Federico Cesi 3', 'street2': '', 'city': 'Acquasparta', 'state': 'Provincia di Terni', 'country': 'Italia', 'postalcode': '05021', 'address_string': 'Piazza Federico Cesi 3, 05021, Acquasparta Italia'}
+13436625: Chiesa di Santa Cecilia, {'street1': 'Via Colonna 79', 'street2': '', 'city': 'Acquasparta', 'state': 'Provincia di Terni', 'country': 'Italia', 'postalcode': '05021', 'address_string': 'Via Colonna 79, 05021, Acquasparta Italia'}
