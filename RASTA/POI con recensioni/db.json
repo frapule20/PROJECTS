@@ -1,0 +1,27 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "56bcaeed-edce-409f-8ac3-7309dd28eaec",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1714861640601"
+        }
+      },
+      "favorite": {
+        "name": "rasta",
+        "color": "color2"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
