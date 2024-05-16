@@ -55,7 +55,6 @@ agostiniane
 agostino
 agosto
 agricolo
-agricolo-gentilizia
 agricolodatazione
 aguzzo
 ail
@@ -93,6 +92,7 @@ allestito
 allineano
 allo
 allora
+alluvionale
 alta
 altare
 altari
@@ -372,7 +372,7 @@ bosco
 boscosa
 bottaccione
 botte
-bourbon-sorbello
+bourbon
 bovara
 bracci
 braccio
@@ -456,7 +456,7 @@ carraia
 carrarino
 carro
 carsici
-carsico-alluvionale
+carsico
 carsulae
 cartine
 casa
@@ -509,7 +509,6 @@ centrale
 centrali
 centri
 centro
-centro-orientale
 century
 ceramica
 cerchia
@@ -532,7 +531,6 @@ chiara
 chiaramente
 chiascio
 chiesa
-chiesa-tempio
 chiese
 chiesetta
 chiesina
@@ -1247,7 +1245,7 @@ furono
 fusaiola
 fuso
 futuro
-gallenga-stuart
+gallenga
 galleria
 galletto
 gara
@@ -1262,6 +1260,7 @@ generazioni
 genere
 geniale
 gennaio
+gentilizia
 geografiche
 geografico
 geografo
@@ -1316,7 +1315,6 @@ grandezza
 grandi
 grazia
 graziani
-graziani-baglioni
 grazie
 grechetto
 greco
@@ -1482,7 +1480,6 @@ italiano
 itinerario
 ittiche
 ivan
-ix-x
 julia
 laa
 laabbazia
@@ -1640,6 +1637,7 @@ mar
 marche
 marchese
 marchesi
+marchigiano
 marchionale
 marco
 marconi
@@ -1832,11 +1830,11 @@ nellaanno
 nellaantico
 nellaarea
 nellaomonima
-nellaxi-xii
+nellaxi
 nelle
 nelli
 nello
-neo-gotico
+neo
 neoclassica
 neoclassico
 nera
@@ -1857,7 +1855,6 @@ nominare
 non
 norcia
 nord
-nord-est
 normalmente
 nostri
 nota
@@ -1917,6 +1914,7 @@ organizzata
 organizzato
 orgoglio
 orientale
+orientali
 originale
 originali
 originaria
@@ -1989,7 +1987,6 @@ paradiso
 parata
 parcheggio
 parco
-parco-museo
 parete
 park
 parla
@@ -2064,7 +2061,6 @@ personale
 personalmente
 pertinente
 perugia
-perugia-citta
 perugina
 perugini
 perugino
@@ -2259,7 +2255,7 @@ proprieta
 proprio
 prosciutto
 prosecuzione
-prosperi-vitelli
+prosperi
 prospetto
 prospiciente
 prossimita
@@ -2499,7 +2495,6 @@ romani
 romanica
 romaniche
 romanico
-romanico-gotico
 romano
 romantica
 romea
@@ -2532,6 +2527,7 @@ sacramento
 sacro
 sacrum
 sagrantino
+sahariana
 sale
 salendo
 salto
@@ -2812,6 +2808,7 @@ stroncone
 stronconesi
 strozzacapponi
 struttura
+stuart
 stucchi
 studi
 studio
@@ -2827,9 +2824,6 @@ successivi
 successivo
 successo
 sud
-sud-est
-sud-orientali
-sud-sahariana
 sue
 suggestiva
 suggestive
@@ -3027,8 +3021,6 @@ umbri
 umbria
 umbriaa
 umbro
-umbro-etrusca
-umbro-marchigiano
 umida
 una
 unaaltura
@@ -3122,7 +3114,6 @@ vescovo
 vesta
 vetrate
 vetro
-vi-iv
 via
 viabilita
 viaggiatori
@@ -3196,10 +3187,8 @@ with
 wwf
 xii
 xiii
-xiii-xiv
 xiv
 xvi
-xvi-xvii
 xvii
 xviii
 ziggurart
