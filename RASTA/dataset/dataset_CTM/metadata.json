@@ -1,0 +1,1 @@
+{"total_documents": 573, "vocabulary_length": 3208, "preprocessing-info": ["lowercase", "filter words with document frequency lower than 0.0 and higher than 1.0", "filter words with less than 3 character", "filter documents with less than 0 words"]}
