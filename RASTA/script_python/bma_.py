@@ -1,14 +1,14 @@
 '''
 Invece di calcolare le probabilità per ogni token, calcoliamo le probabilità per 
 l'intera frase utilizzando le probabilità globali fornite.
-Utilizza le probabilità delle classi dai diversi modelli 
-e le pondera in base alla loro affidabilità (F1-score) per ottenere una predizione 
-finale per ciascuna frase.
+Utilizza le probabilità delle classi dai diversi modelli e le pondera in base alla 
+loro affidabilità (F1-score) per ottenere una predizione finale per ciascuna frase.
 
 Alla fine, la funzione bma_test restituisce una lista di etichette predette per ciascuna 
 frase nel dataset. Queste etichette rappresentano la classe più probabile per ogni frase, 
 basata sulla combinazione delle probabilità fornite dai modelli e delle loro affidalibilità.
 '''
+
 from tqdm import tqdm
 
 def bma_test(probs, reliabilities, model_list, classes, source_tokens):
