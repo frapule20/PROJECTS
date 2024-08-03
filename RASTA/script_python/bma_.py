@@ -12,7 +12,7 @@ basata sulla combinazione delle probabilità fornite dai modelli e delle loro af
 from tqdm import tqdm
 
 def bma_test(probs, reliabilities, model_list, classes, source_tokens):
-    sentence_preds = []
+    results = []
 
     num_classes = len(classes[model_list[0]])  # Numero di classi, assunto lo stesso per tutti i modelli
 
@@ -46,6 +46,9 @@ def bma_test(probs, reliabilities, model_list, classes, source_tokens):
         # Trova la classe con la probabilità più alta
         max_prob = max(norm_probs)
         indice_max = norm_probs.index(max_prob)
-        sentence_preds.append(classes[model_list[0]][indice_max])
+        predicted_label = classes[model_list[0]][indice_max]
 
-    return sentence_preds
+        # Aggiungi l'etichetta predetta e la distribuzione delle probabilità ai risultati
+        results.append((predicted_label, norm_probs))
+
+    return results
