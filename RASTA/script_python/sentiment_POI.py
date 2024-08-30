@@ -29,6 +29,28 @@ def calculate_sentiment(df, poi_name_or_id):
     # Conta il numero di recensioni positive e negative basate sulla colonna pred_BMA
     positive_count = (filtered_df['pred_BMA'] == 'positive').sum()
     negative_count = (filtered_df['pred_BMA'] == 'negative').sum()
+
+    # Converto i valori string della colonna prob_BMA in valori float
+    positive = []
+    negative = []
+
+    for prob in filtered_df['prob_BMA']:
+        # print(prob)
+        virgola = prob.find(',')
+        # print(virgola)
+        #print(type(virgola))
+        n = prob[1:virgola]
+        p = prob[virgola+1:len(prob)-1]
+        pos = float(p)
+        neg = float(n)
+        positive.append(pos)
+        negative.append(neg)
+
+    # print(positive) 
+    # print(negative)
+
+    # Calcola la distribuzione delle recensioni
+    distribution = [sum(positive) / len(positive), sum(negative) / len(negative)]
     
     # Calcola il sentiment totale
     if positive_count == negative_count:
@@ -41,20 +63,22 @@ def calculate_sentiment(df, poi_name_or_id):
     poi_name = filtered_df['POI'].iloc[0]
     poi_id = filtered_df['id'].iloc[0]
     
-    return poi_name, poi_id, sentiment, positive_count, negative_count
+    return poi_name, poi_id, sentiment, positive_count, negative_count, distribution
 
 
 poi = input("Inserisci il nome o l'id del POI di cui vuoi conoscere il sentiment: ")
 
-# Esempio di utilizzo: Calcoliamo il sentiment per "Palazzo Cesi"
-poi_name, poi_id, sentiment, positive_count, negative_count = calculate_sentiment(df, poi)
+
+poi_name, poi_id, sentiment, positive_count, negative_count, distribution = calculate_sentiment(df, poi)
 
 print("Il sentiment del POI '" + poi_name + "' con id '" + str(poi_id) + "' è: " + sentiment)
 print("Recensioni positive: " + str(positive_count))
 print("Recensioni negative: " + str(negative_count))
+print("Distribuzione: " + str(distribution))
 
 
 '''
 - Devo fare una visualizzazione a schermo tipo interfaccia grafica?
 - Per ora non sta calcolando sentiment neutro, dovrei farlo?
+
 '''
