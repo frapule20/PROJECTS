@@ -72,7 +72,8 @@ def main():
         print("API_KEY non trovata. Assicurati che sia configurata correttamente.")
         return
 
-    poche_coordinate = coordinate[2000:2009]
+    # Fatto fino a 1000
+    poche_coordinate = coordinate[601:1000]
     id_presenti = get_existing_ids('script_python/poi.txt')
     poi = fetch_poi(poche_coordinate, api_key)
 
@@ -81,7 +82,8 @@ def main():
 
     save_poi('script_python/poi.txt', poi_da_salvare)
     remove_duplicates('script_python/poi.txt')
-    print(poi_da_salvare)
+    if poi_da_salvare:
+        print(f"Aggiunti {len(poi_da_salvare)} nuovi POI")
 
 if __name__ == "__main__":
     main()
