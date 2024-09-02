@@ -2,85 +2,57 @@
 '''
 Script per estrarre i POI da Tripadvisor sulla base delle coordinate geografiche
 '''
-
-
-from dotenv import dotenv_values
 import os
+from dotenv import dotenv_values
 import requests
+import time
 
-
-# Salvo le coordinate in una lista
-coordinate = []
-
-with open('script_python/coordinate.txt', 'r') as file:
-    for line in file:
-        # Rimuovi spazi bianchi o newline, quindi dividi la riga in due parti
-        lat, lon = line.strip().split(',')
-        
-        # Converti le parti in numeri float e aggiungi come tupla alla lista
-        coordinate.append((float(lat), float(lon)))
-
-# Recupero la chiave API
-dotenv = dotenv_values()
-api_key = dotenv.get("API_KEY")
-
-# Estraggo i POI relativi a poche coordinate alla volta (limiti di richiesta)
-# 2700:3000 indica che sto considerando le coordinate dalla 2700 alla 3000 
-# (per i limiti imposti dall'API non le ho scarivate tutte in una volta)
-poche_coordinate = coordinate[2700:3000]
-
-# print(poche_coordinate)
-
-# Creo un insieme per memorizzare gli ID già presenti nel file.
-# Crea un insieme vuoto: Un set in Python è una collezione non ordinata di elementi unici, 
-# il che significa che non possono esserci duplicati all'interno di un set.
-# Memorizza gli ID: L'insieme id_presenti viene creato per memorizzare gli ID 
-# (o qualunque altro tipo di dato che verrà aggiunto successivamente) già presenti. 
-# Questo è utile se vuoi tenere traccia degli ID che hai già processato, per evitare di elaborare 
-# gli stessi ID più di una volta.
-id_presenti = set()
-
-# Se il file esiste, leggo il contenuto attuale del file e memorizzo gli ID
-if os.path.exists('poi.txt'):
-    with open('poi.txt', 'r', encoding='latin-1') as file:
+def load_coordinates(filepath):
+    coordinate = []
+    with open(filepath, 'r') as file:
         for line in file:
-            # Divido la riga usando ': ' come separatore solo alla prima occorrenza
-            id, resto = line.strip().split(': ', 1)
-            # Aggiungo l'ID all'insieme (non ci saranno duplicati nell'insieme)
-            id_presenti.add(id)
+            lat, lon = line.strip().split(',')
+            coordinate.append((float(lat), float(lon)))
+    return coordinate
 
+def get_existing_ids(filepath):
+    id_presenti = set()
+    if os.path.exists(filepath):
+        with open(filepath, 'r', encoding='utf-8') as file:
+            for line in file:
+                id, _ = line.strip().split(': ', 1)
+                id_presenti.add(id)
+    return id_presenti
 
+def fetch_poi(coordinate, api_key):
+    poi = []
+    for lat, lon in coordinate:
+        url = f"https://api.content.tripadvisor.com/api/v1/location/nearby_search?latLong={lat},{lon}&key={api_key}&category=attractions&language=it"
+        headers = {"accept": "application/json"}
+        response = requests.get(url, headers=headers)
+        
+        if response.status_code != 200:
+            print(f"Errore nella richiesta API: {response.status_code}")
+            continue
 
-# Creo la lista vuota di POI da salvare
-poi = []
+        POI = response.json()
 
-# Mi salvo nella lista l'id e il nome del POI solo se l'id non è già presente
-for coordinate in poche_coordinate:
-    url = "https://api.content.tripadvisor.com/api/v1/location/nearby_search?latLong=" + str(coordinate[0]) + "%2C" + str(coordinate[1]) + "&key=" + api_key + "&category=attractions&language=it"
-    headers = {"accept": "application/json"}
-    response = requests.get(url, headers=headers)
-   
-    POI = response.json()
+        for elemento in POI.get('data', []):
+            nome = elemento.get('name')
+            id = elemento.get('location_id')
+            citta = elemento.get('address_obj', {}).get('city')
+            if nome and id:
+                poi.append((id, nome, citta))
+        
+        time.sleep(1)  # Pausa per evitare di superare i limiti dell'API
 
-    # Estraggo l'id e il nome di ciascun POI e li aggiungo alla lista di POI se l'id non è già presente
-    for elemento in POI['data']:
-        nome = elemento.get('name')
-        id = elemento.get('location_id')
-        citta = elemento.get('address_obj')
-        if nome is not None and id is not None and id not in id_presenti:
-            poi.append((id, nome, citta))
-            # Aggiungo l'id all'insieme degli ID presenti
-            id_presenti.add(id)
+    return poi
 
-# Apro il file in modalità append
-with open('script_python/poi.txt', 'a', encoding='utf-8') as file:
-    # Itero sulla lista di POI e scrivo ciascun POI nel file solo se l'id non è già presente
-    for id, nome, citta in poi:
-        file.write(f"{id}: {nome}, {citta}\n")
+def save_poi(filepath, poi):
+    with open(filepath, 'a', encoding='utf-8') as file:
+        for id, nome, citta in poi:
+            file.write(f"{id}: {nome}, {citta}\n")
 
-print(poi)
-
-# Funzione per rimuovere duplicati dal file
 def remove_duplicates(file_path):
     seen = set()
     with open(file_path, 'r', encoding='utf-8') as infile:
@@ -92,5 +64,24 @@ def remove_duplicates(file_path):
                 seen.add(id)
                 outfile.write(line)
 
-# Rimuovi duplicati dal file
-remove_duplicates('script_python/poi.txt')
+def main():
+    coordinate = load_coordinates('script_python/coordinate.txt')
+    dotenv = dotenv_values()
+    api_key = dotenv.get("API_KEY")    
+    if not api_key:
+        print("API_KEY non trovata. Assicurati che sia configurata correttamente.")
+        return
+
+    poche_coordinate = coordinate[2000:2009]
+    id_presenti = get_existing_ids('script_python/poi.txt')
+    poi = fetch_poi(poche_coordinate, api_key)
+
+    # Filtra i POI per escludere quelli con ID già presenti
+    poi_da_salvare = [p for p in poi if p[0] not in id_presenti]
+
+    save_poi('script_python/poi.txt', poi_da_salvare)
+    remove_duplicates('script_python/poi.txt')
+    print(poi_da_salvare)
+
+if __name__ == "__main__":
+    main()
