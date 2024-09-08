@@ -72,8 +72,8 @@ def main():
         print("API_KEY non trovata. Assicurati che sia configurata correttamente.")
         return
 
-    # Fatto fino a 1000
-    poche_coordinate = coordinate[601:1000]
+    # Fatto fino a 2500
+    poche_coordinate = coordinate[2501:2800]    # Per evitare di superare i limiti dell'API
     id_presenti = get_existing_ids('script_python/poi.txt')
     poi = fetch_poi(poche_coordinate, api_key)
 
