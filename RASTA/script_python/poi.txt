@@ -4175,3 +4175,1225 @@
 12677389: Chiesa di Sant'Anastasia, Borgorose
 23411231: Oasi Di Bianca, Rieti
 8424601: Lago del Salto, Rieti
+14177487: Chiesa della Madonna della Visitazione, Fiamignano
+17804502: Rocca di Poggio Poponesco, Fiamignano
+12818707: Chiesa dei Santi Fabiano e Sebastiano, Fiamignano
+14177520: Chiesa di Sant'Agapito, Fiamignano
+15080890: Chiesa di San Venanzio, Marcetelli
+20349899: Chiesa di San Valentino, Varco Sabino
+4415323: Grotte di Val de' Varri, Pescorocchiano
+4584906: Chiesa di San Panfilo, Tornimparte
+23738019: Chiesa Di San Nicola, Tornimparte
+13873850: Chiesa di San Vito, Tornimparte
+13833364: Chiesa di Santa Maria della Neve, Barano
+9880060: Museo di Santa Filippa Mareri, Petrella Salto
+13737763: Santuario di Santa Filippa Mareri, Borgo San Pietro
+19140458: Asd Sofia’s Ranch, Borgo San Pietro
+14160550: Adventure Quad Varco, Varco Sabino
+15696155: Chiesa di San Girolamo, Varco Sabino
+11912281: Biblioteca Casa Museo Angelo di Mario, Vallecupola
+23633294: Torre Medievale Di Vallecupola, Vallecupola
+9589414: Torrione Aragonese, Lanciano
+10350217: Caffe Metropolis, Lanciano
+9589426: Antica Cereria De Rosa Vincenzo, Lanciano
+10698023: il Corso Trento e Trieste, Lanciano
+20947670: Calzature Santamaria, Ascoli Piceno
+14109281: Palazzo Paolini Contento, Lanciano
+8796858: Palazzo Degli Studi, Lanciano
+17370779: VisitLanciano, Lanciano
+13497648: Centro Storico, Lanciano
+7099333: Basilica Cattedrale della Madonna del Ponte, Lanciano
+10366120: Parco Del Diocleziano, Lanciano
+13147666: Galleria Leonardo, Lanciano
+17380334: Miscia Pelletteria Valigeria, Lanciano
+13001724: Palazzo Bielli, Lanciano
+15143500: Palazzo Iavicoli, Lanciano
+13001780: Palazzo Colacioppo, Lanciano
+13321530: Monumento ai Martiri delle Foibe, Lanciano
+23693161: Cappella Vescovile Di San Gaetano, Lanciano
+23942113: Parco Giochi Orso Bernardo, Lanciano
+23819766: Campanile Della Pace Di Sant'antonio, Lanciano
+25161108: Campo M. Di Meco, Lanciano
+23934021: Biblioteca Il Castello Di Orbil, Lanciano
+25165439: Foyer Alfredo Cohen, Lanciano
+4224251: Santuario Del Miracolo Eucaristico, Lanciano
+23640156: Casa Filippone, Lanciano
+23822135: Pala Masciangelo, Lanciano
+23948881: Belvedere Panoramico Largo Dell'appello, Lanciano
+23981206: Casa San Francesco, Lanciano
+24878611: Rovine Lettopalena Vecchia, Lettopalena
+13447526: Campo Tino Primavera, Guardiagrele
+13156573: Chiesa di San Nicola di Bari, Lettopalena
+15273391: Chiesa di San Pietro in Critpys, Ofena
+10330939: Abbazia di Santa Maria in Monteplanizio, Lettopalena
+9742584: Chiesa della Santissima Trinità, Taranta Peligna
+12534767: Cavallone Easy, Taranta Peligna
+9742574: Santuario Madonna della Valle, Taranta Peligna
+14039012: Chiesa della Madonna del Carmine, Taranta Peligna
+12915561: Sacrario della Brigata Maiella, Taranta Peligna
+12791053: Area Faunistica dell'Orso Bruno, Palena
+9792295: Museo dell’Orso Marsicano, Palena
+23535220: Piccolo Teatro Dell'aventino, Palena
+13089901: Chiesa di Santa Maria del Carmine, Loreto Aprutino
+12073316: Chiesa di Madonna delle Grazie, Loreto Aprutino
+13089900: Chiesa di Santa Maria in Colleromano, Penne
+14838364: Fontana di Trifonte, Penne
+15227006: Villa comunale, Penne
+17325747: Palazzo Teseo Castiglione, Penne
+4550014: Wolftour discover Abruzzo, Penne
+12958070: Chiesa di San Nicola di Bari, Penne
+10547271: Borgo Medievale di Penne, Penne
+8754629: Basilica di San Cesidio e Rufino, Trasacco
+23988685: Alla Madonna Pellegrina, Trasacco
+8765254: Torre Febonio, Trasacco
+13114008: Chiesa della Madonna del Perpetuo Soccorso, Trasacco
+10357960: Chiesa Parrocchiale di San Giovanni Battista, Luco dei Marsi
+15087128: Chiesa della Madonna dell'Ospedale, Luco dei Marsi
+5926973: Bar Centrale Luco, Luco dei Marsi
+15087118: Chiesa di Sant'Antonio, Luco dei Marsi
+15070038: Convento dei Frati Cappuccini, Luco dei Marsi
+23850574: Chiesa Di Santa Maria, Luco dei Marsi
+13113998: Chiesa della Madonna di Candelecchia, Trasacco
+15087122: Chiesa di San Vincenzo Ferreri, Luco dei Marsi
+12843907: Parrocchia di Sant'Andrea, Lucoli
+13123448: Chiesa di San Lorenzo, Lucoli
+13910472: Chiesa di San Giorgio, Prata-Peschiolo
+13910477: Chiesa di Santa Croce, Lucoli
+14177475: Chiesa della Madonna Infante, Lucoli
+13123443: Chiesa della Madonna del Buon Consiglio, Lucoli
+14918612: Palazzo Antinori, L'Aquila
+13810016: Palazzo Persichetti, L'Aquila
+9585356: Santuario della Madonna Di Roio, L'Aquila
+26855328: Roio Bike Park, Roio
+13799870: Palazzo Palitti, Roio Piano
+5937441: " Las Vegas Bar ", L'Aquila
+17425749: Bici e Dintorni Abruzzo, L'Aquila
+17424880: Bici e Dintorni Abruzzo, L'Aquila
+15131075: Casa della Giovane Italiana, L'Aquila
+13799550: Villa Nurzia, L'Aquila
+13293122: Teatro Stabile d'Abruzzo, L'Aquila
+23532109: Chiesa Di Santa Maria, Civita di Bagno
+6672280: Forte Spagnolo, L'Aquila
+13530061: Vecchia Cattedrale di San Massimo, Civita di Bagno
+13118925: Parrocchia di San Raniero, Civita di Bagno
+10035337: Parrocchia di Santa Maria di Bagno, L'Aquila
+4745590: Sito Archeologico di Forcona, Civita di Bagno
+23534593: Chiesa della Madonna delle Grazie, Civita di Bagno
+12857544: Eremo di San Rocco, Ripa
+13847452: Chiesa della Madonna dell'Assunta, L'Aquila
+13162538: Chiesa di San Michele Arcangelo, Villalago
+17733949: Biblioteca della Deputaziobe abruzzese di storia patria Anton Ludovico Antinori, L'Aquila
+23531992: Chiesa Di San Michele, Civita di Bagno
+14023310: Chiesa di Santa Maria in Valle, Assergi
+1800125: Shenandoah Ranch Western Riding, L'Aquila
+23531788: Area Archeologica Di Forcona, Civita di Bagno
+10729091: Antica Cattedrale di San Massimo di Forcona, L'Aquila
+11738238: Laboratorio Artigianale Dolci Aveja, Cavalletto
+23311960: 99 Caffè Micro Torrefazione - Micro Roastery, Cavalletto
+12664225: Chiesa di Sant'Agostino, L'Aquila
+13384183: Chiesa di San Domenico, Magliano de' Marsi
+27976257: Belvedere “pascolano”, Magliano de' Marsi
+8598907: Kartodromo La Maddalena, Magliano de' Marsi
+8765308: Chiesa di Santa Lucia, Magliano de' Marsi
+13326340: Sacrario dei Caduti, Magliano de' Marsi
+15221951: Palazzo comunale, Magliano de' Marsi
+25206170: L'oasi Del Velino, Magliano de' Marsi
+7154556: Castello Orsini, Scurcola Marsicana
+9798672: Chiesa di Sant'Egidio, Scurcola Marsicana
+7104478: Santuario della Madonna della Vittoria, Scurcola Marsicana
+13506113: Chiesa Parrocchiale della Santissima Trinita, Meta
+15198586: Statua della Venere, Scurcola Marsicana
+26498052: Quercia di Donato., Scurcola Marsicana
+12870197: Chiesa di Santa Maria della Vittoria, Scurcola Marsicana
+15198587: Chiesa Sant'Antonio da Padova, Scurcola Marsicana
+15272829: Chiesa di Sant'Ansuino, Poggio Filippo
+15272816: Chiesa di Santa Maria delle Grazie, Sorbo
+15272873: Colonna miliare di Via Valeria, Sorbo
+13326333: Chiesa di Santa Maria Assunta, Magliano de' Marsi
+13833420: Chiesa dei Santi Giovanni e Paolo, Magliano de' Marsi
+24176477: Sentiero N. 3, Rosciolo dei Marsi
+9802301: Chiesa di Santa Maria delle Grazie, Rosciolo dei Marsi
+6755078: Chiesa di Santa Maria in Valle Porclaneta, Magliano de' Marsi
+9585636: Chiesa di San Nicola, Massa D'Albe
+12785549: Chiesa della Santa Croce, Antrosano
+4573058: Chiesa di San Pietro in Albe, Massa D'Albe
+15057728: Tempio di Ercole, Massa D'Albe
+4572962: Area Archeologica di Alba Fucens, Massa D'Albe
+12865185: Anfiteatro di Alba Fucens, Massa D'Albe
+10423165: Castello di Alba Fucens, Massa D'Albe
+26370033: Vigneti Radica, Tollo
+23853276: Vignetiradica, Tollo
+23721231: Enomuseo Museo Del Vino Tollo, Tollo
+18758189: Rievocazione storica della battaglia tra Turchi e Cristiani, Tollo
+14076439: Chiesa di Santa Croce, Tollo
+9589401: Chiesa di San Pietro Apostolo, Ripa Teatina
+23781828: Palazzo De Sanctis Ricciardone, Chieti
+12869899: Chiesa di San Rocco, Ripa Teatina
+10101144: Chiesa Del Convento, Ripa Teatina
+13582043: Torre Aragonese, Ripa Teatina
+13582057: Torre Aragonese, Ripa Teatina
+12951566: Palazzo Toppi - Torre dei Toppi, Chieti
+6060086: Cantine Maligni, Chieti
+23477307: Mostra Abiti e Tessuti Tradizionali Abruzzesi, Torrevecchia Teatina
+23784030: Auditorium Comunale, Torrevecchia Teatina
+12496286: Chiesa Di Santa Maria de Criptis, Chieti
+13507149: Chiesa della Beata Vergine del Carmine, Chieti
+23592880: Chiesa Parrocchiale Di San Silvestro, Montazzoli
+23647554: Chiesa Di San Tommaso, Giuliopoli
+13089275: Chiesa di San Tommaso Apostolo, Rosello
+16959130: Chiesa di San Lorenzo, Pennadomo
+13558251: Chiesa di Sant'Antonio Abate, Pennadomo
+12843919: Chiesa di San Nicola di Bari, Pennadomo
+11917418: Chiesa della Congrega, Villa Santa Maria
+10670533: Parrocchia dei Santi Martino e Giusta, Montenerodomo
+9553007: Chiesa di San Vito, Montenerodomo
+14180967: Teatro comunale, Gessopalena
+15266221: Belvedere, Montenerodomo
+13306321: Chiesa della Madonna degli Angeli, Lanciano
+23608842: Palazzo Croce, Montenerodomo
+15291315: Anfiteatro romano , Montenerodomo
+4563045: Iuvanum Museo e Parco Archeologico, Montenerodomo
+15180999: Chiesa di Sant'Agata, Torricella Peligna
+14099140: Chiesa di Santa Maria dei Raccomandati, Fallascoso
+24183818: Casa Del Poeta Clemente Di Leo, Colledimacine
+10715727: Piazza Barbolani, Colledimacine
+14101502: Palazzo Barbolani, Colledimacine
+14101511: Ex Chiesa di San Rocco e Torre dell`Orologio, Colledimacine
+15110130: Chiesa di Santa Croce, Borbona
+15110154: Chiesa di Santa Restituta, Borbona
+21397541: Chiesa San Michele Arcangelo, Barbona
+13456409: Bar Da Carpentiere, Borbona
+15110145: Chiesa di Sant'Anna, Borbona
+15110469: Chiesa di San Felice, Posta
+13287923: Lido Tahiti, Pescara
+14918567: Pepito Beach Club, Pescara
+12311574: Le Naiadi Piscine, Pescara
+13476986: Fontana Le Naiadi, Pescara
+13283058: Stabilimento Balneare Il Faro, Montesilvano
+15607216: Parrocchia della Visitazione di Maria, Pescara
+9589462: Chiesa dei Santi Innocenti Martiri, Montesilvano
+15849515: Mumbo Jumbo, Montesilvano
+11919569: Di Lana e d'Altre Storie, Montesilvano
+16823809: Fondazione Zimei, Montesilvano
+13236316: Palazzetto dello Sporto Corrado Roma, Montesilvano
+13437817: Il Circo delle Pulci, Pescara
+13455158: Chiesa di San Paolo, Pescara
+12810293: Centro Commerciale Delfino, Pescara
+13287966: Hawaii Pescespada, Pescara
+17185719: RISTORANTE PIZZERIA IL MORO, Pescara
+14913245: Complesso balneare Le Antille, Pescara
+10769421: Riserva Naturale Pineta di Santa Filomena, Pescara
+13137999: Penelope A Mare, Pescara
+12736324: Parrocchia Beata Vergine del Rosario, Pescara
+17714501: Teatro Cordova, Pescara
+23088840: Nut Viaggi, Silvi Marina
+12086425: IAT Silvi Marina, Silvi Marina
+7776659: Twenty Beach, Silvi Marina
+13454253: Waikiki Beach, Silvi Marina
+17759146: 70. 4 the Store, Silvi Marina
+9597164: Parrocchia S. Maria Assunta, Silvi Marina
+13118857: Chiesa di San Giovanni in Pergulis, Valle San Giovanni
+10340488: Borgo di Castelbasso, Castelbasso
+13322614: Chiesa e Convento dei Cappuccini, Montorio al Vomano
+23082795: Bar Giedre, L'Aquila
+14163920: Centro storico, Montorio al Vomano
+2640908: Chiesa di San Rocco, Montorio al Vomano
+11876802: Palazzo Ricci, Mopolino
+23463010: Paesani, Montorio al Vomano
+2634097: Chiesa di S. Antonio, Montorio al Vomano
+5931496: BAR Panetta Romeo, Montorio al Vomano
+16648117: Ruderi del Forte San Carlo, Montorio al Vomano
+13123520: Lago Piaganini, Montorio al Vomano
+13821182: Stadio Comunale Pigliacelli, Montorio al Vomano
+13118852: Chiesa di Santa Maria Assunta, Spiano
+2641027: Area di Largo Madonna delle Grazie, Teramo
+10375590: Santuario della Madonna Delle Grazie, Teramo
+10375583: Domus di Madonna delle Grazie, Teramo
+13118868: Chiesa di San Martino Vescovo, Teramo
+13118871: Chiesa di Santa Lucia, Rocciano
+13118817: Chiesa di Santa Maria del Carmine, Cavuccio
+24965939: Tenuta Savini De Strasser, Morro d'Oro
+13108542: Ex Convento di Sant'Antonio Abate, Morro d'Oro
+23996246: La Torre Di Avvistamento, Morro d'Oro
+7927292: Frantoio Montecchia, Morro d'Oro
+23996250: Chiesa Di Sant'antonio, Morro d'Oro
+23722341: Vini La Quercia, Morro d'Oro
+23999108: Il Borgo Di Morro D'oro, Morro d'Oro
+12814496: Parrocchia di San Salvatore e San Nicola, Morro d'Oro
+23996206: Museo Delle Arti e Civiltà Contadina, Morro d'Oro
+23996222: Chiesa Della Madonna Della Pietà, Morro d'Oro
+24923849: Chiesa Di San Giovanni Battista, Roseto Degli Abruzzi
+21164268: Birrificio San Giovanni, Roseto Degli Abruzzi
+13123513: Chiesa di Santa Marina Vergine, Atri
+13439224: Chiesa di Santa Marina Vergine, Casoli
+21166266: Cantina Fratelli Barba, Roseto Degli Abruzzi
+23644171: I Murales Del Borgo, Casoli
+13198898: Azienda Agricola Centorame, Casoli
+21206574: Palazzo Del Governatore Degli Acquaviva, Montepagano
+13554669: Museo Civico della Cultura Materiale, Montepagano
+21185759: La Ruette Di Campo Riccia, Montepagano
+23629009: Case Storiche Del Borgo, Montepagano
+21185746: Arco Del Duecento, Montepagano
+23630530: Belvedere Meridionale, Montepagano
+21184422: Palazzo Passamonti, Montepagano
+21206551: Palazzo del Municipio, Montepagano
+21184431: Porta da Borea, Montepagano
+21182859: Chiesetta Di San Rocco, Montepagano
+14177452: Chiesa di Maria Santissima Regina della famiglia, Bellante Stazione
+13791791: PalaMaggetti, Roseto Degli Abruzzi
+15560464: Admiral Club, Roseto Degli Abruzzi
+13427183: Palasport Remo Maggetti, Roseto Degli Abruzzi
+13478614: Bahia De Cuba, Roseto Degli Abruzzi
+13478616: Lido La Tartaruga, Roseto Degli Abruzzi
+4881444: Cabana Park, Roseto Degli Abruzzi
+9697059: Civica Raccolta D'Arte, Roseto Degli Abruzzi
+14192579: Biblioteca comunale, Roseto Degli Abruzzi
+21182911: Porta Da Piedi, Montepagano
+26243094: Essenza Caffè e Cucina, Colleranesco
+4419142: Convento Santi sette fratelli, Giulianova
+23800690: Chiesa Di San Giuseppe Di Colleranesco, Colleranesco
+23947197: Chiesa Di San Nicola A Cerratina, Pianella
+23947369: Borgo Antico Pianella, Pianella
+5931509: Caffè Degli Artisti, Pianella
+23792052: M.A.C.A. - Museo Dell' Artigianato Ceramico Abruzzese, Pianella
+14177421: Palazzo Comunale, Pianella
+12116738: Chiesa di San Domenico, Pianella
+12116752: Chiesa di Sant'Antonio Abate, Pianella
+9454502: Chiesa di Santa Maria Maggiore, Pianella
+12116843: Chiesa della Madonna del Carmine, Pianella
+24891487: Birrificio e Agripub Golden Rose di Chiappini Melania, Pianella
+23697530: Necropoli Val Fondillo, Opi
+23693202: Pro Loco Opi - Associazione Turistica, Opi
+17394398: L'ape Del Marsicano, Opi
+8610703: Centro storico di Opi, Opi
+8608462: Chiesa di Santa Maria Assunta, Opi
+15210897: Antico Acquedotto, Opi
+12079313: Museo Archeologico, Opi
+8660792: La Fattoria degli Animali, Pescasseroli
+26583245: Sentiero P2, Pescasseroli
+15033606: Sentiero D3 Pescasseroli - Macchiarvana, Pescasseroli
+21238804: Sentiero B3, Pescasseroli
+3724458: Enoteca Sapore Divino, Pescasseroli
+4497449: Ecotour, Pescasseroli
+26601195: Arteparco, Pescasseroli
+23733377: Il Souvenir Del Parco, Pescasseroli
+26587754: I frutti dell'alveare, Pescasseroli
+26583836: A Fiadun pasta fresca, Pescasseroli
+24921567: Palazzo Del Municipio, Pescasseroli
+14771874: Sentiero C1 Bocca del Petroso - Forca d'Acero, Pescasseroli
+26559286: Chiesa Santa Maria Degli Angeli, Pescasseroli
+13156516: Chiesa del Santissimo Salvatore, Oricola
+9750351: Castello di Oricola, Civita di Oricola
+15266058: Chiesa di Santa Restituta, Oricola
+12079707: Chiesa del Santissimo Salvatore, Arsoli
+14180678: Castello Massimo, Arsoli
+13426130: Biblioteca Comunale, Ortona
+23699205: Giardino Comunale, Ortona
+18845508: La Bottega di Corso Garibaldi, Ortona
+12665234: Chiesa di Santa Caterina d'Alessandria, Ortona
+13203702: Chiesa di Santa Maria di Costantinopoli, Ortona
+6833528: FunnySpace, Ortona
+27690127: Ortona Railway Station, Ortona
+13809342: Lido Dea Venere, Ortona
+9559391: Lido Saraceni, Ortona
+10723174: Corso Vittorio Emanuele II, Ortona
+10354233: Teatro Vittoria, Ortona
+8621700: Museo della Battaglia di Ortona, Ortona
+13625775: Kelly Tea House, Ortona
+13990517: Codice Citra, Ortona
+12843948: Cantina San Zefferino, Ortona
+15147500: Monumento ai Caduti della Prima Guerra Mondiale, Ortona
+10188042: Chiesa di San Rocco, Ortona
+13426124: Fontana Vola, Ortona
+15873265: Piazza di Porta Caldari, Ortona
+13004396: IAT Ortona, Ortona
+15130401: Palazzo del Municipio, Ortona
+12971780: Porto di Ortona, Ortona
+13506536: Cantine Dragani, Villa Caldari
+14001635: Ex chiesa di San Francesco, Ortona
+13368194: Chiesa del Purgatorio, Ortona
+12962570: Monumento alle Vittime canadesi, Ortona
+15227057: Monumento ai caduti civili di Tommaso Cascella, Ortona
+15227071: Monumento Ai Caduti, Ortona
+13426092: Museo Civico d'Arte Contemporanea - Pinacoteca Cascella, Ortona
+23858202: Borghetto Di Acquabella, Ortona
+23699204: Piazza Eroi Canadesi, Ortona
+23727353: Fonte A Mare, Ortona
+23727354: Fonte Delle Fate, Ortona
+17346354: Monumento ai Caduti del mare, Ortona
+15057100: Palazzo De Sanctis, Ortona
+6999264: Basilica di San Tommaso Apostolo, Ortona
+10210170: Museo Diocesano, Ortona
+13489013: Zooart, Ortona
+17826490: Piazza San Tommaso, Ortona
+27675219: Saint Thomas Statue, Ortona
+8842020: Passeggiata Orientale, Ortona
+12966059: Palazzo Mancini, Ortona
+10718229: Quartiere medioevale di Terravecchia, Ortona
+13010646: Chiesa del Sacro Cuore, Ortona
+13132082: Chiesa della Madonna del Carmine, Ortona
+23789588: Fantini Winestore Ortona (ch), Ortona
+13426099: Stadio Comunale, Ortona
+10188287: Parrocchia di San Giuseppe, Ortona
+15450499: Chiesa Della Madonna Degli Angeli, Ortona
+13423059: Chiesa Parrocchiale di San Gabriele dell'Addolorata, Ortona
+12965869: Iper Ortona, Ortona
+14157170: Spiaggia Ripari Bardella, Ortona
+14001700: Chiesa della Madonna dell'Immacolata, Ortona
+10137224: Museo Musicale d’Abruzzo, Ortona
+23740748: Champagnino, Ortona
+10122551: Istituto Nazionale Tostiano - Istituto Culturale di Rilevanza Nazionale, Ortona
+13847246: Palazzo Grilli, Ortona
+13089677: Torre Baglioni, Ortona
+15234626: Mura caldoriane, Ortona
+13004405: Biblioteca Diocesana San Domenico, Ortona
+14192573: Parco Costa dei Trabocchi, Ortona
+23737502: Ex Orfanotrofio Genova Rulli, Genova-Rulli
+23443939: Centro visite e di documentazione Costa dei trabocchi, Rocca San Giovanni
+21119686: Il Trialone, Civitanova Marche
+8407763: Spiaggia dei Ripari di Giobbe, Ortona
+10538914: Punta Ferruccio, Ortona
+10213172: Chiesa di Santa Maria delle Grazie, Ortona
+15144328: Faro di Ortona, Ortona
+14183783: Pista ciclabile di Ortona, Ortona
+4553756: Castello Aragonese, Ortona
+8497616: Scuola Sci Tre Nevi Ovindoli, Ovindoli
+10423036: Mister 88, Ovindoli
+12922210: Monumento dell'Alpino, Ovindoli
+13131890: Chiesa di San Sebastiano, Ovindoli
+12785676: Chiesa di San Sebastiano, Ovindoli
+7714551: Scuola Italiana Snowboard-Sci Oneleven, Ovindoli
+7382141: Monte Magnola Impianti Ovindoli, Ovindoli
+13326204: Chiesa della Madonna della Neve, San Potito
+14804228: Ovindoli Fun Park, Ovindoli
+12785713: Torre di Santa Iona, Ovindoli
+13222238: Chiesa Parrocchiale di Santa Maria di Collemarciano, Ovindoli
+17814897: Bike Tour Academy, Rovere
+26500188: Bar Castellum, Rovere
+12818816: Chiesa della Madonna delle Grazie, Rovere
+24134363: Preta Tonna, Pacentro
+8797263: Castello Cantelmo-Caldora, Pacentro
+14076315: Antico Lavatoio Pubblico, Pacentro
+23894341: SlowMaiella, Pacentro
+14076299: Centro Informazioni Parco Nazionale della Majella, Pacentro
+18143188: Zipline Majella, Pacentro
+12969068: Fontana Monumentale, Pacentro
+8866310: Chiesa di Santa Maria Maggiore, Pacentro
+15046433: Museo della Civiltà Contadina, Pacentro
+12819343: Chiesa di San Marco, Pacentro
+12827654: Museo Palazzo La Rocca, Pacentro
+12969066: Chiesa della Madonna di Loreto, Pacentro
+19650801: Casa di Marlurita, Pacentro
+23413810: Caseificio Fior D'abruzzo, Sulmona
+27461221: Pupi Italici, Sulmona
+27461226: Pupi Italici, Sulmona
+4358811: La Cantina Di Rocco, Sulmona
+12968848: Parrocchia di Cristo Re, Sulmona
+10768934: Parco Fluviale, Sulmona
+13818239: Parrocchia di San Giovanni Evangelista, Sulmona
+12534699: Biblioteca Giuseppe Capograssi, Sulmona
+23508070: Golden Bar, Sulmona
+23814571: Peter's Teahouse Sulmona, Sulmona
+9564837: Polo Culturale Civico Diocesano S. Chiara, Sulmona
+10463708: Piazza Garibaldi, Sulmona
+14065506: Fontanone, Sulmona
+7597941: Museo Diocesano d'Arte Sacra, Sulmona
+10758158: Chiesa di Santa Chiara, Sulmona
+13236581: Statua di Celestino V, Sulmona
+13201026: Palazzo Grilli - de Capite, Sulmona
+18546614: Giostra Cavalleresca, Sulmona
+12534673: Biblioteca Diocesana di Santa Chiara, Sulmona
+23859315: Belvedere Balzolo, Pennapiedimonte
+4297562: Escursioni, Pennapiedimonte
+14176898: Torre Romana - Museo Sulla Necropoli Italica, Pennapiedimonte
+13001680: Borgo Medievale di Pennapiedimonte, Pennapiedimonte
+10723156: Chiesa dei Santi Silvestro e Rocco, Pennapiedimonte
+23413661: Ruderi Di Cluviae, Casoli
+13531122: Cluviae, Casoli
+13582290: Chiesa di Sant'Antonio di Padova, Casoli
+12865594: Chiesa dell'Annunciazione del Signore, Penne
+15226913: Palazzo del Capitano regio, Penne
+15144537: Portici Salconio, Penne
+6577563: Bar Centrale, Penne
+16868249: Piazza Luca da Penne, Penne
+15658944: Convento dei Domenicani, Penne
+13001667: Chiesa di San Giovanni Battista, Pereto
+15104556: Chiesa di San Giorgio, Pereto
+14180669: Borgo di Pereto, Pereto
+18190852: Castello di Pereto, Pereto
+18359034: Parrocchia Ss. Salvatore, Pereto
+4744070: Santuario Madonna Dei Bisognosi, L'Aquila
+12723598: Chiesa di San Pietro Apostolo, Rocca di Botte
+9792538: Chiesa di Santa Maria Maggiore, Rocca Pia
+12723601: Chiesetta di San Pietro Eremita, Rocca di Botte
+13001668: Chiesa di Santa Maria Assunta in Cielo, Camerata Nuova
+13456533: Parrocchia "Madonna dei Sette Dolori", Pescara
+8113768: Abruzzo With Gusto, Pescara
+23712653: Parrocchia Di Cristo Re, Pescara
+13803514: Istituto Tecnico Tito Acerbo, Pescara
+13312509: Chiesa di Cristo Re, Pescara
+13131710: Chiesa di San Giuseppe Sposo della Beata Vergine Maria, Pescara
+25186472: Istituto Sorelle Misericordia, Pescara
+13392854: R. Febo Ex Gesuiti, Pescara
+23992954: Peter's Bar, Pescara
+13296907: Multicinema, Spoltore
+14177539: Chiesa di Santo Stefano Protomartire, Pescara
+6419401: Parco Giochi Paperopoli, Pescara
+15030119: Modelstorming, Villa Raspa
+21231776: Abruzzo live experience, Pescara
+5928801: ORO NERO CAFFè, Pescara
+15798378: Just Bella, Villa Raspa
+12384831: Centro Commerciale L'Arca, Spoltore
+13127842: Parrocchia San Camillo, Villa Raspa
+3463472: African Guide, Watamu
+12133257: Rocciodromo Walter Bonatti, San Giovanni Teatino
+15144041: Piazza di San Rocco, Sambuceto
+15655966: Studio olistico Matteo di Nicola, San Giovanni Teatino
+15143640: Biblioteca comunale, Sambuceto
+12854159: Italian Provincial Tours, Loreto Aprutino
+13447726: Circolo Ippico all'Ippodromo, San Giovanni Teatino
+2160076: Casinò Le Palme, San Giovanni Teatino
+13132016: Siamo a Cavallo, San Giovanni Teatino
+13293087: PalaRigopiano, Pescara
+13568741: Parco Nicola Calipari, Pescara
+8861452: Temple Bar, Pescara
+13123503: Moschea di Pescara, Pescara
+12987364: Teatro Circus, Pescara
+13113903: Casa Urbani, Teramo
+12556679: Ponte Flaiano, Pescara
+13218701: Florian Metateatro, Pescara
+13568919: Fiume Aterno-Pescara, Pescara
+13132087: Pista Ciclabile Val Pescara, Pescara
+13532428: Palazzo ex Stazione Centrale, Pescara
+12870167: Palazzo Imperato, Pescara
+15131083: Piazzale della Repubblica, Pescara
+12870165: Locomotiva FS 740, Pescara
+23148899: Imago Museum, Pescara
+13162060: Abruzzo Promozione Turismo, Pescara
+15210665: Palazzo Mezzopreti, Pescara
+13236502: Bowling Primavera, Pescara
+15849520: Parrocchia Beata Vergine Maria Regina Della Pace, Pescara
+14177366: Chiesa della Beata Vergine Maria Regina della Pace, Pescara
+8424869: Rose Cafe, Pescara
+23818354: Shaka Brew - Italian Craft Beer, Pescara
+21007823: Tropico Exotic Cocktail, Pescara
+12997049: Parco Florida, Pescara
+13287831: Venere, Pescara
+15634828: Mercato coperto Muzii, Pescara
+9873839: Le Streghe, Pescara
+13568910: Ponte di Ferro, Pescara
+12786733: Fiumare Abruzzo, Pescara
+12951651: Ponte Risorgimento, Pescara
+12741979: Esedra della Pescheria, Chieti
+23734483: Campo Rampigna, Pescara
+23734479: Chiesa Della Madonna Del Carmine, Pescara
+4084713: I Luoghi dell'Anima psicolibreria emporio del benessere cafè casa de tango, Pescara
+13001661: Palazzo delle Poste e Telecomunicazioni, Pescara
+12195343: Chiesa dello Spirito Santo, Pescara
+15083480: Palazzo dell'Episcopio, Pescara
+2421942: Museo Casa Natale di Gabriele d'Annunzio, Pescara
+23900261: Kalopsia, Pescara
+13222686: Monumento ai Caduti, Pescara
+12843921: Circolo Aternino, Pescara
+13847444: Mercato Coperto Porta Nuova, Pescara
+13236330: Biblioteca Vittoria Colonna, Pescara
+13108073: Torri Camuzzi, Pescara
+13218598: Statua di Papa Paolo VI, Pescara
+12968975: Chiesa del Santissimo Sacramento, Pescara
+12571195: La Stanzetta, Pescara
+13108082: Palazzo Monti, Pescara
+14199758: Arbiter Bibendi, Pescara
+15594595: Domus Flores, Pescara
+4505360: Cattedrale San Cetteo, Pescara
+10307182: Teatro Michetti, Pescara
+13529939: Palazzo Camillo Michetti, Pescara
+17478349: Piazza Emilio Alessandrini, Pescara
+12033258: Fontana "La Pescara", Pescara
+13108088: Auditorium Leonardo Petruzzi, Pescara
+547474: Museo Delle Genti D'Abruzzo, Pescara
+8028187: Cineteatro Massimo, Pescara
+5922801: PRIMOCAFE, Pescara
+15202061: Monumento a Clemente De Caesaris, Pescara
+13216472: Ex Bagno Penale Borbonico, Pescara
+11960244: Respawn Zone Gaming Bar, Pescara
+15026064: L'Officina delle Invenzioni, Pescara
+10338776: Blue Moon Lounge Bar, Pescara
+11790641: Different Pescara, Pescara
+23469111: Vistamare – Galleria d'Arte Pescara, Pescara
+10482855: Mediamuseum, Pescara
+23647654: Museo dell'Ottocento Fondazione Di Persio-Pallotta, Pescara
+23460725: Phyrexian Plaguelord, Pescara
+15531969: Il Mercante Di Liquori, Pescara
+4762489: Majagreen Parco Avventura, Caramanico Terme
+13131997: Parco Montessori, Pescara
+13476912: Auditorium Cerulli, Pescara
+12123698: Hoverfly, Pescara
+23460714: Parco Angelo Vassallo, Pescara
+13455556: Parrocchia di Gesù Risorto, Pescara
+12934502: Palazzo Perenich, Pescara
+8745537: Museo Civico Basilio Cascella, Pescara
+10188027: Chiesa del Cuore Immacolato di Maria, Pescara
+5932941: Manha' manha', Pescara
+13587180: Le Canarie, Pescara
+12786874: MegaSun, Pescara
+26338396: Il Campetto, Pescara
+12814502: Lido Azzurro, Pescara
+23735352: Casa Del Poeta Luigi Polacchi, Pescara
+23844168: Pescara - Via Firenze, Pescara
+12801416: Italy Unexplored Tours, Pescara
+9459987: Palazzo di Città e Torre dell'orologio, Pescara
+23672565: Busto Di Gabriele D'annunzio, Pescara
+15297749: Colonna di Santa Gerusalemme, Pescara
+15150653: Tomba di Luisa de Benedictis, Pescara
+13809312: Monumento a Gabriele d'Annunzio, Pescara
+13287918: Lido del Carabiniere, Pescara
+14008987: Palazzo Consiglio Regionale Abruzzo, Pescara
+13455876: Monumento a Ennio Flaiano, Pescara
+3540004: Pescara Vecchia, Pescara
+15145037: Monumento Per i Morti e Per La Libertà D'Italia, Pescara
+26360040: Audacia, Pescara
+3299584: Teatro Monumento Gabriele D'Annunzio, Pescara
+13287782: Lido La Perla Rosa, Pescara
+4560404: Stadio Adriatico, Pescara
+13287797: Aretusa, Pescara
+13287793: Pista Ciclabile Lungomare Sud, Pescara
+10727055: Lido Sabbia d'Oro, Pescara
+13587209: Lido La Lucciola, Pescara
+13587201: Stabilimento La Perla Rosa, Pescara
+13231061: Chiesa di Santa Caterina da Siena, Pescara
+13536320: Lungomare Colombo, Pescara
+13847266: Parco Pineta, Pescara
+12163005: Trabocchi, Pescara
+3208768: Ponte del Mare, Pescara
+13287814: Lido La Capannina, Pescara
+12997052: Madonna del Porto, Pescara
+13587172: Monumento ai Caduti del Mare, Pescara
+8734048: Mautica, Pescara
+12786106: Lido Apollo, Pescara
+12097368: Museo del Mare, Pescara
+7055491: Porto Turistico Marina di Pescara, Pescara
+13312934: Auditorium Flaiano, Pescara
+12997059: Busto Raffaele Paolucci, Pescara
+13287827: La Conchiglia 29, Pescara
+13137851: Chiesa di San Giuseppe, Pescina
+8799572: Anfiteatro di Marruvium, San Benedetto dei Marsi
+17837070: Portale della chiesa di Santa Sabina, San Benedetto dei Marsi
+12870162: Parrocchia di Santa Maria Assunta, San Benedetto dei Marsi
+10439634: Terme Romane, San Benedetto dei Marsi
+17837077: Domus Romana, San Benedetto dei Marsi
+10439642: Morroni dei Marsi, San Benedetto dei Marsi
+12812962: Museo del tombolo, Pescocostanzo
+15203308: Palazzo Municipale, Pescocostanzo
+3678090: Vallefura Pescocostanzo-Stazione di sport invernali, Pescocostanzo
+14171879: La Bottega dei Ricordi, Pescocostanzo
+12810873: Palazzo Grilli, Pescocostanzo
+5321479: L'Oggetto, Pescocostanzo
+13222491: Chiesa di Santa Maria del Carmine, Pescocostanzo
+9559311: Collegiata Santa Maria del Colle, Pescocostanzo
+15203280: Chiesa di San Nicola di Bari, Pescocostanzo
+13152877: Fontana Maggiore, Pescocostanzo
+9559317: Basilica di Santa Maria Del Colle, Pescocostanzo
+17781060: Ex Chiesa di Santa Maria di Loreto, Pescocostanzo
+13625537: Palazzo Cocco, Pescocostanzo
+10000506: Scuola Sci & snowboard Pescocostanzo 3000, Pescocostanzo
+4784316: Scuola Snowboard e Sci Math Academy Pescocostanzo, Pescocostanzo
+13625535: Palazzo Ricciardelli, Pescocostanzo
+4737690: Eremo di San Michele Arcangelo, Pescocostanzo
+23711053: Chiesa Di San Rocco, Rocca Pia
+5922608: Red Lion Bar, Rocca Pia
+12811446: Chiesa della Madonna del Casale, Rocca Pia
+15317806: Castello Di Rocca Pia, Rocca Pia
+15317862: Centro Storico, Rocca Pia
+246247: Bosco Sant'Antonio, Villaggio Sant'Antonio
+13123528: Chiesa del Beato Giovanni XXIIII, Scerne
+13293118: Chiesa della Sacra Famiglia di Nazareth, Scerne
+15011209: Centro storico, Pizzoferrato
+10694761: Chiesa Parrocchiale di San Rocco, Pizzoferrato
+13113858: Chiesa di San Domenico in Silvis, Pizzoferrato
+13477280: Luogo della Memoria, Casoli
+12062138: Chiesa di Sant′Antonio Abate, Pizzoli
+23739101: Convento Di San Nicola, Arischia
+12816037: Chiesa di Santa Giusta, Sassa
+13118991: Fonte Vecchia, Collebrincioni
+20483640: Casa Natale Di Corradino D'ascanio, Popoli
+4740692: Parco Lupus in Fabula, Popoli
+13535857: Chiesa della Madonna delle Grazie, Popoli
+2175628: Regional Natural Reserve Sources of Pescara, Popoli
+25151856: Birrificio Mezzopasso, Popoli
+14076444: Stadio comunale Cerasa, Popoli
+23894296: Majella Domus Christi Domus Narurae, Sulmona
+7399183: Abbazia di Santo Spirito al Morrone, Sulmona
+5923703: Caffè Abbazia, Sulmona
+21104971: Cammino di Celestino, Sulmona
+4564060: Eremo di Sant'Onofrio al Morrone, Sulmona
+4544498: Tempio di Ercole Curino, Sulmona
+12534715: Fontana di Fonte d'Amore, Sulmona
+13505645: Campo di Concentramento di Fonte d'Amore, Sulmona
+3724397: Pista kart Sulmona, Badia
+6453990: Majelletta WE, Pretoro
+10670253: Passo Lanciano - Majellletta, Pretoro
+15046470: Fontana del Vallone, Pacentro
+13198880: Ciao Abruzzo, Sulmona
+14192394: Palazzo Ducale, Prezza
+15144196: Cappella del Sacro Monte dei Morti, Chieti
+28111251: Trabocchi Sup, San Vito Chietino
+17149946: Fosso delle Farfalle, Rocca San Giovanni
+8858278: Eremo Dannunziano, San Vito Chietino
+8858281: Trabocco Punta Turchino, San Vito Chietino
+7003083: Costa Dei Trabocchi, Fossacesia Marina
+23443689: Casa Eremo D'annunzio, San Vito Chietino
+14192546: Spiaggia Punta Tufano, Vallevo
+17726910: Palazzo del municipio, San Vito Chietino
+14078504: Belvedere Mare e Monti, San Vito Chietino
+23676594: Chiesa Di San Rocco In San Vito, San Vito Chietino
+28111268: Trabocchi Sup, San Vito Chietino
+10847600: I trabocchi, San Vito Chietino
+23856909: Palazzo Caracciolo, San Vito Chietino
+15624599: Teatro Due Pini, San Vito Chietino
+15350532: Cappella della Madonna delle Vigne, San Vito Chietino
+15624589: Chiesa di San Rocco, San Vito Chietino
+10169270: Chiesa Dell'Immacolata Concezione, San Vito Chietino
+15624595: Mura del castello, San Vito Chietino
+15211461: Palazzo Tosti - Ex Palazzo comunale, San Vito Chietino
+12673195: Chiesa della Madonna del Porto, Marina di San Vito
+6727231: Gelateria Copa de Dora, San Vito Chietino
+5931030: La piazzetta bar tavola calda, Marina di San Vito
+12849321: Lido Nereide, San Vito Chietino
+14157148: Beach Marina di San Vito (South Pier), Marina di San Vito
+27173103: Jacci di Verre, Rocca Santa Maria
+17383533: Chiesa di Santa Cecilia, Rocca Santa Maria
+17383542: Borgo abbandonato di Tavolero, Rocca Santa Maria
+24992124: Diga Di Fiastra, Fiastra
+23789476: Laga Snow, Rocca Santa Maria
+23800390: Trekking Horse Laga, Rocca Santa Maria
+23785374: Horse Riding, Rocca Santa Maria
+15210593: Rocca della Torre vecchia, Rosello
+15606018: Palazzo Caracciolo, Rosello
+13991028: Borgo Antico, Rosello
+9797753: Chiesa di San Nicola di Bari, Rosello
+15210587: Fontana di Rosello, Rosello
+5922679: Pub Pizzeria Black Wolf, Rosello
+4770396: Bar Ca'Nova, Roseto Degli Abruzzi
+14192487: Stadio comunale Fonte dell'Olmo, Roseto Degli Abruzzi
+3859644: Lido Sette, Roseto Degli Abruzzi
+12086420: IAT Roseto degli Abruzzi, Roseto Degli Abruzzi
+24908343: Piazza Della Libertà, Roseto Degli Abruzzi
+26545569: La Stazione Ferroviaria, Roseto Degli Abruzzi
+21164273: Pineta della Stazione, Roseto Degli Abruzzi
+4725187: Bagni Marini, Roseto Degli Abruzzi
+12791116: Lido Mirage, Roseto Degli Abruzzi
+13478467: Villa Clemente, Roseto Degli Abruzzi
+24115456: Lido Ahmar, Roseto Degli Abruzzi
+21207823: Chiesa Beata Santa Teresa di Calcutta, Roseto Degli Abruzzi
+24925795: Portorose, Roseto Degli Abruzzi
+13478485: Lido Azzurra, Roseto Degli Abruzzi
+23565205: Lido Il Moro, Roseto Degli Abruzzi
+2350996: Lido Aurora, Roseto Degli Abruzzi
+4798317: Bagno Oltremare, Roseto Degli Abruzzi
+21165937: Parco Mauro Laeng, Roseto Degli Abruzzi
+4742096: Lido Hercules, Roseto Degli Abruzzi
+13478464: Lido Aragosta, Roseto Degli Abruzzi
+21159820: Lido Bora Bora, Roseto Degli Abruzzi
+21170029: Lido Riva Del Sol, Roseto Degli Abruzzi
+12885900: Lido Costa Est, Roseto Degli Abruzzi
+12794054: Chalet Luna Rossa  -  Welcome Dogs, Roseto Degli Abruzzi
+21181307: Villa Castelli, Roseto Degli Abruzzi
+21169867: Lido Tropical, Roseto Degli Abruzzi
+15144508: Fontana sul Lungomare, Roseto Degli Abruzzi
+23818169: Centro Bocciodromo Sambuceto, Sambuceto
+10187960: Chiesa di Sant'Anna, Chieti
+13551223: Chiesa di San Raffaele, Chieti
+13113982: Palazzo De Pasquale, Chieti
+10084799: Chiesa di Sant'Agata, Vacri
+13113980: Palazzo Zambra, Chieti
+10446981: Chiesa di Sant'Antonio Abate, Chieti
+12968739: Statua di San Giustino, Chieti
+13387517: Palazzo di Giustizia, Chieti
+28031720: I.A.T. Ufficio Informazioni e di Accoglienza Turistica Loreto Aprutino, Loreto Aprutino
+28031704: Biblioteca Popolare Comunale Gaetano Panbianco, Loreto Aprutino
+17443545: Chiesa cristiana evangelica, Pescara
+23815319: Borghetto Dei Pescatori, Marina di San Vito
+23681316: Spiaggia Libera Di San Vito, Marina di San Vito
+15246647: Spiaggia Naturale del Promontorio Dannunziano, Marina di San Vito
+23681314: Pontile Sul Porto Di San Vito, Marina di San Vito
+8858274: Belvedere Guglielmo Marconi, San Vito Chietino
+10541682: Spiaggia Rocco Mancini, San Vito Chietino
+13089640: Parrocchia S. Leonardo Abate, Ortona
+15355920: Chiesa di San Gabriele dell'Addolorata, Ortona
+13236418: Spiaggia del Foro di Ortona, Ortona
+7094314: Punta dell’Acquabella, Ortona
+14001674: Torre del Moro, Ortona
+10378792: Basilica di San Marco, Ortona
+15354942: Madonna Dell'Olivastro, Ortona
+15340497: Chiesa di San Pietro, Ortona
+13809348: Pineta di San Donato, Ortona
+7317265: Moro River Canadian War Cemetery, Ortona
+14008928: Chiesa di San Donato, Ortona
+26361806: Riserva Naturale Grotte di Luppa, Sante Marie
+13123708: Chiesa di Santa Maria delle Grazie, Poggetello
+13833421: Chiesa del Sacro Cuore, Sante Marie
+15272871: Borgo Antico, Sante Marie
+15272811: Chiesa di San Nicola di Bari, Sante Marie
+25558529: Big Bench #241, Sante Marie
+13326334: Chiesa di San Cipriano e Santa Giustina, Scanzano
+25318513: Macelleria Poggetello, Sante Marie
+15272786: Chiesa di Santa Barbara di Gallo, Tagliacozzo
+15287254: Chiesa di San Giacomo, Tagliacozzo
+2267747: Il Lago di Scanno, Scanno
+8797050: Chiesa della Madonna del Lago, Scanno
+27495561: Apetu Scanno, Scanno
+25109429: Sentiero N. 16 Castrovalva - Frattura Vecchia, Castrovalva
+12861998: Eremo di Sant'Egidio, Scanno
+12786088: Chiesa di San Nicola, Frattura
+12848628: La Spiaggetta di Scanno, Scanno
+13236292: Sentiero del Cuore, Scanno
+15244773: Palazzo Baronale Caracciolo, Belmonte del Sannio
+15244925: Cappella di San Rocco, Belmonte del Sannio
+12927140: Chiesa di San Giacomo Apostolo, Scoppito
+13335745: Chiesa di San Valentino, Scoppito
+15287302: Chiesa di Santa Maria di Fontepianura, Scoppito
+15278486: Chiesa di San Bernardino, Sassa
+13156532: Chiesa della Madonna del Buonconsiglio, Collepietro
+12843008: Chiesa di San Giovanni Battista, Scoppito
+13488719: Chiesa della Madonnella, Preturo
+12704885: Villa Silvetrtella, L'Aquila
+13123420: Osservatorio dell'Istituto Nazionale di Geofisica e Vulcanologia, Preturo
+12816007: Chiesa di San Pietro, Preturo
+12900936: Chiesa di Santa Maria del Ponte di Roio, L'Aquila
+9802376: Chiesa di San Pietro in Sassa, L'Aquila
+15607222: Palazzo Rivera, L'Aquila
+15832093: Chiesa della Madonna della Neve, Camporotondo
+18758925: Rievocazione della Perdonanza, L'Aquila
+14008556: Chiesa dell'Immacolata Concezione, Antrosano
+12818598: Chiesa della Madonna del Passo, Avezzano
+26224824: Itaca Ristorazione e servizi srl, Avezzano
+15848133: Pineta di Avezzano, Avezzano
+9585576: Teatro Dei Marsi, Avezzano
+6199958: Sweet Time Cafè, Sulmona
+9564824: Chiesa di Santa Maria Della Tomba, Sulmona
+14075930: Porta di Santa Maria della Tomba, Sulmona
+9457155: Chiesa di San Francesco della Scarpa, Sulmona
+10423048: Bar Nin-Harra, Sulmona
+6716250: Enoteca antica sartoria del vino, Sulmona
+9564821: Porta Napoli, Sulmona
+10196892: Museo Civico Santissima Annunziata, Sulmona
+7094680: Centro Storico di Sulmona, Sulmona
+13343065: Palazzo della Santissima Annunziata, Sulmona
+24972791: Marmo Drink House, Sulmona
+15133150: Palazzo del Gran caffe, Sulmona
+14236685: Confetti Rapone, Sulmona
+13438169: Confetteria Giorgi, Sulmona
+13201047: Palazzo Liberati, Sulmona
+17478402: Torre campanaria della Santissima Annunziata, Sulmona
+13804196: Palazzo Anelli, Sulmona
+9792770: Chiesa di Santa Caterina d'Alessandria, Sulmona
+10156258: Acquedotto Medievale, Sulmona
+10156252: Chiesa di San Rocco, Sulmona
+9457158: Fontana del Vecchio, Sulmona
+13367750: Cinema Pacifico, Sulmona
+13847205: Eremo di Santa Croce del Morrone, Sulmona
+23336373: Travel Nature, Sulmona
+18546635: Madonna che scappa in piazza, Sulmona
+10717986: Teatro Comunale Maria Caniglia, Sulmona
+6483480: Complesso dell'Annunziata, Sulmona
+10156257: Fontana dell'Annunziata, Sulmona
+10188005: Corso Ovidio, Sulmona
+13384174: Chiesa della Santissima Trinita, Popoli
+12827665: Palazzo Tabassi, Sulmona
+13118504: Chiesa della Santissima Trinita, Sulmona
+4115236: Giallo Zafferano, Sulmona
+12534702: Fontana Iapasseri, Sulmona
+12537352: Palazzo Sanita, Sulmona
+13582144: Porta San Rocco, Tagliacozzo
+21347335: Chiesa San Francesco, Tagliacozzo
+13582143: Porta Valeria, Tagliacozzo
+26876103: La Bottega dei Salumi, Tagliacozzo
+16878920: Palazzo Mastroddi, Tagliacozzo
+13226275: Chiesa di San Pietro, Tagliacozzo
+15218248: Castello di San Donato, Tagliacozzo
+17712706: Statua di Dante Alighieri, Tagliacozzo
+13288208: Chiesa di San Sebastiano, Tagliacozzo
+12822623: Rolling Park, Tagliacozzo
+16878923: Ippodromo dei Marsi, Tagliacozzo
+26876108: Municipio, Tagliacozzo
+246251: Tagliacozzo, Tagliacozzo
+2641069: Biblioteca Provinciale Melchiorre Dèlfico, Teramo
+2641141: Palazzo Delfico, Teramo
+2641009: Museo Archeologico Francesco Savini, Teramo
+2615460: Duomo di Santa Maria Assunta, Teramo
+10383456: Palazzo Vescovile, Teramo
+10423225: OLMO, Teramo
+10383445: Piazza Martiri della Libertà, Teramo
+13436846: Torre del Duomo, Teramo
+12937930: Piazza Orsini e Via del Vescovado, Teramo
+13437380: Palazzo Civico, Teramo
+9709896: Villa Comunale, Teramo
+12965900: Pinacoteca Civica, Teramo
+24912223: Le Petit Parc, Teramo
+15147720: Ipogeo, Teramo
+12673251: Parrocchia del Cuore Immacolato di Maria, Teramo
+13131293: Cineteatro Comunale Teramo, Teramo
+12965879: Chiesa e Convento dei Cappuccini, Teramo
+2641082: Giardino dei Tigli, Teramo
+12948520: Monumento ai Caduti, Teramo
+13118646: Palazzo della Provincia, Teramo
+10375578: Torre Bruciata, Teramo
+7605817: Chiesa di Sant'Anna dei Pompetti, Teramo
+15021652: Liceo Classico Statale Melchiorre Delfico, Teramo
+13123500: Chiesa di Santa Maria in Cartecchio, Teramo
+9729502: Parco fluviale del Tordino e del Vezzola, Teramo
+13162071: Corso Porta Romana, Teramo
+2641153: Palazzo delle Poste, Teramo
+13118686: Casa Catenacci, Teramo
+12736295: Chiesa dello Spirito Santo, Teramo
+2640894: La Chiesa di San Domenico, Teramo
+13455166: Statua di San Michele Arcangelo, Teramo
+17448875: Sala del Regno dei Testimoni di Geova, Teramo
+9729507: Statua di Sor Paolo Proconsole, Teramo
+15834377: Archivio di Stato di Teramo, Teramo
+6367453: bar birreria malto da legare, Teramo
+16939664: Cada Franchi, Teramo
+18930172: Settimana Santa, Teramo
+16939662: Casa Franchi, Teramo
+18758234: Interamnia World Cup, Teramo
+10375442: Corso San Giorgio, Teramo
+2641166: Palazzo della Prefettura, Teramo
+12965906: Palazzo Cerulli Irelli, Teramo
+16696110: Palazzo Pompetti, Teramo
+2641118: Castello della Monica, Teramo
+13123497: Chiesa di S. Gabriele dell'Addolorata, Teramo
+13118653: Parrocchia di Santa Rita, Teramo
+2000803: INAF Osservatorio Astronomico di Teramo, Teramo
+13442611: Circolo Tennis Teramo, Teramo
+9715141: Parrocchia di Santa Maria in Cartecchio, Teramo
+16183443: Chiesa di San Berardo, Teramo
+2658529: Il Parco della Scienza, Teramo
+13118802: Parco Ivan Graziani, Teramo
+13131981: Piscina Comunale Acquaviva, Teramo
+15077972: Stazione di Teramo, Teramo
+12958080: Smeraldo Cinema, Teramo
+16183440: Chiesa del Sacro Cuore, Teramo
+15810713: Mercato Campagna Amica, Teramo
+20307621: Curioseety SRLS, Teramo
+16959174: Cimitero comunale di Teramo, Teramo
+3210919: Heaven The Club, Teramo
+17714371: Ponte degli Impiccati, Teramo
+13118829: Chiesa di San Lorenzo Martire, Nepezzano
+2641128: Casa Bonolis, Teramo
+5062977: Centro Yoga YAP Yoga And Pleasure, Teramo
+12965908: Corso De Michetti, Teramo
+9729525: Porta Reale, Teramo
+12736278: Chiesa della Madonna del Carmine, Teramo
+16939650: Piazzetta del Sole, Teramo
+15083654: Museo del Gatto, Teramo
+14192676: Ex Monastero Di San Giovanni a Scorzone, Teramo
+15242054: Quartiere San Leonardo, Teramo
+21275102: Via Dei Mille, Teramo
+26261051: Horama Club, Teramo
+13416593: Ex Ospedale Psichiatrico di Teramo, Teramo
+13131904: Chiesa della Santissima Annunziata, Teramo
+5566312: Scacco Malto Beer-Shop, Teramo
+12094223: Ufficio Informazione e Accoglienza Turistica, Teramo
+2641180: Fonte della Noce, Teramo
+2658526: Largo Torre Bruciata, Teramo
+2634080: Chiesa di San Luca, Teramo
+2615431: Chiesa di Sant'Antonio, Teramo
+9806113: Casa del Melatino, Teramo
+12675784: Palazzo Castelli, Teramo
+15866074: Belvedere Sandro Pertini, Castellalto
+25089743: Chiesetta Dell'annunziata, Castellalto
+15866060: Chiesa della Madonna degli Angeli, Castellalto
+6495478: Edimobili srl, Teramo
+10229065: Stadio Gaetano Bonolis, Teramo
+2251267: Gran Sasso Gran Shopping, Teramo
+12785881: Chiesa Parrocchiale di San Paolo Apostolo, Torricella Sicura
+23608873: Cascate Di Casanova, Torricella Sicura
+4045425: Museo Etnografico Genti della Laga, Torricella Sicura
+9729532: Necropoli Ponte Messato, Teramo
+9805839: Parrocchia Madonna della Cona, Teramo
+15083673: Spazio Tre, Teramo
+27775433: Basciano Bike, Basciano
+13464411: Vecchio Stadio Comunale, Teramo
+3210922: Tempio 3. 0, Teramo
+25120834: Chiesetta Di Santa Barbara, Torricella Sicura
+25120829: Ruderi Monastero S. Giovanni A Scorzone, Torricella Sicura
+7606056: Chiesa di Santa Caterina, Teramo
+2615509: Chiesa Sant'Agostino, Teramo
+17185732: Miniautodromo di Teramo, Teramo
+2641185: Fontana dei due Leoni, Teramo
+13438196: Libreria Il Tempo Libero, Teramo
+2641023: Teatro Romano, Teramo
+2641012: Anfiteatro Romano, Teramo
+2641175: Statua della Maternità, Teramo
+9806098: Paliotto di Nicola da Guardiagrele, Teramo
+23929349: Belvedere Piazza Lauretana, Torino di Sangro
+12842623: Chiesa della Madonna di Loreto, Torino di Sangro
+17450748: Palazzo Priori, Torino di Sangro
+10499548: Parrocchia di San Salvatore, Torino di Sangro
+14180736: Santuario della Madonna del Buon Consiglio, Villalfonsina
+4420681: Cimitero Militare Britannico, Torino di Sangro
+13292898: Spiaggia di Borgata Marina, Torino di Sangro
+6613373: Riserva Naturale Regionale Lecceta Di Torino Di Sangro, Torino di Sangro
+23792043: Azienda Agricola Vitivinicola Strappelli Guido, Torano Nuovo
+15837683: Chiesa di San Rocco, Paglieta
+9559349: Torre della Porta, Paglieta
+15266209: Centro Storico, Paglieta
+15123386: Museo delle Tradizioni Popolari Nelli-Polsoni, Paglieta
+23715950: Chiesa Dei Santi Vincenzo Ed Egidio, Paglieta
+23863113: Belvedere Piazza Roma, Paglieta
+15837688: Palazzo Mariani, Paglieta
+15128281: Chiesa di San Canziano, Paglieta
+15123376: Chiesa di San Canziano, Paglieta
+14192563: Spiaggia Lago Dragoni, Torino di Sangro
+14959017: Chiesa di San Tommaso, Pié La Costa
+13336928: Centro Sportivo Arcobaleno, L'Aquila
+13123439: Parrocchia di San Menna, Lucoli
+18546619: Processione del Venerdì santo, Chieti
+6979404: Cattedrale di San Giustino, Chieti
+13510139: Piazza di San Giustino, Chieti
+15533039: Palazzo Cetti, Chieti
+13800824: Incile del Fucino, Avezzano
+10744046: Castello Bonifaci, Vallenquina
+12073368: Nella Foresta di San Gerbone, Acquasanta Terme
+18845857: Rievocazione storica del Tospn d'Oro, Vasto
+14076410: Fontana Grande (Fontana D'Avalos), Vasto
+8754627: Castello Caldoresco, Vasto
+6883220: Parco Archeologico delle Terme Romane di Histonium, Vasto
+21245530: Calofficina, Vasto
+21246981: Calofficina, Vasto
+16769824: Palazzo Bottari Brindisi della Penna, Vasto
+15114063: Percorsi d'Arte - Ceramiche Artistiche, Vasto
+12958105: Cinema Nuovo Corso, Vasto
+13455528: Centro Sportivo San Gabriele, Vasto
+19087048: Anfiteatro Romano, Vasto
+9461224: Chiesa di San Francesco di Paola, Vasto
+10188370: Torre Bassano, Vasto
+14082833: Palazzo Palmieri, Vasto
+12945855: Monumento a Gabriele Rossetti, Vasto
+9457331: Piazza Rossetti, Vasto
+26441383: La Piccola Caffetteria, Vasto
+14088711: Palazzo del Carmine, Vasto
+21209822: Marocco Style, Vasto
+14098157: Corso de Parma, Vasto
+15150768: Chiesa di Santa Maria di Costantinopoli, Vasto
+10384185: Centro Storico di Vasto, Vasto
+14088638: Palazzo Cardone, Vasto
+10235264: Chiesa di Maria Santissima del Carmine, Vasto
+14088724: Palazzo Meninni, Vasto
+12664996: Biblioteca Comunale R. Mattioli, Vasto
+15057733: Piazza Caprioli, Vasto
+21273611: Sparagn e Cumbarisc, Vasto
+24928247: Creta Rossa, Vasto
+15070132: Palazzo Marchesani, Vasto
+13368115: Palazzo Ritucci Chinni, Vasto
+7099343: Cattedrale San Giuseppe, Vasto
+2392602: Palazzo d'Avalos - Musei Civici, Vasto
+13218777: Giardino Napoletano, Vasto
+12665001: Biblioteca Casa Rossetti - Archivio Storico, Vasto
+10317816: Casa natale di Gabriele Rossetti, Vasto
+17526657: Porta Catena, Vasto
+12990713: Chiesa della Santissima Trinita, Vasto
+23688585: Parrocchia Di San Marco Apostolo, Vasto
+13438978: Palazzetto dello Sport, Vasto
+13132003: Piscina Comunale, Vasto
+17622561: Chiesa del Crocifisso - Madonna dell'Asilo, Vasto
+6888167: Safla, Vasto
+12945698: Chiesa di San Lorenzo Martire, San Buono
+8464274: Cantina Sociale San Michele Arcangelo, Pagliarelli
+12869978: Chiesa della Madonna dei Sette Dolori, Vasto
+12956092: Chiesa della Madonna delle Grazie, Vasto
+10463166: Autolinee Di Fonzo, Vasto
+14181490: Chiesa di Santa Lucia, Vasto
+10080664: Chiesa di San Pietro, Vasto
+9461205: Chiesa di Sant'Antonio di Padova, Vasto
+13966987: Parco Muro delle Lame, Vasto
+14088732: Palazzetto Nibio Cardone, Vasto
+17338283: Monumento ai Caduti del mare, Vasto
+14768319: Passeggiata Archeologica di via Adriatica, Vasto
+3765508: Bau Bar, Vasto
+12412163: Centro Estetico Pavonia, Vasto
+14765807: Chiesa della Maddalena, Vasto
+13438285: Libreria Mondadori, Vasto
+4586398: Pannamore Vasto, Vasto
+6998345: Valle Fiorita, Pizzone
+12994048: Chiesa di San Nicola di Bari, Pizzone
+13651505: Parco Santa Chiara, Sora
+15558129: Chiesa della Madonna delle Grazie, Sora
+15558127: Chiesa della Madonna di Valfrancesca, Sora
+10381176: Cattedrale di Santa Maria Assunta, Sora
+10381218: Castello di Sora, Sora
+8818382: Biblioté Libreria, Sora
+5928923: Papà Rossi 1943, Sora
+13162947: Chiesa di Santa Restituta, Sora
+16695647: Rocca Sorella dal Centro Storico alla Rocca (Green road), Sora
+15558133: Centro storico, Sora
+13646379: Chiesa di Sant'Antonio Abate, Sora
+14180844: Casa Vittorio De Sica, Sora
+13162956: Chiesa di Santo Spirito, Sora
+13646380: Chiesa di San Giovanni Battista, Sora
+13646373: Biblioteca Comunale, Sora
+7139134: Santuario Della Santissima Trinita Vallepietra, Vallepietra
+12732485: Parrocchia di Santa Maria di Costantinopoli, San Felice del Molise
+10317789: Chiesa di San Leonardo, Castelmauro
+8795727: Palazzo Ducale, Castelmauro
+15154958: Chiesa di San Nicola Magno, Castelmauro
+15180975: Osservatorio astronomico Giovanni Boccardi, Castelmauro
+18760787: Festa del Maja, Acquaviva Collecroce
+10317779: Chiesa di Santa Maria Ester, Acquaviva Collecroce
+13293153: Chiesa di San Rocco, Palata
+13162434: Chiesa di Santa Maria di Costantinopoli, Tavenna
+13162439: Chiesa Maria SS. Incoronata, Tavenna
+14079512: Chiesa di San Giuseppe, Guardialfiera
+10644372: Borgo di Guardialfiera, Guardialfiera
+10168946: Chiesa di Santa Maria dell'Assunta, Guardialfiera
+10439744: Parrocchia di San Giorgio Martire, Montecilfone
+15180964: Grotte Neolitiche, Montenero di Bisaccia
+10731171: Chiesa di San Matteo Apostolo, Montenero di Bisaccia
+15154840: Villa comunale, Montenero di Bisaccia
+13847576: Stadio Comunale Vincenzo De Sanctis, Montenero di Bisaccia
+13368148: Chiesa della Madonna delle Grazie, Pescopennataro
+14081884: Borgo di Pescopennataro, Pescopennataro
+14079472: Parco di Pinocchio, Pescopennataro
+10234712: Chiesa di San Bartolomeo Apostolo, Pescopennataro
+15210391: Borgo Antico di Pescopennataro, Pescopennataro
+23706997: Belvedere Panoramico, Pescopennataro
+15662988: PRATO GENTILE 2.0, Capracotta
+2688849: Giardino della Flora Appenninica, Capracotta
+17383615: Chiesa di San Giovanni Battista, Capracotta
+15246897: Poggio dei Grilli, Capracotta
+10542544: Chiesa S. Maria in Cielo Assunta, Capracotta
+15218231: Chiesa di San Vincenzo Ferreri, Capracotta
+15021604: Caseificio Pallotta, Capracotta
+12201276: Giardino della Flora Appenninica di Capracotta, Capracotta
+12818821: Museo della Civilta Contadina, Capracotta
+13272856: Centro Storico Capracotta, Capracotta
+23212024: Trotta Sapori, Capracotta
+12818820: Chiesa di Sant'Antonio Abate, Capracotta
+13833072: Chiesa della Madonna delle Grazie, Scanno
+12859995: Chiesa di Santa Maria delle Grazie, Scanno
+11638110: Il Gioiello del Tombolo, Scanno
+13833078: Auditorium - Ex Chiesa delle Anime Sante, Scanno
+13833082: Palazzo di Rienzo, Scanno
+12859999: Chiesa di San Giovanni Battista, Scanno
+15099246: Chiesa di San Giovanni Evangelista, Vallepietra
+23648784: Borgo Storico di Vallepietra, Vallepietra
+12785521: Chiesa di Santa Maria Assunta, Arcinazzo Romano
+19746408: Chiesa della Croce, Arcinazzo Romano
+12885771: Stazione dell'Aquila, L'Aquila
+19284302: Associazione D-MuNDA, L'Aquila
+8874080: Chiesa di San Vito alla Rivera, L'Aquila
+2392598: Fontana delle 99 cannelle, L'Aquila
+9581721: Convento di Santa Chiara D'Assisi, L'Aquila
+10447086: Porta Rivera, L'Aquila
+7274685: Valentino, San Benedetto Del Tronto
+14098911: Club 23, San Benedetto Del Tronto
+26528883: Luna Park San Benedetto Del Tronto, San Benedetto Del Tronto
+4771164: Reno's, San Benedetto Del Tronto
+14098916: Rivabella, San Benedetto Del Tronto
+3791615: Lungomare di San Benedetto del Tronto, San Benedetto Del Tronto
+21389073: Noma LNI, San Benedetto Del Tronto
+15075764: Pineta Falcone e Borsellino, San Benedetto Del Tronto
+2275699: Stabilimento Balneare Paradise Beach, Porto d'Ascoli
+4583284: Bagni Zappà, San Benedetto Del Tronto
+10454212: Kinder Park, San Benedetto Del Tronto
+15099286: Chiesa di San Silvestro, Collicelle
+13631029: Giardino Botanico Alpino "Vincenzo Rivera", L'Aquila
+12074660: Osservatorio di Campo Imperatore, Assergi
+12958430: Chiesa della Madonna della Neve, L'Aquila
+1977535: Parco Nazionale del Gran Sasso e Monti della Laga, Assergi
+15071544: Confetti William di Carlo, Sulmona
+26529771: Coccopelletterie, Sulmona
+12914784: Transiberiana d'Italia, Sulmona
+13118461: Monumento ai Ferrovieri Caduti, Sulmona
+9564838: Villa Comunale, Sulmona
+13954872: Chiesa di Santa Maria di Roncisvalle, Sulmona
+7597903: Cattedrale di San Panfilo, Sulmona
+13118499: Chiesa di San Gaetano, Sulmona
+13001927: Palazzo della Curia Diocesana, Sulmona
+10768949: Stadio Francesco Pallozzi, Sulmona
+12534714: Museo dell’Immagine e delle Tecniche Fotografiche, Sulmona
+13118466: Parrocchia Madonna Pellegrina, Sulmona
+12810533: Centro Commerciale Nuovo Borgo, Sulmona
+13438181: Monumento ai Caduti, Sulmona
+12534663: Biblioteca della Fondazione Nazionale "Giuseppe Capograssi", Sulmona
+19274595: ARCO DI SAN DONATO (PORTA A LEVANTE), San Donato Val di Comino
+12713422: Duomo di Santa Maria, San Donato Val di Comino
+18452983: Torre medievale, San Donato Val di Comino
+12704803: Santuario di San Donato, San Donato Val di Comino
+18344249: Reali miniere di San Donato, San Donato Val di Comino
+19331215: Monumento ai caduti in guerra, San Donato Val di Comino
+6200038: Caffè Cautilli, San Donato Val di Comino
+19274604: Spuort di San Tommaso, San Donato Val di Comino
+18083254: Centro Storico, San Donato Val di Comino
+18454812: Pietra di San Bernardino, San Donato Val di Comino
+12815168: Chiesa dei Santissimi Giovanni Battista ed Evangelista, Pescosolido
+4702475: Sulpizio Tartufi di Sulpizio Liberato e C. sas, Campoli Appennino
+26260129: Caffetteria Marconi, Campoli Appennino
+26578603: Vallone Gole del Lacerno, Campoli Appennino
+26250857: Borgo storico di Campoli Appennino, Campoli Appennino
+12814994: Chiesa di Sant'Andrea, Campoli Appennino
+17820411: Area Faunistica Orso Bruno Marsicano, Campoli Appennino
+12815217: Torre Medievale, Campoli Appennino
+26107182: Bar Napoli, Campoli Appennino
+19333378: Azienda Agricola Benacquista, Campoli Appennino
+13651503: Stadio Claudio Tomei, Sora
+14761028: Eden Centro Estetico, Sora
+4757815: Fantasie Di Casa, Broccostella
+13646371: Chiesa di San Bartolomeo Apostolo, Sora
+5931773: Jazz Inn, Sora
+15558137: Fiume Liri, Sora
+5931669: Bar La Posta, Sora
+14180828: Eremo di Sant'Antonio Forletta, Sora
+2312495: Lago di Posta Fibreno, Posta Fibreno
+28142682: Natura Loci, Posta Fibreno
+21134047: Abbronzatissima, Fiumicino
+25068214: Bar Collando, Posta Fibreno
+12815184: Chiesa di Santa Maria Assunta, Posta Fibreno
+2522498: Certosa di Trisulti, Collepardo
+14998320: Sorgenti Di Capofiume, Collepardo
+12246080: Ecomuseo Collepardo, Collepardo
+12822435: Pro Loco di Collepardo, Collepardo
+12814881: Chiesa del Santissimo Salvatore, Collepardo
+5773149: Grotte di Collepardo, Collepardo
+16555126: Chiesa di San Rocco, Collepardo
+14178497: Chiesa della Madonna della Consolazione, Collepardo
+15029739: Sarandrea - Liquoreria Erboristeria, Collepardo
+14180787: Chiesa di San Giorgio Fuori le Mura, Vico nel Lazio
+6848993: Pozzo d'Antullo, Collepardo
+14967350: Orto Sylvatico, Collepardo
+12279040: Porta Portati, Alatri
+12278959: Convento dei Padri Cappuccini, Alatri
+12278942: Fontana di Porta San Pietro, Alatri
+12275982: Biblioteca Comunale "L. Ceci", Alatri
+12278879: Porta San Pietro, Alatri
+10291932: Museo civico, Alatri
+12279019: Palazzo Conti Gentili, Alatri
+10295522: Chiesa di Santa Maria Maggiore, Alatri
+12278963: Fontana Pia, Alatri
+10291848: Museo della Chiesa di Santa Maria Maggiore, Alatri
+10263564: PaTa Club, Vico nel Lazio
+23510354: Chiesa Di Santa Maria, Vico nel Lazio
+12815275: Chiesa di San Michele Arcangelo, Vico nel Lazio
+10273757: Acropoli di Alatri, Alatri
+10273793: Cattedrale di San Paolo, Alatri
+16694535: Portico Betilieno Varo, Alatri
+10273766: Mura poligonali urbane di Alatri, Alatri
+12278919: Chiesa della Madonna della Resurrezione, Alatri
+8428241: Area Pic Nic Prato di Campoli, Veroli
+12278950: Uffici Informazioni Pro-Loco, Alatri
+26309224: El barrio exclusive, Alatri
+12278895: Porta San Benedetto, Alatri
+12279030: Chiesa di Santo Stefano e Monastero dell'Annunziata, Alatri
+12815248: Chiesa di Santa Maria Maggiore, Supino
+10291916: Chiesa di San Francesco, Alatri
+12275846: Chiesa degli Scolopi, Alatri
+25548715: Quartiere medievale di Alatri, Alatri
+12279036: Chiesa di San Silvestro, Alatri
+12278962: Porta San Francesco, Alatri
+12278951: Fontana Antonini, Alatri
+7927399: Lago di Canterno, Fiuggi
+19087070: Stardust Bowling, Trivigliano
+2536473: Castello di Fumone, Fumone
+12815102: Chiesa Collegiata di Santa Maria Annunziata, Fumone
+3317898: Le Terme di Fiuggi, Fiuggi
+20141459: Roman Countryside Bike & Active Tours, Fiuggi
