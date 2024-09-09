@@ -13,7 +13,7 @@ dotenv = dotenv_values()
 api_key = dotenv.get("API_KEY")
 
 # File per tenere traccia dello stato
-state_file = 'script_python/last_processed_poi.json'
+state_file = 'last_processed_poi.json'
 
 # Funzione per caricare lo stato dell'ultimo POI processato
 def load_last_processed_poi():
@@ -32,7 +32,7 @@ def save_last_processed_poi(last_processed_index):
 poi_dict = {}
 
 # Leggo il contenuto del file POI riga per riga
-with open('script_python/poi.txt', 'r', encoding='utf-8') as file:
+with open('poi.txt', 'r', encoding='utf-8') as file:
     for line in file:
         # Divido la riga usando ': ' come separatore solo alla prima occorrenza
         id, resto = line.strip().split(': ', 1)
@@ -59,8 +59,8 @@ poi_to_process = items_list[start_index:end_index]
 recensioni_per_location = {}
 
 # Verifico che il dizionario esista, e se esiste già, salvo il contenuto in recensioni_per_location
-if os.path.exists('script_python/recensioni_per_location.json'):
-    with open('script_python/recensioni_per_location.json', 'r', encoding='utf-8') as file:
+if os.path.exists('recensioni_per_location.json'):
+    with open('recensioni_per_location.json', 'r', encoding='utf-8') as file:
         recensioni_per_location = json.load(file)
 else:
     recensioni_per_location = {}
@@ -104,5 +104,5 @@ for poi in poi_to_process:
 save_last_processed_poi(end_index)
 
 # Scrivo il dizionario di recensioni su un file JSON
-with open('script_python/recensioni_per_location.json', 'w', encoding='utf-8') as file:
+with open('recensioni_per_location.json', 'w', encoding='utf-8') as file:
     json.dump(recensioni_per_location, file, ensure_ascii=False, indent=4)
