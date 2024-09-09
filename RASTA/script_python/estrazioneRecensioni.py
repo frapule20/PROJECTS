@@ -6,84 +6,103 @@ tenere sempre aggiornate le recensioni.
 '''
 import json
 import os
-from dotenv import dotenv_values
 import requests
+from dotenv import dotenv_values
 
 dotenv = dotenv_values()
-api_key = dotenv.get("API_KEY");
+api_key = dotenv.get("API_KEY")
+
+# File per tenere traccia dello stato
+state_file = 'script_python/last_processed_poi.json'
+
+# Funzione per caricare lo stato dell'ultimo POI processato
+def load_last_processed_poi():
+    if os.path.exists(state_file):
+        with open(state_file, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            return data.get('last_processed_index', 0)
+    return 0
+
+# Funzione per salvare l'indice dell'ultimo POI processato
+def save_last_processed_poi(last_processed_index):
+    with open(state_file, 'w', encoding='utf-8') as file:
+        json.dump({'last_processed_index': last_processed_index}, file)
 
 # Inizializzo un dizionario vuoto per memorizzare gli ID e i nomi dei POI
 poi_dict = {}
 
-# Leggo il contenuto del file riga per riga
+# Leggo il contenuto del file POI riga per riga
 with open('script_python/poi.txt', 'r', encoding='utf-8') as file:
     for line in file:
         # Divido la riga usando ': ' come separatore solo alla prima occorrenza
         id, resto = line.strip().split(': ', 1)
-        # Divido il resto della riga usando ', ' come separatore per ottenere il nome del POI
         nome = resto.split(', ')[0]
-        # Aggiungo l'id e il nome al dizionario
         poi_dict[id] = nome
 
-# il dizionario ora conterrà gli ID come chiavi e i nomi dei POI come valori
-# print(poi_dict)
-print(len(poi_dict))
+# Converti il dizionario in una lista di tuple (id, nome) per un accesso ordinato
+items_list = list(poi_dict.items())
 
-# salvo il dizionario in un file json
-dizionario_json = "script_python/poi.json"
+# Carico l'ultimo POI processato
+last_processed_index = load_last_processed_poi()
 
-# Salvataggio del dizionario nel file JSON
-with open(dizionario_json, "w") as file:
-    json.dump(poi_dict, file)
+# Numero di POI da processare ogni giorno
+num_poi_per_day = 3
+
+# Calcolo gli indici dei prossimi POI da elaborare
+start_index = last_processed_index
+end_index = start_index + num_poi_per_day
+
+# Seleziono i prossimi POI da processare
+poi_to_process = items_list[start_index:end_index]
 
 # Dizionario per memorizzare le recensioni per ogni location
 recensioni_per_location = {}
 
-# salvo tutti gli id delle recensioni in questa variabile
-id_recensioni = []
-
 # Verifico che il dizionario esista, e se esiste già, salvo il contenuto in recensioni_per_location
 if os.path.exists('script_python/recensioni_per_location.json'):
-    with open('script_python/recensioni_per_location.json', 'r') as file:
+    with open('script_python/recensioni_per_location.json', 'r', encoding='utf-8') as file:
         recensioni_per_location = json.load(file)
-
-        # Estraggo gli ID delle recensioni e li aggiungo alla lista id_recensioni
-        for id_loc in recensioni_per_location.values():
-            for id_rec in id_loc.keys():
-                id_recensioni.append(id_rec)
 else:
     recensioni_per_location = {}
 
-# Recupero le recensioni relative ai POI estratti
-items_list = list(poi_dict.items())
-
-# Itero sui POI e recupera le recensioni
-for id in items_list[:3]:
-    url = "https://api.content.tripadvisor.com/api/v1/location/" + id[0] + "/reviews?key=" + api_key + "&language=it"
+# Itero sui POI selezionati e recupero le recensioni
+for poi in poi_to_process:
+    location_id = poi[0]
+    nome_poi = poi[1]
+    
+    url = f"https://api.content.tripadvisor.com/api/v1/location/{location_id}/reviews?key={api_key}&language=it"
     headers = {"accept": "application/json"}
     response = requests.get(url, headers=headers)
-    REC = response.json()
 
-    # Estraggo le recensioni di ciascun POI e le aggiungo al dizionario
-    for elemento in REC['data']:
-        id_rec = elemento.get('id')
-        id_loc = elemento.get('location_id')
-        data = elemento.get('published_date')
-        url = elemento.get('url')
-        rating = elemento.get('rating')
-        recensione = elemento.get('text')
+    if response.status_code == 200:
+        REC = response.json()
 
-         # Se la location_id non è già presente nel dizionario, l'aggiungo come chiave con una lista vuota come valore
-        if id_loc not in recensioni_per_location:
-            recensioni_per_location[id_loc] = {}
+        # Estraggo le recensioni di ciascun POI e le aggiungo al dizionario
+        for elemento in REC.get('data', []):
+            id_rec = elemento.get('id')
+            id_loc = elemento.get('location_id')
+            data = elemento.get('published_date')
+            url = elemento.get('url')
+            rating = elemento.get('rating')
+            recensione = elemento.get('text')
 
-        if id_rec not in id_recensioni:
-            # Aggiungo la recensione al dizionario nidificato utilizzando l'id della recensione come chiave
-            recensioni_per_location[id_loc][id_rec] = {'rating': rating, 'recensione': recensione, 'data': data, 'url': url}
-            
-            # Aggiungo l'id della recensione alla lista id_recensioni
-            id_recensioni.append(id_rec)
+            # Se la location_id non è già presente nel dizionario, l'aggiungo come chiave con una lista vuota come valore
+            if id_loc not in recensioni_per_location:
+                recensioni_per_location[id_loc] = {}
+
+            # Verifica se la recensione esiste già per questa location nel dizionario
+            if id_rec not in recensioni_per_location[id_loc]:
+                # Aggiungo la recensione al dizionario nidificato utilizzando l'id della recensione come chiave
+                recensioni_per_location[id_loc][id_rec] = {
+                    'rating': rating, 
+                    'recensione': recensione, 
+                    'data': data, 
+                    'url': url
+                }
+
+# Aggiorno l'indice dell'ultimo POI processato
+save_last_processed_poi(end_index)
 
 # Scrivo il dizionario di recensioni su un file JSON
-with open('script_python/recensioni_per_location.json', 'w') as file:
-    json.dump(recensioni_per_location, file)
+with open('script_python/recensioni_per_location.json', 'w', encoding='utf-8') as file:
+    json.dump(recensioni_per_location, file, ensure_ascii=False, indent=4)

@@ -84,6 +84,8 @@ def main():
     remove_duplicates('script_python/poi.txt')
     if poi_da_salvare:
         print(f"Aggiunti {len(poi_da_salvare)} nuovi POI")
+    else:
+        print("Nessun nuovo POI aggiunto")
 
 if __name__ == "__main__":
     main()
