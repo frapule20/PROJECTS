@@ -1,11 +1,19 @@
 import json
 import os
+from tkinter import Image, messagebox
 import requests
 from dotenv import dotenv_values
+import tkinter as tk
+from tkinter import messagebox, ttk
+from PIL import Image, ImageTk  # Per gestire immagini più grandi
+
+#from sentiment_models import predict_feelit, predict_multilingual, predict_bert
+
 
 # Carica la chiave API da .env
 dotenv = dotenv_values()
 api_key = dotenv.get("API_KEY")
+
 
 # Funzione per cercare il POI nel database per ID o nome
 def trova_poi(poi_input, poi_dict):
@@ -63,12 +71,12 @@ def main(poi_input):
     poi_id = trova_poi(poi_input, poi_dict)
 
     if poi_id is None:
-        print(f"L'operazione non è andata a buon fine: non esiste alcun POI con quel nome/id")
+        messagebox.showerror("Errore", "Non esiste alcun POI con quel nome/id.")
         return
     
     # Verifica se ci sono recensioni già presenti nel database per questo POI
     if poi_id in recensioni_per_location:
-        print(f"L'operazione non è andata a buon fine: le recensioni relative a quel POI sono già presenti nel database")
+        messagebox.showinfo("Informazione", "Le recensioni relative a quel POI sono già presenti nel database.")
         return
     
     # Recupera le recensioni dall'API
@@ -78,12 +86,78 @@ def main(poi_input):
         # Salva il file aggiornato con le nuove recensioni
         with open(recensioni_path, 'w', encoding='utf-8') as f:
             json.dump(recensioni_per_location, f, ensure_ascii=False, indent=4)
-        print(f"L'operazione è andata a buon fine: sono state aggiunte al database {nuove_recensioni} recensioni relative al POI {poi_dict[poi_id]}")
+        messagebox.showinfo("Successo", f"Sono state aggiunte {nuove_recensioni} nuove recensioni per il POI {poi_dict[poi_id]}.")
     else:
-        print(f"L'operazione non è andata a buon fine: non ci sono nuove recensioni per il POI {poi_dict[poi_id]}")
+        messagebox.showinfo("Informazione", f"Non ci sono nuove recensioni per il POI {poi_dict[poi_id]}.")
 
-# Esecuzione dello script
-if __name__ == "__main__":
-    # Esempio di input, potrebbe essere sostituito da input dinamico con input() o argomenti da riga di comando
-    poi_input = input("Inserisci il nome o l'ID del POI: ")
+# Funzione per gestire il pulsante
+def on_submit():
+    poi_input = poi_entry.get()
     main(poi_input)
+
+# Funzione per centrare la finestra
+def center_window(root, width, height):
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    position_top = int(screen_height / 2 - height / 2)
+    position_right = int(screen_width / 2 - width / 2)
+    root.geometry(f'{width}x{height}+{position_right}+{position_top}')
+
+# Creazione della finestra grafica
+root = tk.Tk()
+root.title("Recensioni POI")
+
+# Dimensioni fisse per la finestra
+window_width = 400
+window_height = 250
+center_window(root, window_width, window_height)  # Centrare la finestra
+root.resizable(False, False)  # Disabilita il ridimensionamento
+
+# Aggiungi un'icona alla finestra 
+root.iconbitmap('icon.ico')  
+
+# Definire il tema ttk
+style = ttk.Style()
+style.theme_use("clam")  # Altri temi disponibili: 'alt', 'default', 'clam'
+
+# Colori personalizzati
+root.configure(bg="#f0f0f0")  # Colore di sfondo della finestra
+
+# Creare un frame per allineare i widget centralmente
+main_frame = ttk.Frame(root, padding="20 20 20 20")
+main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+second_frame = ttk.Frame(root, padding="20 90 20 20")
+
+# Caricare un'immagine più grande da mostrare in alto
+try:
+    img = Image.open("large_icon.png")  # Aggiungi il tuo file .png qui
+    img = img.resize((100, 100), Image.ANTIALIAS)  # Ridimensiona l'immagine
+    photo = ImageTk.PhotoImage(img)
+    img_label = tk.Label(main_frame, image=photo, background="#f0f0f0")
+    img_label.grid(row=0, column=0, pady=0)
+except Exception as e:
+    print("Errore nel caricamento dell'immagine:", e)
+
+
+# Label e campo di input
+poi_label = ttk.Label(second_frame, text="Inserisci il nome o l'ID del POI:", font=("Helvetica", 12))
+poi_label.grid(row=0, column=0, pady=10)
+
+poi_entry = ttk.Entry(main_frame, width=40, font=("Helvetica", 11))
+poi_entry.grid(row=1, column=0, pady=10)
+
+# Pulsante per inviare il form
+submit_button = ttk.Button(main_frame, text="Cerca Recensioni", command=on_submit, style="Accent.TButton")
+submit_button.grid(row=2, column=0, pady=20)
+
+# Aggiungere un padding attorno ai widget per evitare che siano troppo attaccati
+for widget in main_frame.winfo_children():
+    widget.grid_configure(padx=10, pady=10)
+
+# Definire uno stile personalizzato per i bottoni
+style.configure("Accent.TButton", foreground="white", background="#9B2D30", font=("Helvetica", 11))
+style.map("Accent.TButton", background=[('active', 'white')], foreground=[('active', '#9B2D30')])
+
+
+# Avvio della finestra Tkinter
+root.mainloop()
