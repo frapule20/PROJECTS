@@ -123,9 +123,7 @@ def predict_multilingual(sentence):
 
     # Calcola il sentimento prevalente
     df['MULTILINGUAL'] = df[['1', '2', '3', '4', '5']].idxmax(axis=1)
-    print(df)
     df.drop(columns=['1', '2', '3', '4', '5'], inplace=True)
-    print(df)
     # Tentare di convertire i valori della colonna 'MULTILINGUAL' in numerici, ignorando gli errori
     df['sentiment_pred_numeric'] = pd.to_numeric(df['MULTILINGUAL'], errors='coerce')
 
@@ -133,7 +131,6 @@ def predict_multilingual(sentence):
     df.loc[df['sentiment_pred_numeric'] >= 4, 'MULTILINGUAL'] = 'positive'
     df.loc[df['sentiment_pred_numeric'] <= 2, 'MULTILINGUAL'] = 'negative'
     df.loc[df['sentiment_pred_numeric'] == 3, 'MULTILINGUAL'] = 'neutral'
-    print(df)
     # Rimuovere la colonna temporanea utilizzata per la conversione
     df.drop(columns=['sentiment_pred_numeric'], inplace=True)
         

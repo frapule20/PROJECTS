@@ -65,6 +65,9 @@ if os.path.exists('recensioni_per_location.json'):
 else:
     recensioni_per_location = {}
 
+ # Conteggio delle nuove recensioni
+nuove_recensioni = 0
+    
 # Itero sui POI selezionati e recupero le recensioni
 for poi in poi_to_process:
     location_id = poi[0]
@@ -74,8 +77,11 @@ for poi in poi_to_process:
     headers = {"accept": "application/json"}
     response = requests.get(url, headers=headers)
 
+
+    # Se la richiesta ha successo, estraggo le recensioni
     if response.status_code == 200:
         REC = response.json()
+
 
         # Estraggo le recensioni di ciascun POI e le aggiungo al dizionario
         for elemento in REC.get('data', []):
@@ -85,6 +91,8 @@ for poi in poi_to_process:
             url = elemento.get('url')
             rating = elemento.get('rating')
             recensione = elemento.get('text')
+
+            nuove_recensioni += 1
 
             # Se la location_id non è già presente nel dizionario, l'aggiungo come chiave con una lista vuota come valore
             if id_loc not in recensioni_per_location:
@@ -102,6 +110,9 @@ for poi in poi_to_process:
 
 # Aggiorno l'indice dell'ultimo POI processato
 save_last_processed_poi(end_index)
+
+# stampo su schermo il numero di recensioni aggiunte
+print(f"Aggiunte {nuove_recensioni} recensioni per i POI selezionati.")
 
 # Scrivo il dizionario di recensioni su un file JSON
 with open('recensioni_per_location.json', 'w', encoding='utf-8') as file:

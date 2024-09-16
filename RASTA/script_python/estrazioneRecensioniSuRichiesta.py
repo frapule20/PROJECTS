@@ -103,13 +103,16 @@ def center_window(root, width, height):
     position_right = int(screen_width / 2 - width / 2)
     root.geometry(f'{width}x{height}+{position_right}+{position_top}')
 
+
+
+
 # Creazione della finestra grafica
 root = tk.Tk()
 root.title("Recensioni POI")
 
 # Dimensioni fisse per la finestra
 window_width = 400
-window_height = 250
+window_height = 300
 center_window(root, window_width, window_height)  # Centrare la finestra
 root.resizable(False, False)  # Disabilita il ridimensionamento
 
@@ -126,29 +129,44 @@ root.configure(bg="#f0f0f0")  # Colore di sfondo della finestra
 # Creare un frame per allineare i widget centralmente
 main_frame = ttk.Frame(root, padding="20 20 20 20")
 main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
-second_frame = ttk.Frame(root, padding="20 90 20 20")
 
-# Caricare un'immagine più grande da mostrare in alto
+# Creare un frame per le immagini
+image_frame = ttk.Frame(main_frame)
+image_frame.grid(row=0, column=0, pady=10, padx=10)
+
+# Caricare e visualizzare la prima immagine
 try:
-    img = Image.open("large_icon.png")  # Aggiungi il tuo file .png qui
-    img = img.resize((100, 100), Image.ANTIALIAS)  # Ridimensiona l'immagine
-    photo = ImageTk.PhotoImage(img)
-    img_label = tk.Label(main_frame, image=photo, background="#f0f0f0")
-    img_label.grid(row=0, column=0, pady=0)
+    img1 = Image.open("large_icon.png")  # Aggiungi il tuo file .png qui
+    img1 = img1.resize((100, 100), Image.ANTIALIAS)  # Ridimensiona l'immagine
+    photo1 = ImageTk.PhotoImage(img1)
+    img_label1 = tk.Label(image_frame, image=photo1, background="#f0f0f0")
+    img_label1.image = photo1  # Mantieni un riferimento all'immagine
+    img_label1.grid(row=0, column=0, padx=10)
 except Exception as e:
-    print("Errore nel caricamento dell'immagine:", e)
+    print("Errore nel caricamento dell'immagine large_icon.png:", e)
+
+# Caricare e visualizzare la seconda immagine
+try:
+    img2 = Image.open("RASTA.png")  # Aggiungi il tuo file .png qui
+    img2 = img2.resize((140, 100), Image.ANTIALIAS)  # Ridimensiona l'immagine
+    photo2 = ImageTk.PhotoImage(img2)
+    img_label2 = tk.Label(image_frame, image=photo2, background="#f0f0f0")
+    img_label2.image = photo2  # Mantieni un riferimento all'immagine
+    img_label2.grid(row=0, column=1, padx=10)
+except Exception as e:
+    print("Errore nel caricamento dell'immagine RASTA.png:", e)
 
 
 # Label e campo di input
-poi_label = ttk.Label(second_frame, text="Inserisci il nome o l'ID del POI:", font=("Helvetica", 12))
-poi_label.grid(row=0, column=0, pady=10)
+poi_label = ttk.Label(main_frame, text="Inserisci il nome o l'ID del POI:", font=("Helvetica", 12))
+poi_label.grid(row=1, column=0, pady=10)
 
 poi_entry = ttk.Entry(main_frame, width=40, font=("Helvetica", 11))
-poi_entry.grid(row=1, column=0, pady=10)
+poi_entry.grid(row=2, column=0, pady=10)
 
 # Pulsante per inviare il form
 submit_button = ttk.Button(main_frame, text="Cerca Recensioni", command=on_submit, style="Accent.TButton")
-submit_button.grid(row=2, column=0, pady=20)
+submit_button.grid(row=3, column=0, pady=20)
 
 # Aggiungere un padding attorno ai widget per evitare che siano troppo attaccati
 for widget in main_frame.winfo_children():
