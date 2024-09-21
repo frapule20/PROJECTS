@@ -1,49 +1,44 @@
 '''
 Script che, dato in input il nome di un POI (o l'ID), restituisce il sentiment delle recensioni.
 '''
-
 import tkinter as tk
-from tkinter import Image, ttk, messagebox
-from tkinter import filedialog
+from ttkbootstrap import Style, ttk  # Importa ttk da ttkbootstrap
+from tkinter import messagebox, filedialog
 from PIL import Image, ImageTk  # Per gestire immagini più grandi
 import pandas as pd
-import json
+
 
 def load_excel(file_path=None):
     if not file_path:
         file_path = input("Inserisci il percorso del file Excel: ")
     return pd.read_excel(file_path)
 
+def check_excel_format(df):
+    required_columns = {'id', 'POI', 'rating', 'recensione'}
+    if not required_columns.issubset(df.columns):
+        raise ValueError("Il file Excel selezionato non rispetta il formato richiesto")
 
-# df = load_excel()
-
-
-# Visualizzo le prime righe del dataframe per capire la struttura dei dati
-# print(df.head())
-
+def populate_poi_dropdown(df):
+    poi_names = df['POI'].unique().tolist()
+    poi_dropdown['values'] = poi_names
+    if poi_names:
+        poi_dropdown.current(0)
 
 def calculate_sentiment(df, poi_name_or_id):
-    
-    # Filtra il dataframe in base all'ID o al nome del POI
     filtered_df = df[(df['id'] == poi_name_or_id) | (df['POI'] == poi_name_or_id)]
     
     if filtered_df.empty:
         print(f"Nessuna recensione trovata per il POI con nome o ID: {poi_name_or_id}")
-        exit()  # Interrompe l'esecuzione dello script
+        exit()
     
-    # Conta il numero di recensioni positive e negative basate sulla colonna pred_BMA
     positive_count = (filtered_df['pred_BMA'] == 'positive').sum()
     negative_count = (filtered_df['pred_BMA'] == 'negative').sum()
 
-    # Converto i valori string della colonna prob_BMA in valori float
     positive = []
     negative = []
 
     for prob in filtered_df['prob_BMA']:
-        # print(prob)
         virgola = prob.find(',')
-        # print(virgola)
-        #print(type(virgola))
         n = prob[1:virgola]
         p = prob[virgola+1:len(prob)-1]
         pos = float(p)
@@ -51,58 +46,48 @@ def calculate_sentiment(df, poi_name_or_id):
         positive.append(pos)
         negative.append(neg)
 
-    # print(positive) 
-    # print(negative)
-
-    # Calcola la distribuzione delle recensioni
     distribution = [sum(positive) / len(positive), sum(negative) / len(negative)]
     
-    # Calcola il sentiment totale
-    if positive_count == negative_count:
-        sentiment = "neutro"
-    elif (positive_count > negative_count):
-        sentiment = "positivo"
-    else:
-        sentiment = "negativo"
+    sentiment = "neutro" if positive_count == negative_count else "positivo" if positive_count > negative_count else "negativo"
     
     poi_name = filtered_df['POI'].iloc[0]
     poi_id = filtered_df['id'].iloc[0]
     
     return poi_name, poi_id, sentiment, positive_count, negative_count, distribution
 
-# Funzione per aprire il dialogo di selezione file
 def browse_file():
     filename = filedialog.askopenfilename(
         filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")],
         title="Seleziona un file Excel"
     )
     if filename:
-        excel_path.set(filename)
-        
-# Funzione per gestire il pulsante di ricerca
+        try:
+            df = load_excel(filename)
+            check_excel_format(df)
+            excel_path.set(filename)
+            populate_poi_dropdown(df)
+        except Exception as e:
+            messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
+
 def on_submit():
-    poi_input = poi_entry.get()
+    poi_input = poi_dropdown.get()
     if not poi_input:
-        messagebox.showerror("Errore", "Inserisci un nome o ID del POI.")
+        messagebox.showerror("Errore", "Seleziona un POI dal menù a tendina.")
         return
     
     try:
         df = pd.read_excel(excel_path.get())
         poi_name, poi_id, sentiment, positive_count, negative_count, distribution = calculate_sentiment(df, poi_input)
         
-        if poi_name is None:
-            messagebox.showinfo("Informazione", f"Nessuna recensione trovata per il POI con nome o ID: {poi_input}")
-        else:
-            result = (f"Il sentiment del POI '{poi_name}' con id '{poi_id}' è: {sentiment}\n"
-                      f"Recensioni positive: {positive_count}\n"
-                      f"Recensioni negative: {negative_count}\n"
-                      f"Distribuzione: {distribution}")
-            messagebox.showinfo("Risultato", result)
+        result = (f"Il sentiment del POI '{poi_name}' con id '{poi_id}' è: {sentiment}\n"
+                  f"Recensioni positive: {positive_count}\n"
+                  f"Recensioni negative: {negative_count}\n"
+                  f"Distribuzione: {distribution}")
+        messagebox.showinfo("Risultato", result)
     
     except Exception as e:
         messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
 
-# Funzione per centrare la finestra
 def center_window(root, width, height):
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
@@ -110,59 +95,41 @@ def center_window(root, width, height):
     position_right = int(screen_width / 2 - width / 2)
     root.geometry(f'{width}x{height}+{position_right}+{position_top}')
 
-# Creazione della finestra grafica
-root = tk.Tk()
-root.title("Sentiment delle Recensioni di un dato POI")
+# Usare ttkbootstrap per uno stile moderno
+style = Style(theme="litera")  # Altri temi: 'darkly', 'cosmo', 'litera', etc.
+root = style.master
+root.title("Sentiment delle Recensioni di un POI")
 
-# Dimensioni fisse per la finestra
-window_width = 400
-window_height = 390
-center_window(root, window_width, window_height)  # Centrare la finestra
-root.resizable(False, False)  # Disabilita il ridimensionamento
+window_width = 390
+window_height = 440
+center_window(root, window_width, window_height)
+root.resizable(False, False)
 
-# Aggiungi un'icona alla finestra (se disponibile)
-# root.iconbitmap('icon.ico')  
 
-# Definire il tema ttk
-style = ttk.Style()
-style.theme_use("clam")  # Altri temi disponibili: 'alt', 'default', 'clam'
-
-# Colori personalizzati
-root.configure(bg="#f0f0f0")  # Colore di sfondo della finestra
-
-# Creare un frame per allineare i widget centralmente
+# Creare il frame principale per i contenuti
 main_frame = ttk.Frame(root, padding="20 20 20 20")
 main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
-# Label e campo di input
-poi_label = ttk.Label(main_frame, text="Inserisci il nome o l'ID del POI:", font=("Helvetica", 12))
-poi_label.grid(row=3, column=0, pady=10)
+poi_label = ttk.Label(main_frame, text="Seleziona un POI:", font=("Roboto", 12))
+poi_label.grid(row=4, column=0, pady=10)
 
-poi_entry = ttk.Entry(main_frame, width=40, font=("Helvetica", 11))
-poi_entry.grid(row=4, column=0, pady=10)
+poi_dropdown = ttk.Combobox(main_frame, width=38, font=("Roboto", 11))
+poi_dropdown.grid(row=5, column=0, pady=10)
 
-# Label e campo di input per il percorso del file Excel
-excel_label = ttk.Label(main_frame, text="Seleziona o inserisci il file Excel:", font=("Helvetica", 12))
+excel_label = ttk.Label(main_frame, text="Seleziona un file Excel:", font=("Roboto", 12))
 excel_label.grid(row=1, column=0, pady=10)
 
-# Campo di input
+note_label = ttk.Label(main_frame, text="Il file excel deve rispettare il formato 'id', 'POI', 'rating', 'recensione'", font=("Roboto", 8), foreground="gray")
+note_label.grid(row=2, column=0, pady=5)
+                
 excel_path = tk.StringVar()
-excel_entry = ttk.Entry(main_frame, textvariable=excel_path, width=28, font=("Helvetica", 11))
-excel_entry.grid(row=2, column=0, pady=0, padx=(0, 5), sticky=tk.W)  # Padding destro per distanziare il pulsante
+excel_entry = ttk.Entry(main_frame, textvariable=excel_path, width=28, font=("Roboto", 11))
+excel_entry.grid(row=3, column=0, pady=0, padx=(0, 5), sticky=tk.W)
 
-# Pulsante per aprire il dialogo di selezione file
-browse_button = ttk.Button(main_frame, text="Sfoglia", command=browse_file)
-browse_button.grid(row=2, column=0, pady=0, padx=(245, 0), sticky=tk.E)  # Padding sinistro per avvicinare al campo di input
 
-# Configura la larghezza delle colonne
 main_frame.grid_columnconfigure(0, weight=1)
 
 
-# Pulsante per inviare il form
-submit_button = ttk.Button(main_frame, text="Calcola Sentiment", command=on_submit, style="Accent.TButton")
-submit_button.grid(row=5, column=0, pady=20)
-
-# Aggiungere un padding attorno ai widget per evitare che siano troppo attaccati
 for widget in main_frame.winfo_children():
     widget.grid_configure(padx=10, pady=10)
 
@@ -195,9 +162,19 @@ try:
 except Exception as e:
     print("Errore nel caricamento dell'immagine RASTA.png:", e)
     
-# Definire uno stile personalizzato per i bottoni
-style.configure("Accent.TButton", foreground="white", background="#9B2D30", font=("Helvetica", 11))
-style.map("Accent.TButton", background=[('active', 'white')], foreground=[('active', '#9B2D30')])
+# Definire uno stile personalizzato per il pulsante "Calcola Sentiment"
+style.configure("Custom.TButton", foreground="white", background="#A4224B", font=("Roboto", 11), borderwidth=0,)
+style.map("Custom.TButton", background=[('active', '#A4224B')], foreground=[('active', 'white')])
+
+submit_button = ttk.Button(main_frame, text="Calcola Sentiment", command=on_submit, style="Custom.TButton", bootstyle="success")
+submit_button.grid(row=6, column=0, pady=20)
+
+browse_button = ttk.Button(main_frame, text="Sfoglia", command=browse_file, style="Custom.TButton", bootstyle="primary")
+browse_button.grid(row=3, column=0, pady=0, padx=(245, 0), sticky=tk.E)
+
+
+for widget in main_frame.winfo_children():
+    widget.grid_configure(padx=10, pady=10)
 
 # Avvio della finestra Tkinter
 root.mainloop()
