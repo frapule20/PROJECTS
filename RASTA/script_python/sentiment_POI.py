@@ -6,6 +6,10 @@ from ttkbootstrap import Style, ttk  # Importa ttk da ttkbootstrap
 from tkinter import messagebox, filedialog
 from PIL import Image, ImageTk  # Per gestire immagini più grandi
 import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import tkinter.font as tkFont
+
 
 
 def load_excel(file_path=None):
@@ -79,11 +83,81 @@ def on_submit():
         df = pd.read_excel(excel_path.get())
         poi_name, poi_id, sentiment, positive_count, negative_count, distribution = calculate_sentiment(df, poi_input)
         
-        result = (f"Il sentiment del POI '{poi_name}' con id '{poi_id}' è: {sentiment}\n"
-                  f"Recensioni positive: {positive_count}\n"
-                  f"Recensioni negative: {negative_count}\n"
-                  f"Distribuzione: {distribution}")
-        messagebox.showinfo("Risultato", result)
+        # Crea una nuova finestra per i risultati
+        result_window = tk.Toplevel(root)
+        result_window.title("Risultati del Sentiment")
+        result_window.iconbitmap('icon.ico') 
+
+        # Dimensioni della finestra di risultato
+        result_window_width = 500
+        result_window_height = 630
+    
+        # Ottieni le dimensioni dello schermo
+        screen_width = result_window.winfo_screenwidth()
+        screen_height = result_window.winfo_screenheight()
+
+        # Calcola la posizione per centrare la finestra
+        position_top = int(screen_height / 2 - result_window_height / 2)
+        position_right = int(screen_width / 2 - result_window_width / 2)
+
+        # Imposta la geometria della finestra con la nuova posizione
+        result_window.geometry(f'{result_window_width}x{result_window_height}+{position_right}+{position_top}')
+        
+        # Crea un widget Text
+        text_widget = tk.Text(result_window, wrap=tk.WORD, height=13, width=50)
+        text_widget.pack(pady=10)
+
+        # Definisci un font in grassetto
+        bold_font = tkFont.Font(weight="bold", size=12)
+        normal_font = tkFont.Font(size=12)
+
+        # Inserisci i risultati nel widget Text
+        text_widget.insert(tk.END, f"Il sentiment del POI ", 'normal')
+        text_widget.insert(tk.END, poi_name, 'bold')
+        text_widget.insert(tk.END, ' con id ', 'normal')
+        text_widget.insert(tk.END, poi_id, 'bold')
+        text_widget.insert(tk.END, ' è: ', 'normal')
+        text_widget.insert(tk.END, sentiment + '\n' + '\n', 'bold')
+
+        text_widget.insert(tk.END, f"Recensioni positive: ", 'bold')
+        text_widget.insert(tk.END, str(positive_count) + '\n', 'normal')
+        text_widget.insert(tk.END, f"Recensioni negative: ", 'bold')
+        text_widget.insert(tk.END, str(negative_count), 'normal')
+
+        text_widget.insert(tk.END, '\n\nDistribuzione: ' + '\n', 'bold')
+        text_widget.insert(tk.END, f"Positivo-> {distribution[0]}", 'normal')
+        text_widget.insert(tk.END, f"\nNegativo-> {distribution[1]}", 'normal')
+
+        # Applica lo stile al testo in grassetto
+        text_widget.tag_config('bold', font=bold_font)
+        text_widget.tag_config('normal', font=normal_font)
+
+        # Disabilita la modifica del testo
+        text_widget.config(state=tk.DISABLED)
+
+        # Crea il grafico a torta
+        labels = ['Positivo', 'Negativo']
+
+        pos = distribution[0]
+        neg = distribution[1]
+        sizes = [pos, neg]
+        colors = ['#66c2a5', '#fc8d62']
+        explode = (0.1, 0)  # Esplodi solo il primo pezzo
+
+        fig, ax = plt.subplots()
+        ax.pie(sizes, explode=explode, labels=labels, colors=colors,
+               autopct='%1.1f%%', shadow=True, startangle=90)
+        ax.axis('equal')  # Garantisce che il grafico sia un cerchio
+
+        # Aggiungi il grafico alla finestra dei risultati
+        canvas = FigureCanvasTkAgg(fig, master=result_window)
+        canvas.draw()
+        canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
+
+    except Exception as e:
+        messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
+
+
     
     except Exception as e:
         messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
@@ -94,6 +168,25 @@ def center_window(root, width, height):
     position_top = int(screen_height / 2 - height / 2)
     position_right = int(screen_width / 2 - width / 2)
     root.geometry(f'{width}x{height}+{position_right}+{position_top}')
+
+
+def plot_sentiment_distribution(positive_count, negative_count):
+    plot_window = tk.Toplevel(root)
+    plot_window.title("Distribuzione del Sentiment")
+
+    labels = ['Positivo', 'Negativo']
+    sizes = [positive_count, negative_count]
+    colors = ['#66c2a5', '#fc8d62']
+    explode = (0.1, 0)
+
+    fig, ax = plt.subplots()
+    ax.pie(sizes, explode=explode, labels=labels, colors=colors,
+           autopct='%1.1f%%', shadow=True, startangle=90)
+    ax.axis('equal')
+
+    canvas = FigureCanvasTkAgg(fig, master=plot_window)
+    canvas.draw()
+    canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
 
 # Usare ttkbootstrap per uno stile moderno
 style = Style(theme="litera")  # Altri temi: 'darkly', 'cosmo', 'litera', etc.
