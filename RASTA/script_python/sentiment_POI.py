@@ -34,12 +34,12 @@ def calculate_sentiment(df, poi_name_or_id):
     if filtered_df.empty:
         print(f"Nessuna recensione trovata per il POI con nome o ID: {poi_name_or_id}")
         exit()
-    
-    positive_count = (filtered_df['pred_BMA'] == 'positive').sum()
-    negative_count = (filtered_df['pred_BMA'] == 'negative').sum()
 
     positive = []
     negative = []
+    neutral = []
+    positive_count = 0
+    negative_count = 0
 
     for prob in filtered_df['prob_BMA']:
         virgola = prob.find(',')
@@ -47,17 +47,40 @@ def calculate_sentiment(df, poi_name_or_id):
         p = prob[virgola+1:len(prob)-1]
         pos = float(p)
         neg = float(n)
-        positive.append(pos)
-        negative.append(neg)
 
-    distribution = [sum(positive) / len(positive), sum(negative) / len(negative)]
-    
-    sentiment = "neutro" if positive_count == negative_count else "positivo" if positive_count > negative_count else "negativo"
-    
+        if 0.45 <= pos <= 0.55:
+            neutral.append(0.5)  # Consideriamo 0.5 per le neutre per semplicità
+        else:
+            # Ricalcoliamo le probabilità per tenere conto della classe neutrale
+            scaling_factor = 1 - 0.5  # Poiché parte delle probabilità viene considerata neutrale
+            norm_pos = pos * scaling_factor
+            norm_neg = neg * scaling_factor
+            positive.append(norm_pos)
+            negative.append(norm_neg)
+
+            if pos > 0.45:
+                positive_count += 1
+            else:
+                negative_count += 1
+
+    # Somma totale delle probabilità per ciascuna classe
+    total_pos = sum(positive)
+    total_neg = sum(negative)
+    total_neu = sum(neutral)
+
+    total = total_pos + total_neg + total_neu
+
+    # Normalizziamo le probabilità
+    distribution = [total_pos / total, total_neg / total, total_neu / total]
+
+    sentiment = "neutro" if total_neu > max(total_pos, total_neg) else "positivo" if total_pos > total_neg else "negativo"
+
     poi_name = filtered_df['POI'].iloc[0]
     poi_id = filtered_df['id'].iloc[0]
-    
-    return poi_name, poi_id, sentiment, positive_count, negative_count, distribution
+
+    return poi_name, poi_id, sentiment, positive_count, negative_count, len(neutral), distribution
+
+
 
 def browse_file():
     filename = filedialog.askopenfilename(
@@ -81,7 +104,7 @@ def on_submit():
     
     try:
         df = pd.read_excel(excel_path.get())
-        poi_name, poi_id, sentiment, positive_count, negative_count, distribution = calculate_sentiment(df, poi_input)
+        poi_name, poi_id, sentiment, positive_count, negative_count, neutral_count, distribution = calculate_sentiment(df, poi_input)
         
         # Crea una nuova finestra per i risultati
         result_window = tk.Toplevel(root)
@@ -90,7 +113,7 @@ def on_submit():
 
         # Dimensioni della finestra di risultato
         result_window_width = 500
-        result_window_height = 630
+        result_window_height = 670
     
         # Ottieni le dimensioni dello schermo
         screen_width = result_window.winfo_screenwidth()
@@ -104,7 +127,7 @@ def on_submit():
         result_window.geometry(f'{result_window_width}x{result_window_height}+{position_right}+{position_top}')
         
         # Crea un widget Text
-        text_widget = tk.Text(result_window, wrap=tk.WORD, height=13, width=50)
+        text_widget = tk.Text(result_window, wrap=tk.WORD, height=15, width=50)
         text_widget.pack(pady=10)
 
         # Definisci un font in grassetto
@@ -122,11 +145,16 @@ def on_submit():
         text_widget.insert(tk.END, f"Recensioni positive: ", 'bold')
         text_widget.insert(tk.END, str(positive_count) + '\n', 'normal')
         text_widget.insert(tk.END, f"Recensioni negative: ", 'bold')
-        text_widget.insert(tk.END, str(negative_count), 'normal')
+        text_widget.insert(tk.END, str(negative_count) + '\n', 'normal')
+        text_widget.insert(tk.END, f"Recensioni neutrali: ", 'bold')
+        text_widget.insert(tk.END, str(neutral_count), 'normal')
+
 
         text_widget.insert(tk.END, '\n\nDistribuzione: ' + '\n', 'bold')
         text_widget.insert(tk.END, f"Positivo-> {distribution[0]}", 'normal')
         text_widget.insert(tk.END, f"\nNegativo-> {distribution[1]}", 'normal')
+        text_widget.insert(tk.END, f"\nNeutrale-> {distribution[2]}", 'normal')
+
 
         # Applica lo stile al testo in grassetto
         text_widget.tag_config('bold', font=bold_font)
@@ -136,17 +164,22 @@ def on_submit():
         text_widget.config(state=tk.DISABLED)
 
         # Crea il grafico a torta
-        labels = ['Positivo', 'Negativo']
+        labels = ['Positivo', 'Negativo', 'Neutrale']
 
         pos = distribution[0]
         neg = distribution[1]
-        sizes = [pos, neg]
-        colors = ['#66c2a5', '#fc8d62']
-        explode = (0.1, 0)  # Esplodi solo il primo pezzo
+        neut = distribution[2]
+        sizes = [pos, neg, neut]
+        colors = ['#66c2a5', '#fc8d62', '#FFD700']  # Verde, Arancione, Giallo
+
+        # Filtra i valori zero per evitare la sovrapposizione
+        filtered_labels = [label for label, size in zip(labels, sizes) if size > 0]
+        filtered_sizes = [size for size in sizes if size > 0]
+        filtered_colors = [color for color, size in zip(colors, sizes) if size > 0]
 
         fig, ax = plt.subplots()
-        ax.pie(sizes, explode=explode, labels=labels, colors=colors,
-               autopct='%1.1f%%', shadow=True, startangle=90)
+        ax.pie(filtered_sizes, labels=filtered_labels, colors=filtered_colors,
+               autopct='%1.1f%%', startangle=140, pctdistance=0.85, shadow=True)
         ax.axis('equal')  # Garantisce che il grafico sia un cerchio
 
         # Aggiungi il grafico alla finestra dei risultati
@@ -158,35 +191,12 @@ def on_submit():
         messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
 
 
-    
-    except Exception as e:
-        messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
-
 def center_window(root, width, height):
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
     position_top = int(screen_height / 2 - height / 2)
     position_right = int(screen_width / 2 - width / 2)
     root.geometry(f'{width}x{height}+{position_right}+{position_top}')
-
-
-def plot_sentiment_distribution(positive_count, negative_count):
-    plot_window = tk.Toplevel(root)
-    plot_window.title("Distribuzione del Sentiment")
-
-    labels = ['Positivo', 'Negativo']
-    sizes = [positive_count, negative_count]
-    colors = ['#66c2a5', '#fc8d62']
-    explode = (0.1, 0)
-
-    fig, ax = plt.subplots()
-    ax.pie(sizes, explode=explode, labels=labels, colors=colors,
-           autopct='%1.1f%%', shadow=True, startangle=90)
-    ax.axis('equal')
-
-    canvas = FigureCanvasTkAgg(fig, master=plot_window)
-    canvas.draw()
-    canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
 
 # Usare ttkbootstrap per uno stile moderno
 style = Style(theme="litera")  # Altri temi: 'darkly', 'cosmo', 'litera', etc.
