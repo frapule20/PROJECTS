@@ -126,9 +126,11 @@ def on_submit():
         # Imposta la geometria della finestra con la nuova posizione
         result_window.geometry(f'{result_window_width}x{result_window_height}+{position_right}+{position_top}')
         
+
         # Crea un widget Text
         text_widget = tk.Text(result_window, wrap=tk.WORD, height=15, width=50)
         text_widget.pack(pady=10)
+        text_widget.config(bg='#A4224B', fg='white')  # Imposta il colore di sfondo e il colore del testo
 
         # Definisci un font in grassetto
         bold_font = tkFont.Font(weight="bold", size=12)
@@ -137,9 +139,9 @@ def on_submit():
         # Inserisci i risultati nel widget Text
         text_widget.insert(tk.END, f"Il sentiment del POI ", 'normal')
         text_widget.insert(tk.END, poi_name, 'bold')
-        text_widget.insert(tk.END, ' con id ', 'normal')
+        text_widget.insert(tk.END, ' con id "', 'normal')
         text_widget.insert(tk.END, poi_id, 'bold')
-        text_widget.insert(tk.END, ' è: ', 'normal')
+        text_widget.insert(tk.END, '" è: ', 'normal')
         text_widget.insert(tk.END, sentiment + '\n' + '\n', 'bold')
 
         text_widget.insert(tk.END, f"Recensioni positive: ", 'bold')
@@ -151,9 +153,9 @@ def on_submit():
 
 
         text_widget.insert(tk.END, '\n\nDistribuzione: ' + '\n', 'bold')
-        text_widget.insert(tk.END, f"Positivo-> {distribution[0]}", 'normal')
-        text_widget.insert(tk.END, f"\nNegativo-> {distribution[1]}", 'normal')
-        text_widget.insert(tk.END, f"\nNeutrale-> {distribution[2]}", 'normal')
+        text_widget.insert(tk.END, f"Positivo-> {distribution[0]:.3f}", 'normal')
+        text_widget.insert(tk.END, f"\nNegativo-> {distribution[1]:.3f}", 'normal')
+        text_widget.insert(tk.END, f"\nNeutrale-> {distribution[2]:.3f}", 'normal')
 
 
         # Applica lo stile al testo in grassetto
@@ -170,17 +172,21 @@ def on_submit():
         neg = distribution[1]
         neut = distribution[2]
         sizes = [pos, neg, neut]
-        colors = ['#66c2a5', '#fc8d62', '#FFD700']  # Verde, Arancione, Giallo
+        colors = ['#66C266', '#FF6666', '#FFEE66']  # Verde sfumato, Rosso sfumato, Giallo sfumato
 
         # Filtra i valori zero per evitare la sovrapposizione
         filtered_labels = [label for label, size in zip(labels, sizes) if size > 0]
         filtered_sizes = [size for size in sizes if size > 0]
         filtered_colors = [color for color, size in zip(colors, sizes) if size > 0]
 
+
+
         fig, ax = plt.subplots()
+
         ax.pie(filtered_sizes, labels=filtered_labels, colors=filtered_colors,
                autopct='%1.1f%%', startangle=140, pctdistance=0.85, shadow=True)
         ax.axis('equal')  # Garantisce che il grafico sia un cerchio
+
 
         # Aggiungi il grafico alla finestra dei risultati
         canvas = FigureCanvasTkAgg(fig, master=result_window)
