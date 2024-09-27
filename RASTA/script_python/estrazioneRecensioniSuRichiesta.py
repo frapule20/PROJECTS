@@ -35,15 +35,21 @@ def aggiungi_recensioni(poi_id, recensioni_per_location, api_key):
     nuove_recensioni = 0
     if 'data' in REC:
         for elemento in REC['data']:
-            id_rec = elemento.get('id')
-            id_loc = elemento.get('location_id')
+            id_rec = str(elemento.get('id'))
+            id_loc = str(elemento.get('location_id'))
             data = elemento.get('published_date')
             url = elemento.get('url')
             rating = elemento.get('rating')
             recensione = elemento.get('text')
 
+            #print(type(id_loc))
+            #print(recensioni_per_location.keys())
+
+            print(f"ID POI: {id_loc}")
             if id_loc not in recensioni_per_location:
+                print('True')
                 recensioni_per_location[id_loc] = {}
+               
 
             if id_rec not in recensioni_per_location[id_loc]:
                 recensioni_per_location[id_loc][id_rec] = {
@@ -73,11 +79,12 @@ def main(poi_input):
     if poi_id is None:
         messagebox.showerror("Errore", "Non esiste alcun POI con quel nome/id.")
         return
-    
+    '''
     # Verifica se ci sono recensioni già presenti nel database per questo POI
     if poi_id in recensioni_per_location:
         messagebox.showinfo("Informazione", "Le recensioni relative a quel POI sono già presenti nel database.")
         return
+        '''
     
     # Recupera le recensioni dall'API
     nuove_recensioni = aggiungi_recensioni(poi_id, recensioni_per_location, api_key)
