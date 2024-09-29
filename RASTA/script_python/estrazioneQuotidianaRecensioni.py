@@ -46,7 +46,7 @@ items_list = list(poi_dict.items())
 last_processed_index = load_last_processed_poi()
 
 # Numero di POI da processare ogni giorno
-num_poi_per_day = 3
+num_poi_per_day = 5
 
 # Calcolo gli indici dei prossimi POI da elaborare
 start_index = last_processed_index
