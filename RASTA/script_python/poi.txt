@@ -9,12 +9,10 @@
 17785314: Pieve di Sant'Antonio Abate, Monterubiaglio
 17780645: Chiesa di Sant'Antonio Abate, Monterubiaglio
 17781582: Chiesa Di Sant'antonio Abate, Monterubiaglio
-617225: Velia's Cooking Style, Monterubiaglio
 11851556: Bottega del Castello della Sale, Ficulle
 10384019: Cirulli - Aziende Agricole, Ficulle
 12673247: Castello di Madonna Antonia, Castel Viscardo
 17780814: chiesa della S.S. Annunziata, Castel Viscardo
-27514189: Parrucchiera Giulia, Castel Viscardo
 13436641: Museo dei Cicli Geologici, Allerona
 13436639: Chiesa di San Michele Arcangelo, Allerona
 4828006: Borgo Antico Bar, Allerona
@@ -142,7 +140,6 @@
 24878195: Piazza Santa Chiara, Assisi
 23958061: Cibó Assisi Food&drink, Assisi
 12283255: Parco Regina Margherita, Assisi
-5484556: Cafe' Ivancich Di Passeri Stefano, Assisi
 14292725: Iacopi, Assisi
 8073317: Piero Pieri, Assisi
 12810910: Arco di Via Santa Chiara, Assisi
@@ -203,7 +200,6 @@
 12100945: Museo Della Porziuncola, Santa Maria degli Angeli
 196229: Basilica di Santa Maria degli Angeli, Santa Maria degli Angeli
 15309616: Libreria Internazionale Francescana, Santa Maria degli Angeli
-25188671: Bar Mari- La Piccola Pasticceria, Santa Maria degli Angeli
 4007731: Sapori dall'Umbria, Assisi
 6849366: Terra Umbra Antica, Santa Maria degli Angeli
 16929203: SORPRENDIMI UMBRIA, Assisi
@@ -215,7 +211,6 @@
 26310190: Scelta Di Vino, Bastia Umbra
 13427931: Noleggio E-Bike Biciclette Elettriche Assisi Umbria, Santa Maria degli Angeli
 6481309: Fiori E Fantasia, Santa Maria degli Angeli
-4412956: Bar minelli, Assisi
 15696957: Porta Sant'Angelo, Bastia Umbra
 15691063: Umbria guida turistica ed escursionistica, Assisi
 15528611: Chiesa Collegiata di Santa Croce, Bastia Umbra
@@ -282,7 +277,6 @@
 12527654: Parrocchia di Maria SS. Assunta in Pieve Fanonica, Foligno
 12815827: Parchi di Studio e Riflessione, Attigliano
 13908554: Chiesa di San Lorenzo Martire, Attigliano
-26319950: Wine and Food Experience with Private Sommelier, Roma
 13908579: Castello di Giove, Giove
 13908558: Chiesa Parrocchiale di Santa Maria Assunta, Giove
 20793972: Cappella Di San Rocco, Giove
@@ -310,7 +304,6 @@
 6902371: Antiquarium Comunale di Baschi, Baschi
 3649302: Barberani Wine, Baschi
 5279917: MUVIS - Museo del Vino, Castiglione in Teverina
-24960443: Bar Del Corso, Castiglione in Teverina
 24117489: In Piazza Di Zannini Serena, Castiglione in Teverina
 19460273: Chiesa San Filippo E Giacomo, Castiglione in Teverina
 18955343: Rocca Monaldeschi, Castiglione in Teverina
@@ -415,7 +408,6 @@
 17539784: Chiesa Santa Maria di Pietrarossa, Trevi
 10663992: Tartufi e Funghi Fortunati Antonio, Trevi
 11921065: Beverly Pepper – Il dono di Icaro, Spoleto
-28003030: Piazza Ettore Rolli, Roma
 17412884: Castello Di Acera, Campello sul Clitunno
 10430948: Rafting Nomad, Vallo di Nera
 12150560: Chiesa di San Matteo, Cannara
@@ -426,7 +418,6 @@
 19888846: Tili 21, Assisi
 7040073: Chiesa di Santa Maria della Visitazione, Cascia
 8756435: Statua Di Santa Rita, Cascia
-5932215: Salus Caffè Bistrot, Cascia
 6628840: Chiesa di San Francesco, Cascia
 6403608: Zafferano Purissimo di Cascia, Cascia
 12094246: Ufficio Informazione e Accoglienza Turistica, Cascia
@@ -451,7 +442,6 @@
 15558149: Bolsenatour, Bolsena
 14980187: Azienda Agricola e Frantoio Battaglini - Frantoio Antica Tuscia, Bolsena
 3343163: Lago di Bolsena, Bolsena
-23485722: Bar Del Porto, Bolsena
 8599103: Spiaggetta di Masi Michele, Bolsena
 8398873: La Medusa, Bolsena
 23301387: Palazzo del Drago, Bolsena
@@ -537,13 +527,11 @@
 12731891: Chiesa Parrocchiale di San Giacomo Maggiore, Piedicolle
 27946173: Rupe Tremante, Soriano nel Cimino
 12728166: Chiesa di San Lorenzo, Collazzone
-5932285: Bar Montecristo, Collazzone
 28014867: Chiesa Di Santa Maria Assunta In Cielo, Romazzano
 12728130: Chiesa di Santa Maria Assunta, Collepepe
 12728135: Chiesa della Madonna del Buon Consiglio, Collepepe
 7051888: Citerne Romaine, Collepepe
 21235121: Masseria Felicia, Sessa Aurunca
-5930936: bar dello sport, San Terenziano
 17608585: Chiesa della Madonna delle Grazie, Gualdo Cattaneo
 12396460: Antares, Corciano
 9996809: The Space Cinema, Corciano
@@ -582,7 +570,6 @@
 12275841: Parco Chico Mendez, Perugia
 19066167: Roompicapo Escape Room, Perugia
 11800681: UCI Cinemas, Perugia
-4813173: Bar L'Angolo del Caffe Perugia, Perugia
 21390050: Chiesa Della Madonna Del Vanese, Perugia
 2016178: Necropoli di Strozzacapponi, Corciano
 15513730: Veatles Group, Perugia
@@ -648,7 +635,6 @@
 12433783: Geribi Ceramiche, Deruta
 10439759: Ceramiche Fratelli Contardi, Deruta
 12879887: Ceramiche Artistiche Gialletti Giulio S.n.c., Deruta
-5941098: Bar Bellavista, Castello delle Forme
 10681711: Castello delle Forme di Marsciano, Marsciano
 21502387: Chiesa Parrocchiale di Sant'Angelo di Celle, Sant'Angelo di Celle
 13188158: Castello di Castelleone, Deruta
@@ -735,16 +721,13 @@
 4817287: Centro Olistico Stella D'oriente, Foligno
 10756267: Bernetti Enoteca, Foligno
 12528081: Stazione Foligno, Foligno
-24079799: Casa Dei Pennacchi, Treviso
 7072738: Piscina di Foligno, Foligno
 12527687: Palazzetto dello Sport Giuseppe Paternesi, Foligno
 4594293: Marco zona acconciature, Foligno
-24063652: Caffè Caffi, Treviso
 12527679: Stadio Comunale Enzo Blasone, Foligno
 7071933: Parco dei Canapè, Foligno
 12527652: Parrocchia di San Egidio in Borroni, Foligno
 26329210: Marta Gregori Yoga, Foligno
-4587995: Bar Strauss, Foligno
 12527651: Parrocchia di San Giovanni Battista in San Giovanni Profiamma, Foligno
 10435355: Birriﬁcio Fratelli Perugini, Foligno
 6154915: Nikka & Figo, Sant'Eraclio
@@ -761,14 +744,11 @@
 4942468: Extroso Abbigliamento, Foligno
 12050052: Anfiteatro Romano, Spello
 12048747: Chiesa di San Claudio, Spello
-24878656: Bar Borgo, Spello
 13908603: Chiesa di San Cristoforo, Fossato di Vico
 16663429: Le rughe, Fossato di Vico
 15849344: Torre Pubblica, Fossato di Vico
 13908590: Monastero di Santa Maria del Fonte, Fossato di Vico
 8477852: La Bottega di Merlino, Fossato di Vico
-7394102: Birrificio Millecento, Fabriano
-5932560: Bar Alimentari Scotini, Fabriano
 12263675: Castello di Colmollaro, Gubbio
 19094673: Chiesa di San Sabino, Fratta Todina
 10820499: Chiesa della Madonna delle Carceri, Monte Castello di Vibio
@@ -822,7 +802,6 @@
 12268348: Palazzo del Podestà e Torre Civica, Gualdo Tadino
 12268308: Chiesa di Santa Maria dei Raccomandati, Gualdo Tadino
 12268374: Biblioteca Comunale "Ruggero Guerrieri", Gualdo Tadino
-5927243: AfterglowPub Bar Giardino, Gualdo Tadino
 12268344: Santuario Madonna del Divino Amore, Gualdo Tadino
 12268286: Chiesa di San Facondino, Gualdo Tadino
 12268285: Santuario Madonna di Monte Camera, Gualdo Tadino
@@ -838,7 +817,6 @@
 13815161: Monastero di San Girolamo, Gubbio
 13438525: Statua di Sant'Ubaldo, Gubbio
 534401: Chiesa di Sant'Agostino, Gubbio
-4187225: Bar Padeletti, Gubbio
 13837762: Chiesa di Santa Maria Nuova, Gubbio
 7939947: Chiesa San Marziale, Gubbio
 13815187: Chiesa di Santa Maria dei Servi, Gubbio
@@ -855,7 +833,6 @@
 12848877: Chiesa di Santa Maria dei Laici, Gubbio
 534393: Chiesa di San Francesco, Gubbio
 12262801: Castello di Vallingegno, Gubbio
-23741009: Il Nuovo Bar Dello Sport, Gubbio
 13815268: Monastero Buon Gesù, Gubbio
 13817276: Chiesa della Madonna del Prato, Gubbio
 25428015: Centro storico di Gubbio, Gubbio
@@ -864,7 +841,6 @@
 10783678: Gubbio Express, Gubbio
 17396475: ENOTECA ERALDO DENTICI, Gubbio
 196185: Palazzo dei Consoli e Museo Civico, Gubbio
-6002455: Caffè Ducale Risto Bar, Gubbio
 625613: Piazza Grande, Gubbio
 10677014: Via Galeotti, Gubbio
 17412730: Botteghe Caff, Gubbio
@@ -878,7 +854,6 @@
 3177298: Basilica di Sant'Ubaldo, Gubbio
 13815213: Monastero di Sant'Antonio, Gubbio
 12262816: Abbazia d’Alfiolo, Gubbio
-24135827: Caffè Tre Ceri, Gubbio
 4411253: Parco Ranghiasci, Gubbio
 8820410: Corsa dei ceri Gubbio, Gubbio
 23989272: Chiesa Di Santa Croce Della Foce, Gubbio
@@ -893,8 +868,6 @@
 5963658: CASA DI S. UBALDO, Gubbio
 13815144: Stadio Comunale Pietro Barbetti, Gubbio
 24107651: Il Vigneto" Dal Generale", Gubbio
-23739117: Caffè & Dintorni, Gubbio
-25186339: Bar Dei Consoli, Gubbio
 25188028: Museo Arti E Mestieri Palazzo Beni, Gubbio
 7262976: Chiesa di San Domenico, Gubbio
 13417730: Dinosauri in Carne e Ossa, Gubbio
@@ -984,7 +957,6 @@
 7184426: Chiesa di Santa Lucia, Montefalco
 13908557: Chiesa di San Bartolomeo, Montefalco
 27809728: Convento Di San Fortunato, Montefalco
-24069776: Bar Tabaccheria Tordoni, Montefalco
 7943059: Santuario di Santa Chiara della Croce, Montefalco
 6672198: Cantina Fratelli Pardi, Montefalco
 2257497: Montioni Frantoio & Cantina, Montefalco
@@ -1034,7 +1006,6 @@
 20866998: Chiesa Di San Michele Arcangelo, Monterchi
 2049348: Museo Madonna del Parto, Monterchi
 3685243: Museo delle Bilance, Monterchi
-5927221: BAR Frizzino, Monterchi
 20866997: Chiesa Di San Benedetto, Monterchi
 21134860: Madonna Del Fiume, Calabritto
 13436652: Chiesa di San Michele Arcangelo, Citerna
@@ -1060,20 +1031,16 @@
 15042810: Campanile Rotondo, Città di Castello
 2373328: Pinacoteca di Palazzo Vitelli alla Cannoniera, Città di Castello
 14192647: Chiesa e chiostro di San Domenico, Città di Castello
-5923000: Bar Pinocchio, Città di Castello
 18850177: Ex Seccatoi del Tabacco, Città di Castello
 23588792: Borgo Di Montemigiano, Umbertide
-5931433: Caffè Belvedere, Città di Castello
 10422563: La Rocca, Umbertide
 5926532: Glamour food and fantasy, Umbertide
 7084827: Museo Civico di Santa Croce, Umbertide
 21261218: Romeggio, Umbertide
-10353684: Ristorante Enoteca Migliorati, Umbertide
 18454810: Worm, Umbertide
 18454809: Worm Francesca, Umbertide
 4011572: Parco Mola Casanova, Umbertide
 10378833: Enoteca Migliorati, Umbertide
-25181234: Bar Me ', Trestina
 23784393: Chiesa San Donato, Trestina
 11547649: Oratorio San Crescentino, Morra
 6351652: Chiesa di Santa Pudenziana, Narni
@@ -1113,7 +1080,6 @@
 27796523: Azienda Agricola Badini, Castiglion Fiorentino
 3217332: Buccelletti - Cantina, Castiglion Fiorentino
 13794079: Basilica Santuario Madonna del Transito, Città di Castello
-28109408: Cala Caprarese, Sardegna
 23766464: Sabatini Gin Teccognano Srl, Cortona
 25620923: Chiesa di Santa Margherita, Narni
 12155023: Porta Ternana, Narni
@@ -1138,8 +1104,6 @@
 23922068: ASP Beata Lucia di Narni, Narni
 4563616: Abbazia di San Casciano, Narni Scalo
 6474876: Mulino Dei Marchesi Eroli, Narni Scalo
-5941130: Caffè Rinalducci, Narni Scalo
-5544492: Caffè Millennium, Narni
 21147653: Tenuta Baroni Campanino, Assisi
 10597890: Monte Vettore, Montemonaco
 4163427: Lago di Pilato, Montemonaco
@@ -1240,11 +1204,9 @@
 10744369: Monumento a Lucio Battisti, Poggio Bustone
 13661897: Chiesa di San Giovanni Battista, Poggio Bustone
 10759261: Convento San Giacomo, Poggio Bustone
-14769199: Fly The Apennines, Roma
 23818072: Chiesa Dello Spirito Santo, Chia
 7080995: Parco delle Cascate di Chia del Fosso Castello, Chia
 15119718: La Chiocciola dei Mostri, Bomarzo
-8566732: Area Archeologica di Ferento, Viterbo
 25558469: Area archeologica del SS Salvatore, Grotte Santo Stefano
 13908573: Chiesa Parrocchiale di Santo Stefano, Grotte Santo Stefano
 24893011: Tuscia Tennis Club, Montefiascone
@@ -1261,7 +1223,6 @@
 4163515: Cimitero di Guerra di Bolsena, Montefiascone
 12827886: Centro Ippico Podere La Palombara, Montefiascone
 4505037: Rocca dei Papi, Montefiascone
-20908273: Via Francigena Tappa 39 Montefiascone - Viterbo, Montefiascone
 17423158: BELVEDERE - Drinks & Music, Montefiascone
 12403942: Cantina Stefanoni, Montefiascone
 15266261: Grotta delle Apparizioni, Marta
@@ -1348,7 +1309,6 @@
 2317477: Pinacoteca Comunale Palazzo Vallemani, Assisi
 12103403: La Bottega Acquerelli, Assisi
 12962830: Rocca Minore, Assisi
-4923159: Bar giardini San Lorenzo, Assisi
 6972607: Annette Jolie, Assisi
 3157705: Santa Maria sopra Minerva, Assisi
 10512016: Domus Romane di Assisi, Assisi
@@ -1373,7 +1333,6 @@
 27110406: Dancing Tre Valli, Spoleto
 2260527: Teodelapio, Spoleto
 7058223: Museo della Ferrovia Spoleto Norcia, Spoleto
-5927185: Pasticceria Bar Vincenzo srl, Spoleto
 12016484: Laboratorio Orafo Daniela Durante, Spoleto
 11919582: Torre dell’Olio, Spoleto
 26589123: Bibetto, Spoleto
@@ -1386,7 +1345,6 @@
 11919629: Arnaldo Pomodoro – Colonna del Viaggiatore, Spoleto
 4410123: Chiesa di San Ponziano, Spoleto
 23756509: La Bottega delle Cialde, Spoleto
-5922657: Bar Commercio, Spoleto
 3214976: Parrocchia di San Gregorio Maggiore, Spoleto
 7090233: Ponte Sanguinario, Spoleto
 13530974: Your Personal Driver, Spoleto
@@ -1395,7 +1353,6 @@
 7008482: Chiesa di San Rocco, Sansepolcro
 10785139: Fondazione Piero della Francesca - Fondazione ONLUS, Sansepolcro
 1598823: Aboca Museum, Sansepolcro
-5923910: Caffè Delle Stanze, Sansepolcro
 3753885: Cattedrale di San Giovanni Evangelista, Sansepolcro
 18510683: Spazio Bernardini Fatti, Sansepolcro
 5923673: Happy Bar, Sansepolcro
@@ -1446,7 +1403,6 @@
 23795874: Chiesa Di Sant'Antonio e Santa Maria Goretti, Caramanico Terme
 4703380: Parco del Lavino, Scafa
 13195956: Grangia di San Giorgio, Roccamorice
-27984621: Birrificio Artigianale Belvedere, Roccamorice
 12882645: Chiesa della SS.ma Annunziata o del Barone Zambra, Roccamorice
 12791875: Chiesa di San Donato V.M., Roccamorice
 18935940: Genzianeria Officinale Belvedere, Roccamorice
@@ -1465,7 +1421,6 @@
 13799322: Centro Storico di Bolognano, Bolognano
 12827678: Chiesa di Sant'Antonio Abate, Bolognano
 17848581: Adriatictravels, Pescara
-25295074: Beautiful Gallery, Bologna
 14009241: Campo Sportivo, Scafa
 12723531: Chiesa di Santa Maria del Carmelo, Scafa
 23795579: Giardino Giuseppe Tontodonati, Scafa
@@ -1559,7 +1514,6 @@
 6888121: Castello Piccolomini di Capestrano, Capestrano
 12952466: Chiesa di San Michele Arcangelo, Pietranico
 15221936: Parrocchia dei Santi Valentino e Damiano, San Valentino d'Abruzzo
-3592166: Ristorante Pizzeria Oratorio, Alanno
 13799344: Chiesa del Sacro Cuore di Gesu, Bolognano
 15221889: Chiesa del Sacro Cuore di Gesu, Piano d'Orta
 15221965: Tholos della Signora Margherita, Lettomanoppello
@@ -1621,7 +1575,6 @@
 23808930: Il Tasso Birroteca, Giulianova
 15098983: Punto Informazioni ed Accoglienza del Polo Museale Civico, Giulianova
 16742970: unica beach, Giulianova
-23554290: Caffè La Cupola, Giulianova
 23651910: Pinacoteca Civica Vincenzo Bindi, Giulianova
 13531500: Cinema Moderno Multiscreen, Giulianova
 23487978: Monumento A Gaetano Braga, Giulianova
@@ -1691,7 +1644,6 @@
 10634673: Borgo Medievale di Roccascalegna, Roccascalegna
 17654309: Arca della Pace, Roccascalegna
 9457245: Chiesa dei Santi Cosma e Damiano, Roccascalegna
-23834913: Microbirrificio Delphìn - Tap Room, Roccascalegna
 17549396: Chiesa di Santa Caterina D'Alessandria, Archi
 23894563: Torre Civica Dell'orologio, Archi
 23761197: Parrocchia Di Santa Maria Dell'olmo, Archi
@@ -1702,7 +1654,6 @@
 23769552: Centro Storico Archi, Archi
 23689798: Monumento Ai Caduti, Archi
 12997166: Porta da Monte, Ancarano
-5923857: Caffè Movida, Ancarano
 12787197: Chiesa della Madonna della Misericordia, Ancarano
 13166604: Chiesa di Santa Maria della Pace, Ancarano
 26862694: Tenuta Antonini, Ancarano
@@ -1710,14 +1661,10 @@
 13339388: Chiesa del Sacro Cuore di Gesu, Sant'Egidio alla Vibrata
 12723089: Chiesa della Madonna delle Grazie, Torano Nuovo
 12717724: Chiesa di San Flaviano, Torano Nuovo
-5932048: Bar Senso Unico, Torano Nuovo
 15104895: Cantina Emidio Pepe, Torano Nuovo
-12558488: Bowling delle stelle, Ascoli Piceno
 19291414: Chiesa Ss. Cosma e Damiano, Mozzano
 4295969: Tenuta Seghetti Panichi, Castel di Lama
 23027665: Church of Saint Anthony of Padua, Campolungo-Villa Sant'Antonio
-26880604: Weedy point H24, Ascoli Piceno
-3369253: Via delle Stelle, Ascoli Piceno
 15013262: Valter Mattoni - Azienda Agricola, Castorano
 12787700: Chiesa di Santa Felicita, Colli Del Tronto
 14176885: BUSINESS CLASS - Autonoleggio con Conducente, Colli Del Tronto
@@ -1730,7 +1677,6 @@
 5483104: Chiesa di Santa Maria delle Grazie, Anversa degli Abruzzi
 13162926: Chiesa di Santa Maria delle Grazie, Castrovalva
 4371263: Riserva Naturale Gole del Sagittario, Anversa degli Abruzzi
-10127858: Bar L'angolo delle Grazie, Anversa degli Abruzzi
 15087687: Oasi WWF Sorgenti del Cavuto, Anversa degli Abruzzi
 9802643: Parrocchia di Santa Maria Ad Nives, Anversa degli Abruzzi
 8536172: Chiesa di San Marcello, Anversa degli Abruzzi
@@ -1751,7 +1697,6 @@
 23921591: Belvedere Piazza Indipendenza, Canosa Sannita
 23743716: Chiesetta Dell'addolorata, Canosa Sannita
 12993872: Cantina Sociale Sannitica, Canosa Sannita
-5928900: 4 Volte Caffè, Arielli
 24856795: Fontana Delle Chiavi, Arielli
 10676808: Parrocchia di San Michele Arcangelo, Arielli
 23640768: Chiesa Della Madonna Delle Grazie, Arielli
@@ -1823,14 +1768,11 @@
 23460496: Statua di Gioacchino Murat, Ateleta
 12966287: Museo della Civiltà Contadina, Ateleta
 23586764: Le Tartufaie, Ateleta
-4701265: La Bottega del Dolce Il Gelato Artigianale, Ateleta
-5928684: BAR Zenit PUB, Ateleta
 26574816: spiaggeta di Ateleta, Ateleta
 9581448: Chiesa di San Gioacchino, Ateleta
 24018177: Casa Pollice, Gamberale
 23617740: Laghetto Di Gamberale, Gamberale
 27930308: Area Faunistica Del Cervo, Ateleta
-10796313: Museo Civico della Pietra “Chiara Marinelli”, Pescopennataro
 15617602: Chiesa della Madonna del Carmine, Sant'Angelo del Pesco
 15606031: Chiesa di San Michele Arcangelo, Sant'Angelo del Pesco
 12869935: Monumento ai Caduti di Limmari, Pietransieri
@@ -1873,7 +1815,6 @@
 14107747: Fontana San Rocco, Casalanguida
 23651804: Borgo e Masseria Policorvo, Carpineto Sinello
 15151659: Torre Campanaria di Atri, Atri
-27999129: Caffè Duomo, Atri
 10331078: Museo Capitolare di Atri, Atri
 7116669: La Cisterna Romana, Atri
 13441871: Biblioteca comunale, Atri
@@ -1883,7 +1824,6 @@
 13132014: Teatro Romano, Atri
 13485572: Chiesa di Santa Maria Assunta, Leofara
 2615496: Chiesa San Francesco, Atri
-24962509: Caffè' I Portici, Atri
 9792610: Chiesa di Sant'Agostino, Atri
 9792761: Teatro Comunale Di Atri, Atri
 23777274: Museo Archivio Musicale Antonio Di Jorio, Atri
@@ -1946,7 +1886,6 @@
 15191006: Parco Della Pace, Pineto
 12083568: IAT Pineto - Informazione & Accoglienza Turistica, Pineto
 12849235: Stabilimento Balneare La Florida, Pineto
-5923948: ZANZIBARCAFE PINETO "EVENTS", Pineto
 13454338: Lido San Marco da Leone, Pineto
 15321361: Lungomare, Pineto
 21243929: Casa Anas, Pineto
@@ -1964,14 +1903,12 @@
 8797034: Chiesa di San Rocco, Scanno
 12818630: Centro Commerciale I Marsi, Avezzano
 13646249: Billionaire Palace, Avezzano
-23948680: Bar MaRí - Caffetteria Pasticceria, Avezzano
 6689169: Evoluzione, Avezzano
 13449615: Villa Romana, Avezzano
 13954861: Stadio dei Pini, Avezzano
 13445451: Stadio dei Marsi, Avezzano
 15848131: Santuario della Madonna del Suffragio, Avezzano
 17695463: Chiesa di San Giuseppe, Avezzano
-26813467: Aperibar Number Eight, Avezzano
 20728981: Pro Loco, Avezzano
 8749425: Parrocchia Cattedrale San Bartolomeo, Avezzano
 13954909: Chiesa del Sacro Cuore di Gesù, Avezzano
@@ -1988,7 +1925,6 @@
 12683687: Palazzo Municipale, Avezzano
 12958035: Monumento ai Caduti per la Patria, Avezzano
 8768874: Museo Lapidario Marsicano, Avezzano
-5937390: Touch Bar Avezzano, Avezzano
 9585582: Chiesa della Santissima Trinità, Avezzano
 12188599: Aia dei Musei, Avezzano
 13393104: Villa Palazzi, Avezzano
@@ -2004,8 +1940,6 @@
 12966051: Parrocchia di San Rocco, Avezzano
 23820790: Chiesa Di Santa Maria A Cese Dei Marsi, Avezzano
 23972169: Antica Pasticceria Carmignani, Avezzano
-6624033: Caffe' Garibaldi, Avezzano
-6624037: Bar Garibaldi Cafe', Avezzano
 12309902: Art Beer, Avezzano
 8749360: Castello Piccolomini di Balsorano, Balsorano Vecchio
 13137647: Fontana Cinquecentesca, Balsorano Vecchio
@@ -2055,7 +1989,6 @@
 12869689: Convento di San Colombo - Dimora storica, Barisciano
 23643616: Antico Ponte Romano, Barisciano
 5931583: Marilyn Pub, Poggio Picenze
-5931713: Bar Pinzone, Poggio Picenze
 25152341: La Joie De Vivre, Barisciano
 23650837: Chiesa Di Santa Maria Fuori La Porta, Petogna
 12818355: Porta Medicea, Santo Stefano di Sessanio
@@ -2099,7 +2032,6 @@
 12802104: Parrocchia di San Nicola di Bari, Civitella Alfedena
 14236642: Sentiero H3 Villetta Barrea - Pian del Molino, Villetta Barrea
 14236669: Sentiero H3 Villetta Barrea - Prati del Mulino, Villetta Barrea
-4470494: Caffe Il Camoscio, Civitella Alfedena
 4607516: Centro Visita di Civitella Alfedena, Civitella Alfedena
 10638321: Area Faunistica del Lupo, Civitella Alfedena
 6994537: Antiquarium della Civiltà Safina, Barrea
@@ -2113,7 +2045,6 @@
 24988012: Il Monumento All'emigrante, Basciano
 24987993: La Torre Dell'orologio, Basciano
 13089154: Chiesa di San Giacomo Apostolo, Basciano
-5926512: Caffè De La Place, Basciano
 12787212: Chiesa di Santa Maria del Soccorso, Penna Sant'Andrea
 13459452: Chiesa di Santa Giusta Vergine e Martire, Penna Sant'Andrea
 24978240: Chiesa Di Santa Maria Della Misericordia, Forcella
@@ -2151,7 +2082,6 @@
 24046582: Piazza Saliceti, Mosciano Sant'Angelo
 21400567: OrquiDea Fe.Ma. SRLS, Mosciano Sant'Angelo
 4356713: Osservatorio Astronomico Colle Leone, Mosciano Sant'Angelo
-25365750: Caffè L'alba, Mosciano Sant'Angelo
 9456971: Chiesa di San Michele Arcangelo, Mosciano Sant'Angelo
 24046752: Il Belvedere Meridionale, Mosciano Sant'Angelo
 18344270: Torre Acquaviva, Mosciano Sant'Angelo
@@ -2159,7 +2089,6 @@
 10392456: Chiesa di San Pietro ad Spoltinum, Mosciano Sant'Angelo
 6679949: Azienda Agricola Faraone, Giulianova
 5923181: Smile BAR, Mosciano Sant'Angelo
-5931117: Bar Olimpus 2, Mosciano Sant'Angelo
 9991829: WILD WEST ABRUZZO, Mosciano Sant'Angelo
 13563275: Torre Medievale, Bisegna
 15030752: Centro Storico, Bisegna
@@ -2199,7 +2128,6 @@
 15234541: Casa di Francesco Paolo Michetti, Tocco da Casauria
 10292042: Convento di Santa Maria del Paradiso, Tocco da Casauria
 15080666: Chiesa di San Rocco, Tocco da Casauria
-6200125: "Bar Sacchetta" Caffetteria Dolci Antichi Snc, Bomba
 15211145: Casa natale di Silvio Spaventa, Bomba
 15834129: Parco Comunale, Bomba
 9465388: Chiesa di Santa Maria Del Popolo, Bomba
@@ -2248,7 +2176,6 @@
 13568638: Villa De Lollis, Casalincontrada
 12865611: Chiesa di Santa Maria Calvona, Chieti
 3752850: Museo Archeologico La Civitella, Chieti
-28039427: Babonbo Rome Baby Gear Rentals, Roma
 13229379: Belvedere Civitella, Chieti
 13218401: Villa Giuliante, Chieti
 23631676: Ex Ospedale Militare e Convento Di Sant'andrea, Chieti
@@ -2257,7 +2184,6 @@
 9797547: Chiesa di Santa Maria in Civitellis, Chieti
 13118880: Monumento ai Caduti, Chieti
 13520161: Cimitero Comunale, Chieti
-26855434: Gelateria Caffettieria La dolcevita, Chieti
 10188008: Chiesa di Sant'Antonio Abate, Vasto
 23950566: Sacrario Dei Caduti Di Guerra Cimitero Comunale, Chieti
 13118989: Palazzo De Sanctis Ricciardone, Chieti
@@ -2279,14 +2205,11 @@
 13814943: Chiesa di San Biagio Vescovo, Bussi sul Tirino
 15133164: Torre di Sutrium, Bussi sul Tirino
 17604008: Torre longobarda triangolare, Bussi sul Tirino
-5937214: Bar Moscone, Bussi sul Tirino
 13137844: Chiesa di Maria Santissima Assunta, Bussi sul Tirino
 23684818: Chiesa Di San Lorenzo, Bussi sul Tirino
 15080753: Chiesa di Sant'Anna, Bussi sul Tirino
 23909582: Canoa sul Tirino con Majellando, Bussi sul Tirino
 8765646: Chiesa di Santa Maria di Cartignano, Bussi sul Tirino
-26305975: Bar Tabacchi "La perla nera", Collepietro
-26306001: Bar "La perla nera", Collepietro
 15080889: Borgo Medievale di Collepietro, Collepietro
 15080986: Borgo medievale, Collepietro
 14192664: Piazza della Liberta, Popoli
@@ -2400,7 +2323,6 @@
 10358520: Palazzo Farnese, Campli
 2634103: La Chiesa di San Giovanni Battista, Campli
 10358534: Chiesa di San Francesco, Campli
-24022694: Caffè Farnese, Campli
 2640947: Santuario della Scala Santa, Campli
 24016915: Chiesa Di San Paolo, Campli
 12827905: Piazza Vittorio Emanuele II, Campli
@@ -2511,7 +2433,6 @@
 9997041: Cunicoli di Claudio, Avezzano
 23875853: Tigre Amico Piedicolle, Montereale
 13526319: Centro Storico, Montereale
-5922628: Ristorante Pizzeria Bar LA GIARA, Capitignano
 15635795: Chiesa della Madonna della Neve, Montereale
 10432911: Chiesa del Beato Andrea, Montereale
 15147756: Chiesa di Santa Maria Assunta, Montereale
@@ -2589,7 +2510,6 @@
 10378877: Pista Moscufo DBM Race, Moscufo
 10769426: Oasi Dello Spirito, Pescara
 21034015: Maneggio Rio Tavo, Città Sant'Angelo
-27916195: Azienda Agricola Km0, Sicilia
 10629804: Parrocchia di San Panfilo, Spoltore
 13127836: Belvedere di Spoltore, Spoltore
 24005762: Chiesa Di Santa Maria Di Frisano, Spoltore
@@ -2600,7 +2520,6 @@
 12870184: Torre De Sterlich, Spoltore
 4697564: Donna Cultura, Spoltore
 13272918: Chiesa della Beata Vergine del Monte Carmelo, Montesilvano
-6199981: Bar Rosticceria "da Vittorio", Pescara
 11960181: Lago VestinAzzurro, Montesilvano
 6954556: Bingo Orione, Montesilvano
 14022208: Parco Giochi Kubo L'Universo del Bambino-Family, Montesilvano
@@ -2620,9 +2539,7 @@
 12956007: Chiesa di San Gaetano, Chieti
 15242109: Palazzo comunale, Caramanico Terme
 26685953: Belvedere il Castello, Caramanico Terme
-4808897: Bar Tabacchi La Sorgente, Caramanico Terme
 10729124: Chiesa di San Bartolomeo Apostolo, Sant'Eufemia a Maiella
-4698484: Bar Trattoria Majella, Sant'Eufemia a Maiella
 2342735: Caseificio f.lli Del Mastro, Sant'Eufemia a Maiella
 23232098: Trivai Abruzzo Holidays, Caramanico Terme
 10713851: Museo Naturalistico ed Archeologico "Paolo Barrasso", Caramanico Terme
@@ -2671,7 +2588,6 @@
 12713170: Chiesa di Santa Maria Assunta, Gissi
 21178533: Chiesa Di Santa Lucia In Gissi, Gissi
 13563038: Chiesa di San Bernardino, Gissi
-5926555: Colossal Eno-bar & Caffetteria, Carsoli
 13505777: Chiesa di San Nicola di Bari, Villaromana
 4341207: Progetti Sotto il Cielo, Carsoli
 8797145: Chiesa Santa Maria in Cellis, Carsoli
@@ -2693,7 +2609,6 @@
 13505614: Grotta del Cervo, Pietrasecca
 2292411: Grotte di Pietrasecca, Pietrasecca
 10687795: Borgo di Pietrasecca, Carsoli
-23039154: Bar Del Duca, Pietrasecca
 26361795: Borgo di Pietraseccca, Pietrasecca
 9709733: Chiesa di Santa Maria o del Purgatorio, Carunchio
 13939749: Chiesa Rurale di Santa Lucia, Carunchio
@@ -2723,7 +2638,6 @@
 23815264: Casa Di Giuseppe Dell'orefice, Fara Filiorum Petri
 25271806: Giardino Il Laghetto, Fara Filiorum Petri
 25275581: Chiesetta S. Antonio Ai Colli, Fara Filiorum Petri
-23766197: Accademia Sannita Sport Equestri, Benevento
 13531388: Chiesa di Sant'Agata, Fara Filiorum Petri
 15143677: Chiesa di Sant'Eufemia, Fara Filiorum Petri
 12815653: Chiesa della Madonna del Colle, San Martino Sulla Marrucina
@@ -2768,7 +2682,6 @@
 15218106: Palazzo Mucci, Pollutri
 9750252: Chiesa del Santissimo Salvatore, Pollutri
 15181044: Palazzo Magnarapa, Casalbordino
-5923687: Gelateria Polo Nord dal 1929, Casalbordino
 13535974: Chiesa di San Nicola di Bari, Casalbordino
 13535947: Chiesa di San Nicola di Bari, Casalbordino
 14192756: Pineta Colle dei Sospirit, Scerni
@@ -2886,10 +2799,8 @@
 15265842: Chiesa della Maddalena, Castel di Sangro
 16718067: Museo internazionale della Pesca a Mosca Stanislao Kuckiewicz, Castel di Sangro
 23680515: Chiesa Dei Santi Cosma e Damiano, Castel di Sangro
-3849088: Alex Saloon Caffetteria Birreria, Castel di Sangro
 13815080: Chiesa della Madonna delle Grazie, Castel di Sangro
 7223523: Museo Teofilo Patini, Castel di Sangro
-26444932: Bar Milano, Castel di Sangro
 3708584: Fluèntia Beauty & Spa, Castel di Sangro
 13387192: Chiesa del Sacro Cuore, Castel di Sangro
 10318480: Museo dell’Alto Molise, San Pietro Avellana
@@ -2898,7 +2809,6 @@
 23413555: Montedimezzo, Vastogirardi
 2688862: Riserva Naturale Orientata e Riserva MaB Montedimezzo, Vastogirardi
 10636970: Chiesa di San Nicola di Bari, Vastogirardi
-2689105: Staffoli Horses, Isernia
 13910487: Belvedere Caporali, Castel Frentano
 23766228: Cappella N.S. Della Misericordia, Castel Frentano
 13910482: Chiesa del Monte dei Morti, Castel Frentano
@@ -2971,7 +2881,6 @@
 8732043: Museo di Arte Sacra della Diocesi di Trivento, Trivento
 12948474: Castello Ducale o Palazzo Colaneri, Trivento
 12862182: Chiesa di Santa Croce, Trivento
-5544489: Pub Rock Cafè, Trivento
 14180847: Quercia di Lozzi, San Giovanni Lipioni
 13156146: Chiesa di Santa Maria delle Grazie, Torrebruna
 10514440: Di Nardo Prodotti Tipici San Salvo, San Salvo Marina
@@ -3158,7 +3067,6 @@
 14192484: Chiesa di San Nicola di Bari, San Salvo
 15242027: Porta Terra, San Salvo
 23815838: Auditorium Aldo Moro, San Salvo
-4753292: Caffè Roma, San Salvo
 10376852: Chiesa Vecchia di San Nicola, San Salvo
 15227123: La Giostra della Memoria, San Salvo
 13152051: Museo dell'Abbazia, San Salvo
@@ -3188,7 +3096,6 @@
 10635025: Villa Comunale di Vasto, Vasto
 14079412: Villa Virginia, Vasto
 6403667: L'abitudine cafè, Vasto
-23705273: Bar Ai Portici, Vasto
 4506396: Camomilla, Vasto
 13127888: Politeama Ruzzi, Vasto
 8667126: Laboratorio ArtiBus, Vasto
@@ -3330,7 +3237,6 @@
 5931346: Bar105, Silvi Marina
 10221693: Lido L'Ombrellone, Silvi Marina
 15018165: Lungomare, Silvi Marina
-5922620: Gelateria Tiziano, Silvi Marina
 13438068: Lido Onda Marina, Silvi Marina
 7070748: Lido Shaula, Silvi Marina
 15233939: Palazzo Coppa Zuccari, Città Sant'Angelo
@@ -3347,7 +3253,6 @@
 15711150: Museolaboratorio, Città Sant'Angelo
 9589454: Cappella Del Convento Delle Clarisse, Città Sant'Angelo
 16882772: Strada del Ghetto, Città Sant'Angelo
-26494106: Retrògusto Enobirreria, Città Sant'Angelo
 9589434: Chiesa Dell'Annunziata, Città Sant'Angelo
 12727761: Chiesa di Sant'Andrea Apostolo, Collecorvino
 17847693: ASD Fair Play Collecorvino Centro Sportivo, Collecorvino
@@ -3433,7 +3338,6 @@
 13287766: Chiesa di San Pietro Martire, Pescara
 13442757: Athenee Club, Pianella
 24905225: Chiesetta Della Madonna Di Loreto, Ornano Grande
-24977214: Caffè San Giorgio, Ornano Grande
 14183624: Chiesa di San Giorgio, Ornano Grande
 24905216: Chiesetta Di San Bernardino, Ornano Grande
 23830006: Borgo Antico Colledimezzo, Colledimezzo
@@ -3476,7 +3380,6 @@
 13454239: Museo delle Armi Antiche, Martinsicuro
 8614391: Bowling Club San Benedetto, Porto d'Ascoli
 6848788: EST, Martinsicuro
-4345330: Bar Gabry, Martinsicuro
 14076404: Chiesa Madre Teresa di Calcutta, Martinsicuro
 14076635: Anfiteatro, Martinsicuro
 15234738: Piazza Cavour, Martinsicuro
@@ -3492,7 +3395,6 @@
 13461867: Campo Sportivo La Rocca, San Benedetto Del Tronto
 13478313: Torre Guelfa, San Benedetto Del Tronto
 24832277: Chiesa Parrocchiale Di San Giacomo Della Marca, Porto d'Ascoli
-4836218: Bar Grappolo D'oro, Porto d'Ascoli
 14063846: Play Planet, San Benedetto Del Tronto
 12718027: Chiesa di San Benedetto, Montemonaco
 16643746: Weedy Point H24, San Benedetto Del Tronto
@@ -3512,7 +3414,6 @@
 15226810: Palazzo comunale, Corropoli
 24972083: Centro Storico, Corropoli
 2634075: Santuario della Madonna del Sabato Santo, Corropoli
-5945185: Bar Europa, Nereto
 12727772: Chiesa di Santa Maria del Suffragio, Nereto
 27699369: Ngricca, Spinetoli
 13368288: Azienda Agricola Saladini Pilastri, Spinetoli
@@ -3541,7 +3442,6 @@
 4547957: Museo Civico Archeologico Antonio De Nino, Corfinio
 13162567: Chiesa della Madonna del Soccorso, Corfinio
 13293064: Eremo di San Terenziano, Corfinio
-6484175: Bar Caffetteria Sugar Santilli Luigi, Pratola Peligna
 15087142: Teatro Cinema Rodolfo D'Andrea, Pratola Peligna
 5924345: Lemon Cafè, Pratola Peligna
 13847229: Chiesa della Madonna della Neve, Pratola Peligna
@@ -3611,7 +3511,6 @@
 15083354: Centro storico, Farindola
 15714476: Chiesa di Santa Maria, Città Sant'Angelo
 12076522: Polo Scientifico, Farindola
-6920588: Bar Monte Camicia, Farindola
 12708857: Chiesa di San Nicola Vescovo, Farindola
 12073294: Chiesa della Beata Vergine Maria del Monte Carmelo, Penne
 12911556: Museo d'Arte Moderna e Contemporanea "MAMeC", Penne
@@ -3814,7 +3713,6 @@
 24018392: Canadian Renaissance Italy, Lanciano
 13436879: Chiesa di San Rocco, Lanciano
 13216866: Mercato Coperto, Lanciano
-4909223: Bar Piccadilly, Lanciano
 10241269: Palazzo del Capitano, Lanciano
 13199055: Convento di San Francesco, Lanciano
 10365863: Torre Civica, Lanciano
@@ -3875,7 +3773,6 @@
 17436422: Casa-Museo Gaetano Braga, Giulianova
 23474582: Salita Montegrappa, Giulianova
 12211820: Villa Castelli Montano, Giulianova
-3590975: Caffe dello Splendore, Giulianova
 3501119: Santuario della Madonna dello Splendore, Giulianova
 13201126: Chiesa di Santa Maria degli Angeli, Campli
 15226948: Chiesa di San Rocco, Giulianova
@@ -3910,7 +3807,6 @@
 13531474: Spinnaker Beach, Giulianova
 13229344: Lido Cesare, Giulianova
 23460728: Lido Paola, Giulianova
-23825633: Bar Lando, Giulianova
 9709629: Chiesa della Santissima Annunziata, Giulianova
 13439145: Palacastrum, Giulianova
 25672404: Eleven Drink & Food Bar, Giulianova
@@ -3988,7 +3884,6 @@
 9792787: Chiesa Del Santissimo Crocifisso, Sulmona
 4738341: Pasticceria Dolcidea, Sulmona
 4606341: Piscina Comunale Sulmona, Sulmona
-23728349: Magic Caffè, Sulmona
 12827651: Chiesa di Santa Lucia, Sulmona
 13305444: Chiesa di Santa Maria delle Grazie, Isola del Gran Sasso d'Italia
 246242: Gran Sasso, Abruzzo
@@ -4014,13 +3909,11 @@
 2279353: Val Fondillo, Opi
 6608469: Wildlife Adventures, Pescasseroli
 12869923: Chiesa della Madonna del Carmelo, Pescasseroli
-23656036: Bar Alle Arcate, Pescasseroli
 20199357: Pescasseroli Mostra Museo, Pescasseroli
 7688367: Chiesa di San Pietro e Paolo, Pescasseroli
 7709121: Castel Mancino, Pescasseroli
 246248: Parco Nazionale d'Abruzzo, Abruzzo
 26587568: La Pulce, Pescasseroli
-26587407: Pasticceria gelateria delizia degli elfi, Pescasseroli
 26591751: Il bosco incantato, Pescasseroli
 14079465: Fontana San Rocco, Pescasseroli
 7927512: Centro Visita di Pescasseroli, Pescasseroli
@@ -4095,10 +3988,7 @@
 10347336: Centro Storico di Scanno, Scanno
 12858549: Chiesa di Santa Maria di Costantinopoli, Scanno
 9559255: Campocatino 360 srl, Guarcino
-4506836: Bar Risorgimento, Filettino
 21331401: Chiesa San Giovanni, Filettino
-13127578: Oratorio di San Pietro Eremita, Trevi nel Lazio
-12815401: Collegiata di Santa Maria Assunta, Trevi nel Lazio
 27801928: Casa Posta, Sgurgola
 10442815: Osservatorio Astronomico di Campo Catino, Guarcino
 3229218: Riserva Naturale Zompo lo Schioppo, Morino
@@ -4124,7 +4014,6 @@
 27942904: Ch Relais & Sport Club, Altipiani di Arcinazzo
 17398490: Altipiani Adventures Park, Altipiani di Arcinazzo
 4926570: Ruderi di Camerata Vecchia, Camerata Nuova
-5944064: Abetaia Caffè, Altipiani di Arcinazzo
 10178468: Museo Civico Archeologico Villa di Traiano, Altipiani di Arcinazzo
 14938662: Chiesa di Sant'Andrea Apostolo, Jenne
 8597254: Parco Monti Simbruini, Jenne
@@ -4194,10 +4083,8 @@
 11912281: Biblioteca Casa Museo Angelo di Mario, Vallecupola
 23633294: Torre Medievale Di Vallecupola, Vallecupola
 9589414: Torrione Aragonese, Lanciano
-10350217: Caffe Metropolis, Lanciano
 9589426: Antica Cereria De Rosa Vincenzo, Lanciano
 10698023: il Corso Trento e Trieste, Lanciano
-20947670: Calzature Santamaria, Ascoli Piceno
 14109281: Palazzo Paolini Contento, Lanciano
 8796858: Palazzo Degli Studi, Lanciano
 17370779: VisitLanciano, Lanciano
@@ -4249,7 +4136,6 @@
 13114008: Chiesa della Madonna del Perpetuo Soccorso, Trasacco
 10357960: Chiesa Parrocchiale di San Giovanni Battista, Luco dei Marsi
 15087128: Chiesa della Madonna dell'Ospedale, Luco dei Marsi
-5926973: Bar Centrale Luco, Luco dei Marsi
 15087118: Chiesa di Sant'Antonio, Luco dei Marsi
 15070038: Convento dei Frati Cappuccini, Luco dei Marsi
 23850574: Chiesa Di Santa Maria, Luco dei Marsi
@@ -4266,7 +4152,6 @@
 9585356: Santuario della Madonna Di Roio, L'Aquila
 26855328: Roio Bike Park, Roio
 13799870: Palazzo Palitti, Roio Piano
-5937441: " Las Vegas Bar ", L'Aquila
 17425749: Bici e Dintorni Abruzzo, L'Aquila
 17424880: Bici e Dintorni Abruzzo, L'Aquila
 15131075: Casa della Giovane Italiana, L'Aquila
@@ -4289,7 +4174,6 @@
 23531788: Area Archeologica Di Forcona, Civita di Bagno
 10729091: Antica Cattedrale di San Massimo di Forcona, L'Aquila
 11738238: Laboratorio Artigianale Dolci Aveja, Cavalletto
-23311960: 99 Caffè Micro Torrefazione - Micro Roastery, Cavalletto
 12664225: Chiesa di Sant'Agostino, L'Aquila
 13384183: Chiesa di San Domenico, Magliano de' Marsi
 27976257: Belvedere “pascolano”, Magliano de' Marsi
@@ -4362,7 +4246,6 @@
 15110130: Chiesa di Santa Croce, Borbona
 15110154: Chiesa di Santa Restituta, Borbona
 21397541: Chiesa San Michele Arcangelo, Barbona
-13456409: Bar Da Carpentiere, Borbona
 15110145: Chiesa di Sant'Anna, Borbona
 15110469: Chiesa di San Felice, Posta
 13287923: Lido Tahiti, Pescara
@@ -4380,7 +4263,6 @@
 13455158: Chiesa di San Paolo, Pescara
 12810293: Centro Commerciale Delfino, Pescara
 13287966: Hawaii Pescespada, Pescara
-17185719: RISTORANTE PIZZERIA IL MORO, Pescara
 14913245: Complesso balneare Le Antille, Pescara
 10769421: Riserva Naturale Pineta di Santa Filomena, Pescara
 13137999: Penelope A Mare, Pescara
@@ -4395,13 +4277,11 @@
 13118857: Chiesa di San Giovanni in Pergulis, Valle San Giovanni
 10340488: Borgo di Castelbasso, Castelbasso
 13322614: Chiesa e Convento dei Cappuccini, Montorio al Vomano
-23082795: Bar Giedre, L'Aquila
 14163920: Centro storico, Montorio al Vomano
 2640908: Chiesa di San Rocco, Montorio al Vomano
 11876802: Palazzo Ricci, Mopolino
 23463010: Paesani, Montorio al Vomano
 2634097: Chiesa di S. Antonio, Montorio al Vomano
-5931496: BAR Panetta Romeo, Montorio al Vomano
 16648117: Ruderi del Forte San Carlo, Montorio al Vomano
 13123520: Lago Piaganini, Montorio al Vomano
 13821182: Stadio Comunale Pigliacelli, Montorio al Vomano
@@ -4423,7 +4303,6 @@
 23996206: Museo Delle Arti e Civiltà Contadina, Morro d'Oro
 23996222: Chiesa Della Madonna Della Pietà, Morro d'Oro
 24923849: Chiesa Di San Giovanni Battista, Roseto Degli Abruzzi
-21164268: Birrificio San Giovanni, Roseto Degli Abruzzi
 13123513: Chiesa di Santa Marina Vergine, Atri
 13439224: Chiesa di Santa Marina Vergine, Casoli
 21166266: Cantina Fratelli Barba, Roseto Degli Abruzzi
@@ -4449,19 +4328,16 @@
 9697059: Civica Raccolta D'Arte, Roseto Degli Abruzzi
 14192579: Biblioteca comunale, Roseto Degli Abruzzi
 21182911: Porta Da Piedi, Montepagano
-26243094: Essenza Caffè e Cucina, Colleranesco
 4419142: Convento Santi sette fratelli, Giulianova
 23800690: Chiesa Di San Giuseppe Di Colleranesco, Colleranesco
 23947197: Chiesa Di San Nicola A Cerratina, Pianella
 23947369: Borgo Antico Pianella, Pianella
-5931509: Caffè Degli Artisti, Pianella
 23792052: M.A.C.A. - Museo Dell' Artigianato Ceramico Abruzzese, Pianella
 14177421: Palazzo Comunale, Pianella
 12116738: Chiesa di San Domenico, Pianella
 12116752: Chiesa di Sant'Antonio Abate, Pianella
 9454502: Chiesa di Santa Maria Maggiore, Pianella
 12116843: Chiesa della Madonna del Carmine, Pianella
-24891487: Birrificio e Agripub Golden Rose di Chiappini Melania, Pianella
 23697530: Necropoli Val Fondillo, Opi
 23693202: Pro Loco Opi - Associazione Turistica, Opi
 17394398: L'ape Del Marsicano, Opi
@@ -4550,7 +4426,6 @@
 14192573: Parco Costa dei Trabocchi, Ortona
 23737502: Ex Orfanotrofio Genova Rulli, Genova-Rulli
 23443939: Centro visite e di documentazione Costa dei trabocchi, Rocca San Giovanni
-21119686: Il Trialone, Civitanova Marche
 8407763: Spiaggia dei Ripari di Giobbe, Ortona
 10538914: Punta Ferruccio, Ortona
 10213172: Chiesa di Santa Maria delle Grazie, Ortona
@@ -4569,7 +4444,6 @@
 12785713: Torre di Santa Iona, Ovindoli
 13222238: Chiesa Parrocchiale di Santa Maria di Collemarciano, Ovindoli
 17814897: Bike Tour Academy, Rovere
-26500188: Bar Castellum, Rovere
 12818816: Chiesa della Madonna delle Grazie, Rovere
 24134363: Preta Tonna, Pacentro
 8797263: Castello Cantelmo-Caldora, Pacentro
@@ -4614,7 +4488,6 @@
 12865594: Chiesa dell'Annunciazione del Signore, Penne
 15226913: Palazzo del Capitano regio, Penne
 15144537: Portici Salconio, Penne
-6577563: Bar Centrale, Penne
 16868249: Piazza Luca da Penne, Penne
 15658944: Convento dei Domenicani, Penne
 13001667: Chiesa di San Giovanni Battista, Pereto
@@ -4641,11 +4514,9 @@
 6419401: Parco Giochi Paperopoli, Pescara
 15030119: Modelstorming, Villa Raspa
 21231776: Abruzzo live experience, Pescara
-5928801: ORO NERO CAFFè, Pescara
 15798378: Just Bella, Villa Raspa
 12384831: Centro Commerciale L'Arca, Spoltore
 13127842: Parrocchia San Camillo, Villa Raspa
-3463472: African Guide, Watamu
 12133257: Rocciodromo Walter Bonatti, San Giovanni Teatino
 15144041: Piazza di San Rocco, Sambuceto
 15655966: Studio olistico Matteo di Nicola, San Giovanni Teatino
@@ -4674,7 +4545,6 @@
 13236502: Bowling Primavera, Pescara
 15849520: Parrocchia Beata Vergine Maria Regina Della Pace, Pescara
 14177366: Chiesa della Beata Vergine Maria Regina della Pace, Pescara
-8424869: Rose Cafe, Pescara
 23818354: Shaka Brew - Italian Craft Beer, Pescara
 21007823: Tropico Exotic Cocktail, Pescara
 12997049: Parco Florida, Pescara
@@ -4712,7 +4582,6 @@
 13108088: Auditorium Leonardo Petruzzi, Pescara
 547474: Museo Delle Genti D'Abruzzo, Pescara
 8028187: Cineteatro Massimo, Pescara
-5922801: PRIMOCAFE, Pescara
 15202061: Monumento a Clemente De Caesaris, Pescara
 13216472: Ex Bagno Penale Borbonico, Pescara
 11960244: Respawn Zone Gaming Bar, Pescara
@@ -4819,11 +4688,9 @@
 4740692: Parco Lupus in Fabula, Popoli
 13535857: Chiesa della Madonna delle Grazie, Popoli
 2175628: Regional Natural Reserve Sources of Pescara, Popoli
-25151856: Birrificio Mezzopasso, Popoli
 14076444: Stadio comunale Cerasa, Popoli
 23894296: Majella Domus Christi Domus Narurae, Sulmona
 7399183: Abbazia di Santo Spirito al Morrone, Sulmona
-5923703: Caffè Abbazia, Sulmona
 21104971: Cammino di Celestino, Sulmona
 4564060: Eremo di Sant'Onofrio al Morrone, Sulmona
 4544498: Tempio di Ercole Curino, Sulmona
@@ -4856,8 +4723,6 @@
 15624595: Mura del castello, San Vito Chietino
 15211461: Palazzo Tosti - Ex Palazzo comunale, San Vito Chietino
 12673195: Chiesa della Madonna del Porto, Marina di San Vito
-6727231: Gelateria Copa de Dora, San Vito Chietino
-5931030: La piazzetta bar tavola calda, Marina di San Vito
 12849321: Lido Nereide, San Vito Chietino
 14157148: Beach Marina di San Vito (South Pier), Marina di San Vito
 27173103: Jacci di Verre, Rocca Santa Maria
@@ -4872,8 +4737,6 @@
 13991028: Borgo Antico, Rosello
 9797753: Chiesa di San Nicola di Bari, Rosello
 15210587: Fontana di Rosello, Rosello
-5922679: Pub Pizzeria Black Wolf, Rosello
-4770396: Bar Ca'Nova, Roseto Degli Abruzzi
 14192487: Stadio comunale Fonte dell'Olmo, Roseto Degli Abruzzi
 3859644: Lido Sette, Roseto Degli Abruzzi
 12086420: IAT Roseto degli Abruzzi, Roseto Degli Abruzzi
@@ -4973,14 +4836,12 @@
 9564824: Chiesa di Santa Maria Della Tomba, Sulmona
 14075930: Porta di Santa Maria della Tomba, Sulmona
 9457155: Chiesa di San Francesco della Scarpa, Sulmona
-10423048: Bar Nin-Harra, Sulmona
 6716250: Enoteca antica sartoria del vino, Sulmona
 9564821: Porta Napoli, Sulmona
 10196892: Museo Civico Santissima Annunziata, Sulmona
 7094680: Centro Storico di Sulmona, Sulmona
 13343065: Palazzo della Santissima Annunziata, Sulmona
 24972791: Marmo Drink House, Sulmona
-15133150: Palazzo del Gran caffe, Sulmona
 14236685: Confetti Rapone, Sulmona
 13438169: Confetteria Giorgi, Sulmona
 13201047: Palazzo Liberati, Sulmona
@@ -5051,7 +4912,6 @@
 17448875: Sala del Regno dei Testimoni di Geova, Teramo
 9729507: Statua di Sor Paolo Proconsole, Teramo
 15834377: Archivio di Stato di Teramo, Teramo
-6367453: bar birreria malto da legare, Teramo
 16939664: Cada Franchi, Teramo
 18930172: Settimana Santa, Teramo
 16939662: Casa Franchi, Teramo
@@ -5171,7 +5031,6 @@
 14082833: Palazzo Palmieri, Vasto
 12945855: Monumento a Gabriele Rossetti, Vasto
 9457331: Piazza Rossetti, Vasto
-26441383: La Piccola Caffetteria, Vasto
 14088711: Palazzo del Carmine, Vasto
 21209822: Marocco Style, Vasto
 14098157: Corso de Parma, Vasto
@@ -5251,12 +5110,6 @@
 10731171: Chiesa di San Matteo Apostolo, Montenero di Bisaccia
 15154840: Villa comunale, Montenero di Bisaccia
 13847576: Stadio Comunale Vincenzo De Sanctis, Montenero di Bisaccia
-13368148: Chiesa della Madonna delle Grazie, Pescopennataro
-14081884: Borgo di Pescopennataro, Pescopennataro
-14079472: Parco di Pinocchio, Pescopennataro
-10234712: Chiesa di San Bartolomeo Apostolo, Pescopennataro
-15210391: Borgo Antico di Pescopennataro, Pescopennataro
-23706997: Belvedere Panoramico, Pescopennataro
 15662988: PRATO GENTILE 2.0, Capracotta
 2688849: Giardino della Flora Appenninica, Capracotta
 17383615: Chiesa di San Giovanni Battista, Capracotta
@@ -5322,78 +5175,14 @@
 12704803: Santuario di San Donato, San Donato Val di Comino
 18344249: Reali miniere di San Donato, San Donato Val di Comino
 19331215: Monumento ai caduti in guerra, San Donato Val di Comino
-6200038: Caffè Cautilli, San Donato Val di Comino
 19274604: Spuort di San Tommaso, San Donato Val di Comino
 18083254: Centro Storico, San Donato Val di Comino
 18454812: Pietra di San Bernardino, San Donato Val di Comino
 12815168: Chiesa dei Santissimi Giovanni Battista ed Evangelista, Pescosolido
 4702475: Sulpizio Tartufi di Sulpizio Liberato e C. sas, Campoli Appennino
-26260129: Caffetteria Marconi, Campoli Appennino
 26578603: Vallone Gole del Lacerno, Campoli Appennino
 26250857: Borgo storico di Campoli Appennino, Campoli Appennino
 12814994: Chiesa di Sant'Andrea, Campoli Appennino
 17820411: Area Faunistica Orso Bruno Marsicano, Campoli Appennino
 12815217: Torre Medievale, Campoli Appennino
-26107182: Bar Napoli, Campoli Appennino
 19333378: Azienda Agricola Benacquista, Campoli Appennino
-13651503: Stadio Claudio Tomei, Sora
-14761028: Eden Centro Estetico, Sora
-4757815: Fantasie Di Casa, Broccostella
-13646371: Chiesa di San Bartolomeo Apostolo, Sora
-5931773: Jazz Inn, Sora
-15558137: Fiume Liri, Sora
-5931669: Bar La Posta, Sora
-14180828: Eremo di Sant'Antonio Forletta, Sora
-2312495: Lago di Posta Fibreno, Posta Fibreno
-28142682: Natura Loci, Posta Fibreno
-21134047: Abbronzatissima, Fiumicino
-25068214: Bar Collando, Posta Fibreno
-12815184: Chiesa di Santa Maria Assunta, Posta Fibreno
-2522498: Certosa di Trisulti, Collepardo
-14998320: Sorgenti Di Capofiume, Collepardo
-12246080: Ecomuseo Collepardo, Collepardo
-12822435: Pro Loco di Collepardo, Collepardo
-12814881: Chiesa del Santissimo Salvatore, Collepardo
-5773149: Grotte di Collepardo, Collepardo
-16555126: Chiesa di San Rocco, Collepardo
-14178497: Chiesa della Madonna della Consolazione, Collepardo
-15029739: Sarandrea - Liquoreria Erboristeria, Collepardo
-14180787: Chiesa di San Giorgio Fuori le Mura, Vico nel Lazio
-6848993: Pozzo d'Antullo, Collepardo
-14967350: Orto Sylvatico, Collepardo
-12279040: Porta Portati, Alatri
-12278959: Convento dei Padri Cappuccini, Alatri
-12278942: Fontana di Porta San Pietro, Alatri
-12275982: Biblioteca Comunale "L. Ceci", Alatri
-12278879: Porta San Pietro, Alatri
-10291932: Museo civico, Alatri
-12279019: Palazzo Conti Gentili, Alatri
-10295522: Chiesa di Santa Maria Maggiore, Alatri
-12278963: Fontana Pia, Alatri
-10291848: Museo della Chiesa di Santa Maria Maggiore, Alatri
-10263564: PaTa Club, Vico nel Lazio
-23510354: Chiesa Di Santa Maria, Vico nel Lazio
-12815275: Chiesa di San Michele Arcangelo, Vico nel Lazio
-10273757: Acropoli di Alatri, Alatri
-10273793: Cattedrale di San Paolo, Alatri
-16694535: Portico Betilieno Varo, Alatri
-10273766: Mura poligonali urbane di Alatri, Alatri
-12278919: Chiesa della Madonna della Resurrezione, Alatri
-8428241: Area Pic Nic Prato di Campoli, Veroli
-12278950: Uffici Informazioni Pro-Loco, Alatri
-26309224: El barrio exclusive, Alatri
-12278895: Porta San Benedetto, Alatri
-12279030: Chiesa di Santo Stefano e Monastero dell'Annunziata, Alatri
-12815248: Chiesa di Santa Maria Maggiore, Supino
-10291916: Chiesa di San Francesco, Alatri
-12275846: Chiesa degli Scolopi, Alatri
-25548715: Quartiere medievale di Alatri, Alatri
-12279036: Chiesa di San Silvestro, Alatri
-12278962: Porta San Francesco, Alatri
-12278951: Fontana Antonini, Alatri
-7927399: Lago di Canterno, Fiuggi
-19087070: Stardust Bowling, Trivigliano
-2536473: Castello di Fumone, Fumone
-12815102: Chiesa Collegiata di Santa Maria Annunziata, Fumone
-3317898: Le Terme di Fiuggi, Fiuggi
-20141459: Roman Countryside Bike & Active Tours, Fiuggi

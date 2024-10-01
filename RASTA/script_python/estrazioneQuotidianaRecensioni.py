@@ -6,6 +6,7 @@ tenere sempre aggiornate le recensioni.
 '''
 import json
 import os
+import time
 import requests
 from dotenv import dotenv_values
 
@@ -107,6 +108,7 @@ for poi in poi_to_process:
                     'data': data, 
                     'url': url
                 }
+    time.sleep(1)  # Pausa per evitare di superare i limiti dell'API
 
 # Aggiorno l'indice dell'ultimo POI processato
 save_last_processed_poi(end_index)
