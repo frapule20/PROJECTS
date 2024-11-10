@@ -128,7 +128,6 @@
 196180: San Damiano, Assisi
 17528819: Fonte di San Nicolo, Assisi
 23514141: Assisi Tour by Asisium Travel, Assisi
-7161120: Enoteca Lombardi, Assisi
 8530540: La Bottega del Monastero, Assisi
 13089541: Porta Nuovo, Assisi
 4765104: Segway Assisi, Assisi
@@ -207,7 +206,6 @@
 12420181: Bottega d'Arte, Assisi
 4470249: Volta Pinta, Assisi
 1838996: Azienda Agraria Saio, Assisi
-8128482: Enoteca Hotel La Quiete, Assisi
 26310190: Scelta Di Vino, Bastia Umbra
 13427931: Noleggio E-Bike Biciclette Elettriche Assisi Umbria, Santa Maria degli Angeli
 6481309: Fiori E Fantasia, Santa Maria degli Angeli
@@ -487,7 +485,6 @@
 26221683: Cicli Marinelli Ferrettini, Castiglione del Lago
 26826268: Poggio Santa Maria, Castiglione del Lago
 23505974: Il Melograno, Castiglione del Lago
-27660957: Enoteca Poggiani, Castiglione del Lago
 23514837: Terrazza Panoramica, Castiglione del Lago
 23816584: L'Angolo del Buon Gustaio Shop, Castiglione del Lago
 19112205: Pista Ciclabile del Trasimeno, Castiglione del Lago
@@ -682,7 +679,6 @@
 19542324: Museo Rionale Societas Juctorum, Foligno
 2421944: Cattedrale di San Feliciano, Foligno
 12527627: Palazzo del Podestà, Foligno
-23598932: Enoteca Artemisia, Foligno
 2054856: Palazzo Trinci, Foligno
 12527715: "A Ruota Libera" - Servizio Noleggio Biciclette, Foligno
 12527804: Piazza Matteotti, Foligno
@@ -719,7 +715,6 @@
 5928597: Coffee-House La Dolce Vita, Sant'Eraclio
 12527634: Porta Romana, Foligno
 4817287: Centro Olistico Stella D'oriente, Foligno
-10756267: Bernetti Enoteca, Foligno
 12528081: Stazione Foligno, Foligno
 7072738: Piscina di Foligno, Foligno
 12527687: Palazzetto dello Sport Giuseppe Paternesi, Foligno
@@ -729,7 +724,6 @@
 12527652: Parrocchia di San Egidio in Borroni, Foligno
 26329210: Marta Gregori Yoga, Foligno
 12527651: Parrocchia di San Giovanni Battista in San Giovanni Profiamma, Foligno
-10435355: Birriﬁcio Fratelli Perugini, Foligno
 6154915: Nikka & Figo, Sant'Eraclio
 10804871: Palazzo Comunale di Sellano, Sellano
 10804868: Chiesa di Santa Maria Assunta, Sellano
@@ -839,7 +833,6 @@
 12862005: Palazzo Pretorio, Gubbio
 18509926: Tipici prodotti snc, Gubbio
 10783678: Gubbio Express, Gubbio
-17396475: ENOTECA ERALDO DENTICI, Gubbio
 196185: Palazzo dei Consoli e Museo Civico, Gubbio
 625613: Piazza Grande, Gubbio
 10677014: Via Galeotti, Gubbio
@@ -987,7 +980,6 @@
 8298444: Spazio Kossuth, Città della Pieve
 10832617: Palazzo della Corgna, Città della Pieve
 3357359: Palazzo della Corgna - Palazzo Ducale, Castiglione del Lago
-26620901: Enoteca Coppetta, Città della Pieve
 6888585: Cattedrale Santi Gervasio e Protasio, Città della Pieve
 15144036: Cook by Me Cooking Class, Città della Pieve
 7085894: La Bottega del Vino, Città della Pieve
@@ -1021,7 +1013,6 @@
 14862633: Monastero di Santa Veronica Giuliani, Città di Castello
 10681718: Antico borgo medievale di Compignano, Marsciano
 8431377: Erboristeria Bioprofumeria Secondo Natura, Città di Castello
-14763759: Enoteca Lo Sfizio, Città di Castello
 7653935: Cattedrale dei Santi Florido e Amanzio, Città di Castello
 5848818: Museo diocesano, Città di Castello
 16809098: Palazzo Comunale Citta' di Castello, Città di Castello
@@ -1040,7 +1031,6 @@
 18454810: Worm, Umbertide
 18454809: Worm Francesca, Umbertide
 4011572: Parco Mola Casanova, Umbertide
-10378833: Enoteca Migliorati, Umbertide
 23784393: Chiesa San Donato, Trestina
 11547649: Oratorio San Crescentino, Morra
 6351652: Chiesa di Santa Pudenziana, Narni
@@ -1317,7 +1307,6 @@
 196167: Piazza del Comune, Assisi
 26493824: Assisi serafica bellezza eco tour, Assisi
 12673448: Santuario della Madonna della Paolina, Leonessa
-6755421: La Dogana Enoteca, Valiano
 12106118: Palazzo Vecchio Cantina, Valiano
 20867268: Chiesa San Giuseppe, Città di Castello
 10795260: Oratorio della Madonna del Sole, Arquata del Tronto
@@ -1326,7 +1315,6 @@
 8666366: Terminal Le Matonelle - Il BiciGrill, Spoleto
 5930967: the gemel's cafè, Spoleto
 25374013: Caber Beer, Spoleto
-17406170: Enoteca Corsetti, Spoleto
 13809423: Unique - Fitness & Health, Spoleto
 15634721: Happy Park, Spoleto
 19885461: Mastro Raphael Factory Outlet, Spoleto
@@ -1377,7 +1365,6 @@
 12098355: Archivio di Stato, Terni
 12083297: Palazzo Mazzancolli, Terni
 12083186: Torre Barbarasa, Terni
-2362938: Enoteca Zanchi, Terni
 13205089: CityPlex Politeama Lucioli, Terni
 6674720: Chiesa di San Salvatore, Terni
 12083263: Palazzo Montani, Terni
@@ -2493,7 +2480,6 @@
 8538575: Chiostro del Convento di San Francesco, Tagliacozzo
 16878918: Palazzo Gattinara, Tagliacozzo
 8544542: Chiesa della Misericordia, Tagliacozzo
-12958060: Enoteca "La Sarimmènta", Tagliacozzo
 16878916: Palazzo Mancini Botticelli, Tagliacozzo
 12866233: Chiesa di San Nicola di Bari, Tagliacozzo
 9457077: Monastero dei Santi Cosma e Damiano, Tagliacozzo
@@ -2781,7 +2767,6 @@
 13505477: Parco Archeologico Don Antonio Colella, Corfinio
 23898953: Max's Bar, Castel di Sangro
 23862247: Asd Natural..mente Trekking, Castel di Sangro
-12958117: Enoteca 58, Castel di Sangro
 9552850: Chiesa di San Giovanni Battista, Castel di Sangro
 8724112: Pinacoteca Patiniana, Castel di Sangro
 8564876: Parco Avventura, Castel di Sangro
@@ -4001,33 +3986,12 @@
 14069647: Campanile di San Michele, Guarcino
 14069611: Collegiata di San Nicola, Guarcino
 14065781: Palazzo Patrasso, Guarcino
-7313124: Borgo Medievale di Fiuggi, Fiuggi
-13980324: Chiesa di Santa Maria del Colle, Fiuggi
-10291394: Chiesa di San Pietro Apostolo, Fiuggi
-10291424: Chiesa di Santo Stefano, Fiuggi
-13977464: Chiesa di Santa Chiara, Fiuggi
-10291458: Teatro Comunale, Fiuggi
-10273714: Palazzo Comunale di Fiuggi, Fiuggi
-27439765: Sapori Di Grano, Fiuggi
-27168382: Big Bench  #328 Fiuggi, Fiuggi
-7323411: Tangerine Spa - Benessere & Beauty, Fiuggi
 27942904: Ch Relais & Sport Club, Altipiani di Arcinazzo
 17398490: Altipiani Adventures Park, Altipiani di Arcinazzo
 4926570: Ruderi di Camerata Vecchia, Camerata Nuova
 10178468: Museo Civico Archeologico Villa di Traiano, Altipiani di Arcinazzo
 14938662: Chiesa di Sant'Andrea Apostolo, Jenne
 8597254: Parco Monti Simbruini, Jenne
-14052120: Tana Libera Tutti, Alatri
-7389365: Da Silvana, Fiuggi
-3317173: Thermarium Spa - Centro Benessere Fiuggi, Fiuggi
-12822521: Pro Loco Citta di Fiuggi, Fiuggi
-10586770: Golf Club Fiuggi 1928, Fiuggi
-10359764: Fonte Bonifacio VIII, Fiuggi
-6765093: Officine della Memoria e dell'Immagine, Fiuggi
-7249727: Wellness&Beauty CentroBenessere, Fiuggi
-5480553: Tre Store Fiuggi, Fiuggi
-2508781: Heaven Spa, Fiuggi
-14069615: Chiesa di Santa Maria Assunta, Trivigliano
 14000873: Castello Teofilatto, Torre Cajetani
 14000869: Chiesa di Santa Maria Assunta in Cielo, Torre Cajetani
 23651530: Centro Storico di Piglio, Piglio
@@ -4349,7 +4313,6 @@
 26583245: Sentiero P2, Pescasseroli
 15033606: Sentiero D3 Pescasseroli - Macchiarvana, Pescasseroli
 21238804: Sentiero B3, Pescasseroli
-3724458: Enoteca Sapore Divino, Pescasseroli
 4497449: Ecotour, Pescasseroli
 26601195: Arteparco, Pescasseroli
 23733377: Il Souvenir Del Parco, Pescasseroli
@@ -4836,7 +4799,6 @@
 9564824: Chiesa di Santa Maria Della Tomba, Sulmona
 14075930: Porta di Santa Maria della Tomba, Sulmona
 9457155: Chiesa di San Francesco della Scarpa, Sulmona
-6716250: Enoteca antica sartoria del vino, Sulmona
 9564821: Porta Napoli, Sulmona
 10196892: Museo Civico Santissima Annunziata, Sulmona
 7094680: Centro Storico di Sulmona, Sulmona
@@ -5169,16 +5131,6 @@
 12810533: Centro Commerciale Nuovo Borgo, Sulmona
 13438181: Monumento ai Caduti, Sulmona
 12534663: Biblioteca della Fondazione Nazionale "Giuseppe Capograssi", Sulmona
-19274595: ARCO DI SAN DONATO (PORTA A LEVANTE), San Donato Val di Comino
-12713422: Duomo di Santa Maria, San Donato Val di Comino
-18452983: Torre medievale, San Donato Val di Comino
-12704803: Santuario di San Donato, San Donato Val di Comino
-18344249: Reali miniere di San Donato, San Donato Val di Comino
-19331215: Monumento ai caduti in guerra, San Donato Val di Comino
-19274604: Spuort di San Tommaso, San Donato Val di Comino
-18083254: Centro Storico, San Donato Val di Comino
-18454812: Pietra di San Bernardino, San Donato Val di Comino
-12815168: Chiesa dei Santissimi Giovanni Battista ed Evangelista, Pescosolido
 4702475: Sulpizio Tartufi di Sulpizio Liberato e C. sas, Campoli Appennino
 26578603: Vallone Gole del Lacerno, Campoli Appennino
 26250857: Borgo storico di Campoli Appennino, Campoli Appennino

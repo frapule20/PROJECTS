@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment delle Recensioni di un POI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 500px;
+        }
+        .result-box {
+            background-color: #A4224B;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .pie-chart-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="text-center mb-4">
+        <img src="large_icon.png" alt="Icon" width="180">
+        <img src="RASTA.png" alt="RASTA" width="260">
+    </div>
+
+    <div class="mb-3">
+        <label for="excelFile" class="form-label">Seleziona un file Excel:</label>
+        <input type="file" class="form-control" id="excelFile" accept=".xlsx">
+        <small class="text-muted">Il file excel deve rispettare il formato 'id', 'POI', 'rating', 'recensione'</small>
+    </div>
+
+    <div class="mb-3">
+        <label for="poiSelect" class="form-label">Seleziona un POI:</label>
+        <select class="form-select" id="poiSelect">
+            <option value="" disabled selected>Scegli un POI</option>
+            <!-- Options will be dynamically populated -->
+        </select>
+    </div>
+
+    <div class="text-center", style="margin-bottom: 12px;">
+        <button class="btn btn-success" id="submitBtn">Calcola Sentiment</button>
+    </div>
+
+    <div id="resultBox" class="result-box d-none">
+        <p id="resultText"></p>
+        <div class="pie-chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+<script>
+    // Simulazione dell'elaborazione di sentiment
+    const poiSelect = document.getElementById('poiSelect');
+    const excelFileInput = document.getElementById('excelFile');
+    const resultBox = document.getElementById('resultBox');
+    const resultText = document.getElementById('resultText');
+    const pieChart = document.getElementById('pieChart');
+
+     // Funzione per leggere il file Excel e popolare il dropdown
+     excelFileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const sheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                const jsonData = XLSX.utils.sheet_to_json(worksheet);
+
+                // Ripulisci il dropdown prima di aggiungere nuovi POI
+                poiSelect.innerHTML = '<option value="" disabled selected>Scegli un POI</option>';
+
+                // Popola il dropdown con i POI dal file Excel
+                const uniquePois = [...new Set(jsonData.map(item => item.POI))];
+                uniquePois.forEach(poi => {
+                    const option = document.createElement('option');
+                    option.value = poi;
+                    option.textContent = poi;
+                    poiSelect.appendChild(option);
+                });
+            };
+            reader.readAsArrayBuffer(file);
+        }
+    });
+
+    document.getElementById('submitBtn').addEventListener('click', () => {
+        const poi = poiSelect.value;
+        if (!poi) {
+            alert('Seleziona un POI!');
+            return;
+        }
+
+        // Simulazione del calcolo del sentiment
+        const sentiment = "positivo";
+        const distribution = [70, 20, 10]; // Simulazione: 70% positivo, 20% negativo, 10% neutro
+
+        // Mostra il risultato
+        resultBox.classList.remove('d-none');
+        resultText.innerHTML = `Il sentiment del POI <strong>${poi}</strong> è: <strong>${sentiment}</strong>`;
+
+        // Creazione del grafico a torta
+        new Chart(pieChart, {
+            type: 'pie',
+            data: {
+                labels: ['Positivo', 'Negativo', 'Neutrale'],
+                datasets: [{
+                    data: distribution,
+                    backgroundColor: ['#66C266', '#FF6666', '#FFEE66']
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

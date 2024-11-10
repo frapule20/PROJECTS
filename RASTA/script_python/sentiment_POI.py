@@ -109,30 +109,27 @@ def on_submit():
         # Crea una nuova finestra per i risultati
         result_window = tk.Toplevel(root)
         result_window.title("Risultati del Sentiment")
-        result_window.iconbitmap('icon.ico') 
+        result_window.iconbitmap('icon.ico')
 
-        # Dimensioni della finestra di risultato
-        result_window_width = 500
-        result_window_height = 670
-    
-        # Ottieni le dimensioni dello schermo
+        # Dimensioni ridotte della finestra di risultato
+        result_window_width = 400
+        result_window_height = 500
+
+        # Ottieni le dimensioni dello schermo e calcola la posizione
         screen_width = result_window.winfo_screenwidth()
         screen_height = result_window.winfo_screenheight()
-
-        # Calcola la posizione per centrare la finestra
         position_top = int(screen_height / 2 - result_window_height / 2)
         position_right = int(screen_width / 2 - result_window_width / 2)
 
-        # Imposta la geometria della finestra con la nuova posizione
+        # Imposta la geometria della finestra
         result_window.geometry(f'{result_window_width}x{result_window_height}+{position_right}+{position_top}')
-        
 
-        # Crea un widget Text
-        text_widget = tk.Text(result_window, wrap=tk.WORD, height=15, width=50)
-        text_widget.pack(pady=10)
-        text_widget.config(bg='#A4224B', fg='white')  # Imposta il colore di sfondo e il colore del testo
+        # Crea un widget Text per il risultato del sentiment
+        text_widget = tk.Text(result_window, wrap=tk.WORD, height=2.7, width=50)
+        text_widget.pack(pady=20)
+        text_widget.config(bg='#A4224B', fg='white')
 
-        # Definisci un font in grassetto
+        # Font per il testo
         bold_font = tkFont.Font(weight="bold", size=12)
         normal_font = tkFont.Font(size=12)
 
@@ -144,20 +141,6 @@ def on_submit():
         text_widget.insert(tk.END, '" è: ', 'normal')
         text_widget.insert(tk.END, sentiment + '\n' + '\n', 'bold')
 
-        text_widget.insert(tk.END, f"Recensioni positive: ", 'bold')
-        text_widget.insert(tk.END, str(positive_count) + '\n', 'normal')
-        text_widget.insert(tk.END, f"Recensioni negative: ", 'bold')
-        text_widget.insert(tk.END, str(negative_count) + '\n', 'normal')
-        text_widget.insert(tk.END, f"Recensioni neutrali: ", 'bold')
-        text_widget.insert(tk.END, str(neutral_count), 'normal')
-
-
-        text_widget.insert(tk.END, '\n\nDistribuzione: ' + '\n', 'bold')
-        text_widget.insert(tk.END, f"Positivo-> {distribution[0]:.3f}", 'normal')
-        text_widget.insert(tk.END, f"\nNegativo-> {distribution[1]:.3f}", 'normal')
-        text_widget.insert(tk.END, f"\nNeutrale-> {distribution[2]:.3f}", 'normal')
-
-
         # Applica lo stile al testo in grassetto
         text_widget.tag_config('bold', font=bold_font)
         text_widget.tag_config('normal', font=normal_font)
@@ -165,36 +148,30 @@ def on_submit():
         # Disabilita la modifica del testo
         text_widget.config(state=tk.DISABLED)
 
-        # Crea il grafico a torta
+        # Crea un grafico a torta più piccolo
         labels = ['Positivo', 'Negativo', 'Neutrale']
+        sizes = distribution
+        colors = ['#66C266', '#FF6666', '#FFEE66']
 
-        pos = distribution[0]
-        neg = distribution[1]
-        neut = distribution[2]
-        sizes = [pos, neg, neut]
-        colors = ['#66C266', '#FF6666', '#FFEE66']  # Verde sfumato, Rosso sfumato, Giallo sfumato
-
-        # Filtra i valori zero per evitare la sovrapposizione
         filtered_labels = [label for label, size in zip(labels, sizes) if size > 0]
         filtered_sizes = [size for size in sizes if size > 0]
         filtered_colors = [color for color, size in zip(colors, sizes) if size > 0]
 
-
-
-        fig, ax = plt.subplots()
+        # Creare una figura più piccola
+        fig, ax = plt.subplots(figsize=(4, 4))  # Riduci le dimensioni del grafico
 
         ax.pie(filtered_sizes, labels=filtered_labels, colors=filtered_colors,
                autopct='%1.1f%%', startangle=140, pctdistance=0.85, shadow=True)
-        ax.axis('equal')  # Garantisce che il grafico sia un cerchio
+        ax.axis('equal')  # Assicura che il grafico sia circolare
 
-
-        # Aggiungi il grafico alla finestra dei risultati
+        # Aggiungi il grafico subito sotto il testo
         canvas = FigureCanvasTkAgg(fig, master=result_window)
         canvas.draw()
-        canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
+        canvas.get_tk_widget().pack(fill=tk.BOTH, expand=False, pady=10)  # Riduci lo spazio e metti sotto al testo
 
     except Exception as e:
         messagebox.showerror("Errore", f"Si è verificato un errore: {e}")
+
 
 
 def center_window(root, width, height):
@@ -252,7 +229,7 @@ image_frame.grid(row=0, column=0, pady=10, padx=10)
 # Caricare e visualizzare la prima immagine
 try:
     img1 = Image.open("large_icon.png")  # Aggiungi il tuo file .png qui
-    img1 = img1.resize((100, 100), Image.ANTIALIAS)  # Ridimensiona l'immagine
+    img1 = img1.resize((100, 100), Image.Resampling.LANCZOS)  # Ridimensiona l'immagine
     photo1 = ImageTk.PhotoImage(img1)
     img_label1 = tk.Label(image_frame, image=photo1, background="#f0f0f0")
     img_label1.image = photo1  # Mantieni un riferimento all'immagine
@@ -263,13 +240,14 @@ except Exception as e:
 # Caricare e visualizzare la seconda immagine
 try:
     img2 = Image.open("RASTA.png")  # Aggiungi il tuo file .png qui
-    img2 = img2.resize((140, 100), Image.ANTIALIAS)  # Ridimensiona l'immagine
+    img2 = img2.resize((140, 100), Image.Resampling.LANCZOS)  # Ridimensiona l'immagine
     photo2 = ImageTk.PhotoImage(img2)
     img_label2 = tk.Label(image_frame, image=photo2, background="#f0f0f0")
     img_label2.image = photo2  # Mantieni un riferimento all'immagine
     img_label2.grid(row=0, column=1, padx=10)
 except Exception as e:
     print("Errore nel caricamento dell'immagine RASTA.png:", e)
+
     
 # Definire uno stile personalizzato per il pulsante "Calcola Sentiment"
 style.configure("Custom.TButton", foreground="white", background="#A4224B", font=("Roboto", 11), borderwidth=0,)
