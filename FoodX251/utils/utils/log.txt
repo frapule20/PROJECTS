@@ -1,0 +1,265 @@
+18:07:16: Length of train dataset: 5020
+18:07:16: Length of unlabel dataset: 113455
+
+18:07:16: Cycle: 0
+18:07:16:      Loading model resnet18_0.pth
+18:13:48:      Prediction time: 391.7722897529602
+18:13:48:      Model resnet18 accuracy: -1
+18:13:48:      Loading model efficientnet_0.pth
+18:18:13:      Prediction time: 264.66122126579285
+18:18:13:      Model efficientnet accuracy: -1
+18:18:16:      Loading model vgg16_0.pth
+18:37:25:      Prediction time: 1148.679414987564
+18:37:25:      Model vgg16 accuracy: -1
+18:37:25: Weights:  [0.33333333 0.33333333 0.33333333]
+18:37:25: Number of images added to train set: 52
+18:37:25: Number of images removed from unlabel set: 52
+18:37:25: ----------------------------------------------------------------------------------------------------------
+19:02:38: Length of train dataset: 5072
+19:02:38: Length of unlabel dataset: 113455
+
+19:02:38: Cycle: 2
+19:02:39: Training model <models.FoodCNN.FoodCNN object at 0x0000018FFB4B46A0>
+19:12:11:      Training time: 572.5538301467896
+19:18:36:      Prediction time: 384.6084485054016
+19:18:36:      Model resnet18 accuracy: 0.18503937007874016
+19:18:36: Training model <models.FoodCNN.FoodCNN object at 0x0000018FFB4B46A0>
+22:48:50:      Training time: 12613.730828762054
+22:52:58:      Prediction time: 248.20822095870972
+22:52:58:      Model efficientnet accuracy: 0.21653543307086615
+22:53:01: Training model <models.FoodCNN.FoodCNN object at 0x0000018FFE30E380>
+23:04:59:      Training time: 718.357138633728
+23:56:37:      Prediction time: 3097.419666528702
+23:56:37:      Model vgg16 accuracy: 0.1830708661417323
+23:56:37: Weights:  [0.31649832 0.37037037 0.31313131]
+23:56:37: Number of images added to train set: 101
+23:56:37: Number of images removed from unlabel set: 101
+23:56:37: ----------------------------------------------------------------------------------------------------------
+
+10:20:55: Length of train dataset: 5173
+10:20:55: Length of unlabel dataset: 24899
+10:20:55: Cycle: 3
+10:20:55: Length of prediction dataset: 15000
+10:20:55:      Loading model resnet18_3.pth
+10:24:18:      Prediction time: 202.9969460964203
+10:24:18:      Model resnet18 accuracy: -1
+10:24:18: Training model <models.FoodCNN.FoodCNN object at 0x00000232E9CA8DF0>
+10:33:51:      Training time: 573.0345203876495
+10:38:02:      Prediction time: 250.68623733520508
+10:38:02:      Model efficientnet accuracy: 0.19111969111969113
+10:38:05: Training model <models.FoodCNN.FoodCNN object at 0x00000232E9D61600>
+10:50:26:      Training time: 741.0991160869598
+10:54:03:      Prediction time: 216.7103419303894
+10:54:03:      Model vgg16 accuracy: 0.15057915057915058
+10:54:03: Weights:  [ 1.51906158 -0.29032258 -0.228739  ]
+10:54:03: Number of images added to train set: 107
+10:54:03: Number of images removed from unlabel set: 107
+10:54:03: ----------------------------------------------------------------------------------------------------------
+
+
+10:54:03: Length of train dataset: 5173
+10:54:03: Length of unlabel dataset: 24899
+10:54:03: Cycle: 4
+10:54:03: Length of prediction dataset: 15000
+10:54:03: Training model <models.FoodCNN.FoodCNN object at 0x00000232E9D761A0>
+11:04:01:      Training time: 597.9417054653168
+11:07:03:      Prediction time: 181.47580933570862
+11:07:03:      Model resnet18 accuracy: 0.2215909090909091
+11:07:03: Training model <models.FoodCNN.FoodCNN object at 0x00000232E9D761A0>
+11:16:13:      Training time: 550.437263250351
+11:19:00:      Prediction time: 166.16880702972412
+11:19:00:      Model efficientnet accuracy: 0.23674242424242425
+11:19:01: Training model <models.FoodCNN.FoodCNN object at 0x00000232E9CA9390>
+11:31:58:      Training time: 777.0262413024902
+11:35:35:      Prediction time: 217.0397515296936
+11:35:35:      Model vgg16 accuracy: 0.19696969696969696
+11:35:35: Weights:  [0.33815029 0.36127168 0.30057803]
+11:35:35: Number of images added to train set: 51
+11:35:35: Number of images removed from unlabel set: 51
+11:35:35: ----------------------------------------------------------------------------------------------------------
+
+11:39:32: Length of train dataset: 5331
+11:39:32: Length of unlabel dataset: 24741
+11:39:32: Cycle: 5
+11:39:32: Length of prediction dataset: 15000
+11:39:32: Training model resnet18
+11:49:37:      Training time: 604.5776844024658
+11:52:19:      Prediction time: 162.2512276172638
+11:52:19:      Model resnet18 accuracy: 0.19662921348314608
+11:52:19: Training model efficientnet
+12:00:53:      Training time: 514.4825115203857
+12:03:29:      Prediction time: 155.20107460021973
+12:03:29:      Model efficientnet accuracy: 0.23595505617977527
+12:03:30: Training model vgg16
+12:16:17:      Training time: 766.7182998657227
+12:19:56:      Prediction time: 218.96759748458862
+12:19:56:      Model vgg16 accuracy: 0.19850187265917604
+12:19:56: Weights:  [0.3115727  0.37388724 0.31454006]
+12:19:56: Number of images added to train set: 55
+12:19:56: Number of images removed from unlabel set: 55
+12:19:56: ----------------------------------------------------------------------------------------------------------
+
+
+12:19:56: Length of train dataset: 5331
+12:19:56: Length of unlabel dataset: 24741
+12:19:56: Cycle: 6
+12:19:56: Length of prediction dataset: 15000
+12:19:56: Training model resnet18
+
+12:23:58: Length of train dataset: 5386
+12:23:58: Length of unlabel dataset: 24686
+12:23:58: Cycle: 5
+12:23:58: Length of prediction dataset: 15000
+12:23:58: Training model resnet18
+
+13:17:42: Length of train dataset: 5386
+13:17:42: Length of unlabel dataset: 24686
+13:17:42: Cycle: 7
+13:17:42: Length of prediction dataset: 15000
+13:17:42: Training model resnet18
+13:27:43:      Training time: 601.0092244148254
+13:30:10:      Prediction time: 147.23337721824646
+13:30:10:      Model resnet18 accuracy: 0.20222634508348794
+13:30:10: Training model efficientnet
+13:39:15:      Training time: 544.6329455375671
+13:41:56:      Prediction time: 160.70336413383484
+13:41:56:      Model efficientnet accuracy: 0.23933209647495363
+13:41:57: Training model vgg16
+13:54:39:      Training time: 761.7663667201996
+13:58:14:      Prediction time: 215.19169306755066
+13:58:14:      Model vgg16 accuracy: 0.23191094619666047
+13:58:14: Weights:  [0.30027548 0.3553719  0.34435262]
+13:58:14: Number of images added to train set: 35
+13:58:14: Number of images removed from unlabel set: 35
+13:58:14: ----------------------------------------------------------------------------------------------------------
+
+
+13:58:14: Length of train dataset: 5386
+13:58:14: Length of unlabel dataset: 24686
+13:58:14: Cycle: 8
+13:58:14: Length of prediction dataset: 15000
+13:58:14: Training model resnet18
+14:08:20:      Training time: 606.0228204727173
+14:10:50:      Prediction time: 149.93216180801392
+14:10:50:      Model resnet18 accuracy: 0.19152854511970535
+14:10:51: Training model efficientnet
+14:19:28:      Training time: 517.6800014972687
+14:21:58:      Prediction time: 149.3646788597107
+14:21:58:      Model efficientnet accuracy: 0.2302025782688766
+14:21:59: Training model vgg16
+14:34:44:      Training time: 765.3097960948944
+14:38:20:      Prediction time: 215.3781933784485
+14:38:20:      Model vgg16 accuracy: 0.22283609576427257
+14:38:20: Weights:  [0.29714286 0.35714286 0.34571429]
+14:38:20: Number of images added to train set: 37
+14:38:20: Number of images removed from unlabel set: 37
+14:38:20: ----------------------------------------------------------------------------------------------------------
+
+20:25:36: Length of train dataset: 5458
+20:25:36: Length of unlabel dataset: 24614
+20:25:36: Cycle: 9
+20:25:36: Length of prediction dataset: 15000
+20:25:36: Training model resnet18
+20:36:15:      Training time: 639.5256209373474
+20:40:09:      Prediction time: 233.3840560913086
+20:40:09:      Model resnet18 accuracy: 0.22893772893772893
+20:40:09: Training model efficientnet
+20:49:28:      Training time: 558.8100428581238
+20:52:09:      Prediction time: 160.85496044158936
+20:52:09:      Model efficientnet accuracy: 0.24358974358974358
+20:52:10: Training model vgg16
+21:05:18:      Training time: 788.0708062648773
+21:08:58:      Prediction time: 220.2351839542389
+21:08:58:      Model vgg16 accuracy: 0.22527472527472528
+21:08:58: Weights:  [0.32808399 0.34908136 0.32283465]
+21:08:58: Number of images added to train set: 33
+21:08:58: Number of images removed from unlabel set: 33
+21:08:58: ----------------------------------------------------------------------------------------------------------
+
+
+21:08:58: Length of train dataset: 5458
+21:08:58: Length of unlabel dataset: 24614
+21:08:58: Cycle: 10
+21:08:58: Length of prediction dataset: 15000
+21:08:59: Training model resnet18
+21:19:23:      Training time: 624.0653235912323
+21:22:23:      Prediction time: 180.19504070281982
+21:22:23:      Model resnet18 accuracy: 0.24181818181818182
+21:22:23: Training model efficientnet
+21:31:54:      Training time: 570.4409673213959
+21:34:37:      Prediction time: 163.407155752182
+21:34:37:      Model efficientnet accuracy: 0.2581818181818182
+21:34:38: Training model vgg16
+21:47:47:      Training time: 788.0255498886108
+21:51:24:      Prediction time: 217.44011235237122
+21:51:24:      Model vgg16 accuracy: 0.24545454545454545
+21:51:24: Weights:  [0.32439024 0.34634146 0.32926829]
+21:51:24: Number of images added to train set: 30
+21:51:24: Number of images removed from unlabel set: 30
+21:51:24: ----------------------------------------------------------------------------------------------------------
+
+
+21:51:24: Length of train dataset: 5458
+21:51:24: Length of unlabel dataset: 24614
+21:51:24: Cycle: 11
+21:51:24: Length of prediction dataset: 15000
+21:51:24: Training model resnet18
+22:01:52:      Training time: 627.6131398677826
+22:04:32:      Prediction time: 160.36208581924438
+22:04:32:      Model resnet18 accuracy: 0.2549728752260398
+22:04:32: Training model efficientnet
+22:14:09:      Training time: 576.0866928100586
+22:16:48:      Prediction time: 159.0272023677826
+22:16:48:      Model efficientnet accuracy: 0.2640144665461121
+22:16:49: Training model vgg16
+22:29:57:      Training time: 788.13511967659
+22:33:34:      Prediction time: 217.44141817092896
+22:33:34:      Model vgg16 accuracy: 0.22423146473779385
+22:33:34: Weights:  [0.34306569 0.35523114 0.30170316]
+22:33:34: Number of images added to train set: 16
+22:33:34: Number of images removed from unlabel set: 16
+22:33:34: ----------------------------------------------------------------------------------------------------------
+
+
+00:02:40: Length of train dataset: 5537
+00:02:40: Length of unlabel dataset: 24535
+00:02:40: Cycle: 12
+00:02:40: Length of prediction dataset: 15000
+00:02:40: Training model resnet18
+00:13:34:      Training time: 653.6144556999207
+00:17:21:      Prediction time: 227.5573742389679
+00:17:21:      Model resnet18 accuracy: 0.23465703971119134
+00:17:22: Training model efficientnet
+00:26:47:      Training time: 565.4099957942963
+00:29:31:      Prediction time: 163.6326766014099
+00:29:31:      Model efficientnet accuracy: 0.259927797833935
+00:29:32: Training model vgg16
+00:42:40:      Training time: 788.4701154232025
+00:46:17:      Prediction time: 217.04983282089233
+00:46:17:      Model vgg16 accuracy: 0.22743682310469315
+00:46:17: Weights:  [0.325 0.36  0.315]
+00:46:18: Number of images added to train set: 21
+00:46:18: Number of images removed from unlabel set: 21
+00:46:18: ----------------------------------------------------------------------------------------------------------
+
+
+00:46:18: Length of train dataset: 5537
+00:46:18: Length of unlabel dataset: 24535
+00:46:18: Cycle: 13
+00:46:18: Length of prediction dataset: 15000
+00:46:18: Training model resnet18
+00:56:44:      Training time: 626.2719690799713
+00:59:44:      Prediction time: 179.7473645210266
+00:59:44:      Model resnet18 accuracy: 0.2446043165467626
+00:59:44: Training model efficientnet
+01:09:19:      Training time: 575.0964598655701
+01:12:04:      Prediction time: 165.13118386268616
+01:12:04:      Model efficientnet accuracy: 0.2787769784172662
+01:12:05: Training model vgg16
+01:25:16:      Training time: 790.1365804672241
+01:28:53:      Prediction time: 217.18901014328003
+01:28:53:      Model vgg16 accuracy: 0.25359712230215825
+01:28:53: Weights:  [0.31481481 0.3587963  0.32638889]
+01:28:53: Number of images added to train set: 26
+01:28:53: Number of images removed from unlabel set: 26
+01:28:53: ----------------------------------------------------------------------------------------------------------
